@@ -13,6 +13,7 @@ entity PCcomJK is
 end PCcomJK;
 
 architecture archPCcomJK of PCcomJK is
+	
 	--Este componente serve para o resistrador
 	component FlipFlopJK is
 	port(
@@ -32,9 +33,9 @@ architecture archPCcomJK of PCcomJK is
 	end component;
 	signal reg: std_logic_vector(7 downto 0) := "00000000"; isso aqui ainda eh incerteza
 	signal Qs: std_logic_vector(7 downto 0);
-	Qs <= soma(reg, inc and not(C)); --Perguntar se posso colocar que Qs recebe a soma diretamente ou se eh necessario um laco
-	
 	signal Jpc, Kpc: std_logic_vector(7 downto 0); --Sinais resposaveis pela logica para gerar o resistrador interno do CONTADOR DE PROGRAMA
+begin
+	Qs <= soma(pm, inc and not(C)); --Perguntar se posso colocar que Qs recebe a soma diretamente ou se eh necessario um laco	
 	RFOR: for I in 0 to 7 generate
 		JN: Jpc(I) <= (not(C(I)) and Inc(I) and not(Qs(I))) or (C(I) and not(M(I)));
 		KN: Kpc(I) <= (not(C(I)) and Inc(I) and Qs(I)) or (C(I) and M(I));
