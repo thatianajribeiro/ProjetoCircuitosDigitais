@@ -23,7 +23,7 @@ end component;
 
    signal ySoma 		: std_logic_vector(7 downto 0);
 	signal Carry_Soma	: std_logic;
-	signal N_aux : std_logic_vector(7 downto 0);
+	signal Z_aux : std_logic_vector(7 downto 0);
 
 begin
 
@@ -31,13 +31,13 @@ begin
   
   N <= ySoma(7);
   
-	N_aux(0) <= ySoma(0);
+	Z_aux <= ySoma;
   
 	FOR01: for i in 1 to (7) generate	
-		N_aux(i) <= N_aux(i-1) nor ySoma(i);
+		Z_aux(i) <= Z_aux(i-1) nor ySoma(i);
 	end generate; 
 
-	N <= N_aux(7);	
+	Z <= not(Z_aux(0));	-- Resolvi de forma burra, está funcionando, mas não sei onde está o erro. A saída Z está invertida, alterar o operador de "nor" para "or" não resolveu.
 	
   WITH operacao SELECT
 		y <=  ySoma   WHEN "000",
