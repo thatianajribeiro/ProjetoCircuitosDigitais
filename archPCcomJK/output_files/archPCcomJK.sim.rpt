@@ -1,0 +1,319 @@
+Simulator report for archPCcomJK
+Fri Jun 21 18:16:39 2019
+Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 151 nodes    ;
+; Simulation Coverage         ;     100.00 % ;
+; Total Number of Transitions ; 13988        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                   ;
++--------------------------------------------------------------------------------------------+-----------------------------------------+---------------+
+; Option                                                                                     ; Setting                                 ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                              ; Timing        ;
+; Start time                                                                                 ; 0 ns                                    ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                     ;               ;
+; Vector input source                                                                        ; C:/altera/13.0/archPCcomJK/teste_PC.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                      ; On            ;
+; Check outputs                                                                              ; Off                                     ; Off           ;
+; Report simulation coverage                                                                 ; On                                      ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                      ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                      ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                      ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                     ; Off           ;
+; Detect glitches                                                                            ; Off                                     ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                     ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                     ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                     ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                     ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                      ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                              ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                     ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                     ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                    ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 32-bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;     100.00 % ;
+; Total nodes checked                                 ; 151          ;
+; Total output ports checked                          ; 151          ;
+; Total output ports with complete 1/0-value coverage ; 151          ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 0            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                  ;
++---------------------------------------------+---------------------------------------------+------------------+
+; Node Name                                   ; Output Port Name                            ; Output Port Type ;
++---------------------------------------------+---------------------------------------------+------------------+
+; |PCcomJK|Jpc~0                              ; |PCcomJK|Jpc~0                              ; out0             ;
+; |PCcomJK|Jpc~1                              ; |PCcomJK|Jpc~1                              ; out0             ;
+; |PCcomJK|Jpc~2                              ; |PCcomJK|Jpc~2                              ; out0             ;
+; |PCcomJK|Jpc[0]                             ; |PCcomJK|Jpc[0]                             ; out0             ;
+; |PCcomJK|Kpc~0                              ; |PCcomJK|Kpc~0                              ; out0             ;
+; |PCcomJK|Kpc~1                              ; |PCcomJK|Kpc~1                              ; out0             ;
+; |PCcomJK|Kpc~2                              ; |PCcomJK|Kpc~2                              ; out0             ;
+; |PCcomJK|Kpc[0]                             ; |PCcomJK|Kpc[0]                             ; out0             ;
+; |PCcomJK|Jpc~3                              ; |PCcomJK|Jpc~3                              ; out0             ;
+; |PCcomJK|Jpc~4                              ; |PCcomJK|Jpc~4                              ; out0             ;
+; |PCcomJK|Jpc~5                              ; |PCcomJK|Jpc~5                              ; out0             ;
+; |PCcomJK|Jpc[1]                             ; |PCcomJK|Jpc[1]                             ; out0             ;
+; |PCcomJK|Kpc~3                              ; |PCcomJK|Kpc~3                              ; out0             ;
+; |PCcomJK|Kpc~4                              ; |PCcomJK|Kpc~4                              ; out0             ;
+; |PCcomJK|Kpc~5                              ; |PCcomJK|Kpc~5                              ; out0             ;
+; |PCcomJK|Kpc[1]                             ; |PCcomJK|Kpc[1]                             ; out0             ;
+; |PCcomJK|Jpc~6                              ; |PCcomJK|Jpc~6                              ; out0             ;
+; |PCcomJK|Jpc~7                              ; |PCcomJK|Jpc~7                              ; out0             ;
+; |PCcomJK|Jpc~8                              ; |PCcomJK|Jpc~8                              ; out0             ;
+; |PCcomJK|Jpc[2]                             ; |PCcomJK|Jpc[2]                             ; out0             ;
+; |PCcomJK|Kpc~6                              ; |PCcomJK|Kpc~6                              ; out0             ;
+; |PCcomJK|Kpc~7                              ; |PCcomJK|Kpc~7                              ; out0             ;
+; |PCcomJK|Kpc~8                              ; |PCcomJK|Kpc~8                              ; out0             ;
+; |PCcomJK|Kpc[2]                             ; |PCcomJK|Kpc[2]                             ; out0             ;
+; |PCcomJK|Jpc~9                              ; |PCcomJK|Jpc~9                              ; out0             ;
+; |PCcomJK|Jpc~10                             ; |PCcomJK|Jpc~10                             ; out0             ;
+; |PCcomJK|Jpc~11                             ; |PCcomJK|Jpc~11                             ; out0             ;
+; |PCcomJK|Jpc[3]                             ; |PCcomJK|Jpc[3]                             ; out0             ;
+; |PCcomJK|Kpc~9                              ; |PCcomJK|Kpc~9                              ; out0             ;
+; |PCcomJK|Kpc~10                             ; |PCcomJK|Kpc~10                             ; out0             ;
+; |PCcomJK|Kpc~11                             ; |PCcomJK|Kpc~11                             ; out0             ;
+; |PCcomJK|Kpc[3]                             ; |PCcomJK|Kpc[3]                             ; out0             ;
+; |PCcomJK|Jpc~12                             ; |PCcomJK|Jpc~12                             ; out0             ;
+; |PCcomJK|Jpc~13                             ; |PCcomJK|Jpc~13                             ; out0             ;
+; |PCcomJK|Jpc~14                             ; |PCcomJK|Jpc~14                             ; out0             ;
+; |PCcomJK|Jpc[4]                             ; |PCcomJK|Jpc[4]                             ; out0             ;
+; |PCcomJK|Kpc~12                             ; |PCcomJK|Kpc~12                             ; out0             ;
+; |PCcomJK|Kpc~13                             ; |PCcomJK|Kpc~13                             ; out0             ;
+; |PCcomJK|Kpc~14                             ; |PCcomJK|Kpc~14                             ; out0             ;
+; |PCcomJK|Kpc[4]                             ; |PCcomJK|Kpc[4]                             ; out0             ;
+; |PCcomJK|Jpc~15                             ; |PCcomJK|Jpc~15                             ; out0             ;
+; |PCcomJK|Jpc~16                             ; |PCcomJK|Jpc~16                             ; out0             ;
+; |PCcomJK|Jpc~17                             ; |PCcomJK|Jpc~17                             ; out0             ;
+; |PCcomJK|Jpc[5]                             ; |PCcomJK|Jpc[5]                             ; out0             ;
+; |PCcomJK|Kpc~15                             ; |PCcomJK|Kpc~15                             ; out0             ;
+; |PCcomJK|Kpc~16                             ; |PCcomJK|Kpc~16                             ; out0             ;
+; |PCcomJK|Kpc~17                             ; |PCcomJK|Kpc~17                             ; out0             ;
+; |PCcomJK|Kpc[5]                             ; |PCcomJK|Kpc[5]                             ; out0             ;
+; |PCcomJK|Jpc~18                             ; |PCcomJK|Jpc~18                             ; out0             ;
+; |PCcomJK|Jpc~19                             ; |PCcomJK|Jpc~19                             ; out0             ;
+; |PCcomJK|Jpc~20                             ; |PCcomJK|Jpc~20                             ; out0             ;
+; |PCcomJK|Jpc[6]                             ; |PCcomJK|Jpc[6]                             ; out0             ;
+; |PCcomJK|Kpc~18                             ; |PCcomJK|Kpc~18                             ; out0             ;
+; |PCcomJK|Kpc~19                             ; |PCcomJK|Kpc~19                             ; out0             ;
+; |PCcomJK|Kpc~20                             ; |PCcomJK|Kpc~20                             ; out0             ;
+; |PCcomJK|Kpc[6]                             ; |PCcomJK|Kpc[6]                             ; out0             ;
+; |PCcomJK|Jpc~21                             ; |PCcomJK|Jpc~21                             ; out0             ;
+; |PCcomJK|Jpc~22                             ; |PCcomJK|Jpc~22                             ; out0             ;
+; |PCcomJK|Jpc~23                             ; |PCcomJK|Jpc~23                             ; out0             ;
+; |PCcomJK|Jpc[7]                             ; |PCcomJK|Jpc[7]                             ; out0             ;
+; |PCcomJK|Kpc~21                             ; |PCcomJK|Kpc~21                             ; out0             ;
+; |PCcomJK|Kpc~22                             ; |PCcomJK|Kpc~22                             ; out0             ;
+; |PCcomJK|Kpc~23                             ; |PCcomJK|Kpc~23                             ; out0             ;
+; |PCcomJK|Kpc[7]                             ; |PCcomJK|Kpc[7]                             ; out0             ;
+; |PCcomJK|clk                                ; |PCcomJK|clk                                ; out              ;
+; |PCcomJK|R[0]                               ; |PCcomJK|R[0]                               ; out              ;
+; |PCcomJK|R[1]                               ; |PCcomJK|R[1]                               ; out              ;
+; |PCcomJK|R[2]                               ; |PCcomJK|R[2]                               ; out              ;
+; |PCcomJK|R[3]                               ; |PCcomJK|R[3]                               ; out              ;
+; |PCcomJK|R[4]                               ; |PCcomJK|R[4]                               ; out              ;
+; |PCcomJK|R[5]                               ; |PCcomJK|R[5]                               ; out              ;
+; |PCcomJK|R[6]                               ; |PCcomJK|R[6]                               ; out              ;
+; |PCcomJK|R[7]                               ; |PCcomJK|R[7]                               ; out              ;
+; |PCcomJK|carga                              ; |PCcomJK|carga                              ; out              ;
+; |PCcomJK|incrementa                         ; |PCcomJK|incrementa                         ; out              ;
+; |PCcomJK|E[0]                               ; |PCcomJK|E[0]                               ; pin_out          ;
+; |PCcomJK|E[1]                               ; |PCcomJK|E[1]                               ; pin_out          ;
+; |PCcomJK|E[2]                               ; |PCcomJK|E[2]                               ; pin_out          ;
+; |PCcomJK|E[3]                               ; |PCcomJK|E[3]                               ; pin_out          ;
+; |PCcomJK|E[4]                               ; |PCcomJK|E[4]                               ; pin_out          ;
+; |PCcomJK|E[5]                               ; |PCcomJK|E[5]                               ; pin_out          ;
+; |PCcomJK|E[6]                               ; |PCcomJK|E[6]                               ; pin_out          ;
+; |PCcomJK|E[7]                               ; |PCcomJK|E[7]                               ; pin_out          ;
+; |PCcomJK|flipFlopJK:\RFOR:7:FFN|process_0~0 ; |PCcomJK|flipFlopJK:\RFOR:7:FFN|process_0~0 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:7:FFN|process_0~1 ; |PCcomJK|flipFlopJK:\RFOR:7:FFN|process_0~1 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:7:FFN|process_0~2 ; |PCcomJK|flipFlopJK:\RFOR:7:FFN|process_0~2 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:7:FFN|qsignal~0   ; |PCcomJK|flipFlopJK:\RFOR:7:FFN|qsignal~0   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:7:FFN|qsignal~1   ; |PCcomJK|flipFlopJK:\RFOR:7:FFN|qsignal~1   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:7:FFN|qsignal~2   ; |PCcomJK|flipFlopJK:\RFOR:7:FFN|qsignal~2   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:7:FFN|qsignal     ; |PCcomJK|flipFlopJK:\RFOR:7:FFN|qsignal     ; regout           ;
+; |PCcomJK|flipFlopJK:\RFOR:6:FFN|process_0~0 ; |PCcomJK|flipFlopJK:\RFOR:6:FFN|process_0~0 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:6:FFN|process_0~1 ; |PCcomJK|flipFlopJK:\RFOR:6:FFN|process_0~1 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:6:FFN|process_0~2 ; |PCcomJK|flipFlopJK:\RFOR:6:FFN|process_0~2 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:6:FFN|qsignal~0   ; |PCcomJK|flipFlopJK:\RFOR:6:FFN|qsignal~0   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:6:FFN|qsignal~1   ; |PCcomJK|flipFlopJK:\RFOR:6:FFN|qsignal~1   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:6:FFN|qsignal~2   ; |PCcomJK|flipFlopJK:\RFOR:6:FFN|qsignal~2   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:6:FFN|qsignal     ; |PCcomJK|flipFlopJK:\RFOR:6:FFN|qsignal     ; regout           ;
+; |PCcomJK|flipFlopJK:\RFOR:5:FFN|process_0~0 ; |PCcomJK|flipFlopJK:\RFOR:5:FFN|process_0~0 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:5:FFN|process_0~1 ; |PCcomJK|flipFlopJK:\RFOR:5:FFN|process_0~1 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:5:FFN|process_0~2 ; |PCcomJK|flipFlopJK:\RFOR:5:FFN|process_0~2 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:5:FFN|qsignal~0   ; |PCcomJK|flipFlopJK:\RFOR:5:FFN|qsignal~0   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:5:FFN|qsignal~1   ; |PCcomJK|flipFlopJK:\RFOR:5:FFN|qsignal~1   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:5:FFN|qsignal~2   ; |PCcomJK|flipFlopJK:\RFOR:5:FFN|qsignal~2   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:5:FFN|qsignal     ; |PCcomJK|flipFlopJK:\RFOR:5:FFN|qsignal     ; regout           ;
+; |PCcomJK|flipFlopJK:\RFOR:4:FFN|process_0~0 ; |PCcomJK|flipFlopJK:\RFOR:4:FFN|process_0~0 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:4:FFN|process_0~1 ; |PCcomJK|flipFlopJK:\RFOR:4:FFN|process_0~1 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:4:FFN|process_0~2 ; |PCcomJK|flipFlopJK:\RFOR:4:FFN|process_0~2 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:4:FFN|qsignal~0   ; |PCcomJK|flipFlopJK:\RFOR:4:FFN|qsignal~0   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:4:FFN|qsignal~1   ; |PCcomJK|flipFlopJK:\RFOR:4:FFN|qsignal~1   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:4:FFN|qsignal~2   ; |PCcomJK|flipFlopJK:\RFOR:4:FFN|qsignal~2   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:4:FFN|qsignal     ; |PCcomJK|flipFlopJK:\RFOR:4:FFN|qsignal     ; regout           ;
+; |PCcomJK|flipFlopJK:\RFOR:3:FFN|process_0~0 ; |PCcomJK|flipFlopJK:\RFOR:3:FFN|process_0~0 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:3:FFN|process_0~1 ; |PCcomJK|flipFlopJK:\RFOR:3:FFN|process_0~1 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:3:FFN|process_0~2 ; |PCcomJK|flipFlopJK:\RFOR:3:FFN|process_0~2 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:3:FFN|qsignal~0   ; |PCcomJK|flipFlopJK:\RFOR:3:FFN|qsignal~0   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:3:FFN|qsignal~1   ; |PCcomJK|flipFlopJK:\RFOR:3:FFN|qsignal~1   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:3:FFN|qsignal~2   ; |PCcomJK|flipFlopJK:\RFOR:3:FFN|qsignal~2   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:3:FFN|qsignal     ; |PCcomJK|flipFlopJK:\RFOR:3:FFN|qsignal     ; regout           ;
+; |PCcomJK|flipFlopJK:\RFOR:2:FFN|process_0~0 ; |PCcomJK|flipFlopJK:\RFOR:2:FFN|process_0~0 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:2:FFN|process_0~1 ; |PCcomJK|flipFlopJK:\RFOR:2:FFN|process_0~1 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:2:FFN|process_0~2 ; |PCcomJK|flipFlopJK:\RFOR:2:FFN|process_0~2 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:2:FFN|qsignal~0   ; |PCcomJK|flipFlopJK:\RFOR:2:FFN|qsignal~0   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:2:FFN|qsignal~1   ; |PCcomJK|flipFlopJK:\RFOR:2:FFN|qsignal~1   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:2:FFN|qsignal~2   ; |PCcomJK|flipFlopJK:\RFOR:2:FFN|qsignal~2   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:2:FFN|qsignal     ; |PCcomJK|flipFlopJK:\RFOR:2:FFN|qsignal     ; regout           ;
+; |PCcomJK|flipFlopJK:\RFOR:1:FFN|process_0~0 ; |PCcomJK|flipFlopJK:\RFOR:1:FFN|process_0~0 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:1:FFN|process_0~1 ; |PCcomJK|flipFlopJK:\RFOR:1:FFN|process_0~1 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:1:FFN|process_0~2 ; |PCcomJK|flipFlopJK:\RFOR:1:FFN|process_0~2 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:1:FFN|qsignal~0   ; |PCcomJK|flipFlopJK:\RFOR:1:FFN|qsignal~0   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:1:FFN|qsignal~1   ; |PCcomJK|flipFlopJK:\RFOR:1:FFN|qsignal~1   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:1:FFN|qsignal~2   ; |PCcomJK|flipFlopJK:\RFOR:1:FFN|qsignal~2   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:1:FFN|qsignal     ; |PCcomJK|flipFlopJK:\RFOR:1:FFN|qsignal     ; regout           ;
+; |PCcomJK|flipFlopJK:\RFOR:0:FFN|process_0~0 ; |PCcomJK|flipFlopJK:\RFOR:0:FFN|process_0~0 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:0:FFN|process_0~1 ; |PCcomJK|flipFlopJK:\RFOR:0:FFN|process_0~1 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:0:FFN|process_0~2 ; |PCcomJK|flipFlopJK:\RFOR:0:FFN|process_0~2 ; out0             ;
+; |PCcomJK|flipFlopJK:\RFOR:0:FFN|qsignal~0   ; |PCcomJK|flipFlopJK:\RFOR:0:FFN|qsignal~0   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:0:FFN|qsignal~1   ; |PCcomJK|flipFlopJK:\RFOR:0:FFN|qsignal~1   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:0:FFN|qsignal~2   ; |PCcomJK|flipFlopJK:\RFOR:0:FFN|qsignal~2   ; out              ;
+; |PCcomJK|flipFlopJK:\RFOR:0:FFN|qsignal     ; |PCcomJK|flipFlopJK:\RFOR:0:FFN|qsignal     ; regout           ;
+; |PCcomJK|soma:somalabel|soma[1]             ; |PCcomJK|soma:somalabel|soma[1]             ; out0             ;
+; |PCcomJK|soma:somalabel|c_out~1             ; |PCcomJK|soma:somalabel|c_out~1             ; out0             ;
+; |PCcomJK|soma:somalabel|soma[2]             ; |PCcomJK|soma:somalabel|soma[2]             ; out0             ;
+; |PCcomJK|soma:somalabel|c_out~5             ; |PCcomJK|soma:somalabel|c_out~5             ; out0             ;
+; |PCcomJK|soma:somalabel|soma[3]             ; |PCcomJK|soma:somalabel|soma[3]             ; out0             ;
+; |PCcomJK|soma:somalabel|c_out~9             ; |PCcomJK|soma:somalabel|c_out~9             ; out0             ;
+; |PCcomJK|soma:somalabel|soma[4]             ; |PCcomJK|soma:somalabel|soma[4]             ; out0             ;
+; |PCcomJK|soma:somalabel|c_out~13            ; |PCcomJK|soma:somalabel|c_out~13            ; out0             ;
+; |PCcomJK|soma:somalabel|soma[5]             ; |PCcomJK|soma:somalabel|soma[5]             ; out0             ;
+; |PCcomJK|soma:somalabel|c_out~17            ; |PCcomJK|soma:somalabel|c_out~17            ; out0             ;
+; |PCcomJK|soma:somalabel|soma[6]             ; |PCcomJK|soma:somalabel|soma[6]             ; out0             ;
+; |PCcomJK|soma:somalabel|c_out~21            ; |PCcomJK|soma:somalabel|c_out~21            ; out0             ;
++---------------------------------------------+---------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Simulator
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Fri Jun 21 18:16:38 2019
+Info: Command: quartus_sim --simulation_results_format=VWF archPCcomJK -c archPCcomJK
+Info (324025): Using vector source file "C:/altera/13.0/archPCcomJK/teste_PC.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning (324036): Found clock-sensitive change during active clock edge at time 10.0 ns on register "|PCcomJK|flipFlopJK:\RFOR:5:FFN|qsignal"
+Warning (324036): Found clock-sensitive change during active clock edge at time 10.0 ns on register "|PCcomJK|flipFlopJK:\RFOR:3:FFN|qsignal"
+Warning (324036): Found clock-sensitive change during active clock edge at time 10.0 ns on register "|PCcomJK|flipFlopJK:\RFOR:2:FFN|qsignal"
+Warning (324036): Found clock-sensitive change during active clock edge at time 10.0 ns on register "|PCcomJK|flipFlopJK:\RFOR:1:FFN|qsignal"
+Warning (324036): Found clock-sensitive change during active clock edge at time 20.0 ns on register "|PCcomJK|flipFlopJK:\RFOR:7:FFN|qsignal"
+Warning (324036): Found clock-sensitive change during active clock edge at time 20.0 ns on register "|PCcomJK|flipFlopJK:\RFOR:0:FFN|qsignal"
+Warning (324036): Found clock-sensitive change during active clock edge at time 30.0 ns on register "|PCcomJK|flipFlopJK:\RFOR:6:FFN|qsignal"
+Warning (324036): Found clock-sensitive change during active clock edge at time 30.0 ns on register "|PCcomJK|flipFlopJK:\RFOR:4:FFN|qsignal"
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is     100.00 %
+Info (328052): Number of transitions in simulation is 13988
+Info (324045): Vector file archPCcomJK.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 32-bit Simulator was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 283 megabytes
+    Info: Processing ended: Fri Jun 21 18:16:39 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
