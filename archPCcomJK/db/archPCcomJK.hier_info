@@ -3,10 +3,6 @@ clk => FlipFlopJK:RFOR:0:FFN.clk
 clk => FlipFlopJK:RFOR:1:FFN.clk
 clk => FlipFlopJK:RFOR:2:FFN.clk
 clk => FlipFlopJK:RFOR:3:FFN.clk
-clk => FlipFlopJK:RFOR:4:FFN.clk
-clk => FlipFlopJK:RFOR:5:FFN.clk
-clk => FlipFlopJK:RFOR:6:FFN.clk
-clk => FlipFlopJK:RFOR:7:FFN.clk
 R[0] => Kpc~0.IN0
 R[0] => Jpc~0.IN0
 R[1] => Kpc~3.IN0
@@ -15,14 +11,10 @@ R[2] => Kpc~6.IN0
 R[2] => Jpc~6.IN0
 R[3] => Kpc~9.IN0
 R[3] => Jpc~9.IN0
-R[4] => Kpc~12.IN0
-R[4] => Jpc~12.IN0
-R[5] => Kpc~15.IN0
-R[5] => Jpc~15.IN0
-R[6] => Kpc~18.IN0
-R[6] => Jpc~18.IN0
-R[7] => Kpc~21.IN0
-R[7] => Jpc~21.IN0
+R[4] => ~NO_FANOUT~
+R[5] => ~NO_FANOUT~
+R[6] => ~NO_FANOUT~
+R[7] => ~NO_FANOUT~
 carga => Jpc~0.IN1
 carga => Kpc~0.IN1
 carga => Jpc~3.IN1
@@ -31,14 +23,6 @@ carga => Jpc~6.IN1
 carga => Kpc~6.IN1
 carga => Jpc~9.IN1
 carga => Kpc~9.IN1
-carga => Jpc~12.IN1
-carga => Kpc~12.IN1
-carga => Jpc~15.IN1
-carga => Kpc~15.IN1
-carga => Jpc~18.IN1
-carga => Kpc~18.IN1
-carga => Jpc~21.IN1
-carga => Kpc~21.IN1
 carga => Jpc~1.IN0
 carga => Kpc~1.IN0
 carga => Jpc~4.IN0
@@ -47,14 +31,6 @@ carga => Jpc~7.IN0
 carga => Kpc~7.IN0
 carga => Jpc~10.IN0
 carga => Kpc~10.IN0
-carga => Jpc~13.IN0
-carga => Kpc~13.IN0
-carga => Jpc~16.IN0
-carga => Kpc~16.IN0
-carga => Jpc~19.IN0
-carga => Kpc~19.IN0
-carga => Jpc~22.IN0
-carga => Kpc~22.IN0
 incrementa => Jpc~1.IN1
 incrementa => Kpc~1.IN1
 incrementa => Jpc~4.IN1
@@ -63,22 +39,14 @@ incrementa => Jpc~7.IN1
 incrementa => Kpc~7.IN1
 incrementa => Jpc~10.IN1
 incrementa => Kpc~10.IN1
-incrementa => Jpc~13.IN1
-incrementa => Kpc~13.IN1
-incrementa => Jpc~16.IN1
-incrementa => Kpc~16.IN1
-incrementa => Jpc~19.IN1
-incrementa => Kpc~19.IN1
-incrementa => Jpc~22.IN1
-incrementa => Kpc~22.IN1
 E[0] <= FlipFlopJK:RFOR:0:FFN.Q
 E[1] <= FlipFlopJK:RFOR:1:FFN.Q
 E[2] <= FlipFlopJK:RFOR:2:FFN.Q
 E[3] <= FlipFlopJK:RFOR:3:FFN.Q
-E[4] <= FlipFlopJK:RFOR:4:FFN.Q
-E[5] <= FlipFlopJK:RFOR:5:FFN.Q
-E[6] <= FlipFlopJK:RFOR:6:FFN.Q
-E[7] <= FlipFlopJK:RFOR:7:FFN.Q
+E[4] <= <GND>
+E[5] <= <GND>
+E[6] <= <GND>
+E[7] <= <GND>
 
 
 |PCcomJK|soma:somalabel
@@ -102,7 +70,7 @@ A[5] => c_out~17.IN1
 A[6] => soma~11.IN0
 A[6] => c_out~20.IN0
 A[6] => c_out~21.IN1
-A[7] => ~NO_FANOUT~
+A[7] => soma~13.IN0
 B[0] => soma~0.IN1
 B[0] => c_out[0].IN1
 B[1] => soma~1.IN1
@@ -123,7 +91,7 @@ B[5] => c_out~19.IN1
 B[6] => soma~11.IN1
 B[6] => c_out~20.IN1
 B[6] => c_out~23.IN1
-B[7] => ~NO_FANOUT~
+B[7] => soma~13.IN1
 soma[0] <= soma~0.DB_MAX_OUTPUT_PORT_TYPE
 soma[1] <= soma~2.DB_MAX_OUTPUT_PORT_TYPE
 soma[2] <= soma~4.DB_MAX_OUTPUT_PORT_TYPE
@@ -131,7 +99,7 @@ soma[3] <= soma~6.DB_MAX_OUTPUT_PORT_TYPE
 soma[4] <= soma~8.DB_MAX_OUTPUT_PORT_TYPE
 soma[5] <= soma~10.DB_MAX_OUTPUT_PORT_TYPE
 soma[6] <= soma~12.DB_MAX_OUTPUT_PORT_TYPE
-soma[7] <= c_out~24.DB_MAX_OUTPUT_PORT_TYPE
+soma[7] <= soma~14.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |PCcomJK|flipFlopJK:\RFOR:0:FFN
@@ -180,66 +148,6 @@ Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |PCcomJK|flipFlopJK:\RFOR:3:FFN
-J => process_0~1.IN0
-J => process_0~2.IN0
-J => process_0~0.IN0
-K => process_0~0.IN1
-K => process_0~2.IN1
-K => process_0~1.IN1
-clear => qsignal~3.IN0
-clear => qsignal.ACLR
-preset => qsignal~3.IN1
-clk => qsignal.CLK
-Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
-Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|PCcomJK|flipFlopJK:\RFOR:4:FFN
-J => process_0~1.IN0
-J => process_0~2.IN0
-J => process_0~0.IN0
-K => process_0~0.IN1
-K => process_0~2.IN1
-K => process_0~1.IN1
-clear => qsignal~3.IN0
-clear => qsignal.ACLR
-preset => qsignal~3.IN1
-clk => qsignal.CLK
-Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
-Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|PCcomJK|flipFlopJK:\RFOR:5:FFN
-J => process_0~1.IN0
-J => process_0~2.IN0
-J => process_0~0.IN0
-K => process_0~0.IN1
-K => process_0~2.IN1
-K => process_0~1.IN1
-clear => qsignal~3.IN0
-clear => qsignal.ACLR
-preset => qsignal~3.IN1
-clk => qsignal.CLK
-Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
-Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|PCcomJK|flipFlopJK:\RFOR:6:FFN
-J => process_0~1.IN0
-J => process_0~2.IN0
-J => process_0~0.IN0
-K => process_0~0.IN1
-K => process_0~2.IN1
-K => process_0~1.IN1
-clear => qsignal~3.IN0
-clear => qsignal.ACLR
-preset => qsignal~3.IN1
-clk => qsignal.CLK
-Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
-Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|PCcomJK|flipFlopJK:\RFOR:7:FFN
 J => process_0~1.IN0
 J => process_0~2.IN0
 J => process_0~0.IN0

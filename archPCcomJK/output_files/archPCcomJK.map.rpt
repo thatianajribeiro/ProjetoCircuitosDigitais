@@ -1,6 +1,6 @@
 Analysis & Synthesis report for archPCcomJK
-Fri Jun 21 18:06:52 2019
-Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Sat Jun 22 14:41:11 2019
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
 ---------------------
@@ -14,17 +14,13 @@ Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "flipFlopJK:\RFOR:7:FFN"
- 10. Port Connectivity Checks: "flipFlopJK:\RFOR:6:FFN"
- 11. Port Connectivity Checks: "flipFlopJK:\RFOR:5:FFN"
- 12. Port Connectivity Checks: "flipFlopJK:\RFOR:4:FFN"
- 13. Port Connectivity Checks: "flipFlopJK:\RFOR:3:FFN"
- 14. Port Connectivity Checks: "flipFlopJK:\RFOR:2:FFN"
- 15. Port Connectivity Checks: "flipFlopJK:\RFOR:1:FFN"
- 16. Port Connectivity Checks: "flipFlopJK:\RFOR:0:FFN"
- 17. Port Connectivity Checks: "soma:somalabel"
- 18. Elapsed Time Per Partition
- 19. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "flipFlopJK:\RFOR:3:FFN"
+ 10. Port Connectivity Checks: "flipFlopJK:\RFOR:2:FFN"
+ 11. Port Connectivity Checks: "flipFlopJK:\RFOR:1:FFN"
+ 12. Port Connectivity Checks: "flipFlopJK:\RFOR:0:FFN"
+ 13. Port Connectivity Checks: "soma:somalabel"
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -50,15 +46,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jun 21 18:06:52 2019      ;
-; Quartus II 32-bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Successful - Sat Jun 22 14:41:11 2019      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; archPCcomJK                                ;
 ; Top-level Entity Name              ; PCcomJK                                    ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 20                                         ;
-;     Total combinational functions  ; 20                                         ;
-;     Dedicated logic registers      ; 8                                          ;
-; Total registers                    ; 8                                          ;
+; Total logic elements               ; 7                                          ;
+;     Total combinational functions  ; 7                                          ;
+;     Dedicated logic registers      ; 4                                          ;
+; Total registers                    ; 4                                          ;
 ; Total pins                         ; 19                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -163,45 +159,45 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                     ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path              ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------+---------+
-; PCcomJK.vhd                      ; yes             ; User VHDL File  ; C:/altera/13.0/archPCcomJK/PCcomJK.vhd    ;         ;
-; soma.vhd                         ; yes             ; User VHDL File  ; C:/altera/13.0/archPCcomJK/soma.vhd       ;         ;
-; flipFlopJK.vhd                   ; yes             ; User VHDL File  ; C:/altera/13.0/archPCcomJK/flipFlopJK.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                      ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------+---------+
+; PCcomJK.vhd                      ; yes             ; User VHDL File  ; C:/Users/thaty/Desktop/ProjetoCircuitosDigitais/archPCcomJK/PCcomJK.vhd    ;         ;
+; soma.vhd                         ; yes             ; User VHDL File  ; C:/Users/thaty/Desktop/ProjetoCircuitosDigitais/archPCcomJK/soma.vhd       ;         ;
+; flipFlopJK.vhd                   ; yes             ; User VHDL File  ; C:/Users/thaty/Desktop/ProjetoCircuitosDigitais/archPCcomJK/flipFlopJK.vhd ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 20    ;
-;                                             ;       ;
-; Total combinational functions               ; 20    ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 10    ;
-;     -- 3 input functions                    ; 9     ;
-;     -- <=2 input functions                  ; 1     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 20    ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 8     ;
-;     -- Dedicated logic registers            ; 8     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 19    ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; carga ;
-; Maximum fan-out                             ; 12    ;
-; Total fan-out                               ; 93    ;
-; Average fan-out                             ; 1.98  ;
-+---------------------------------------------+-------+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                  ;
++---------------------------------------------+--------------------------------+
+; Resource                                    ; Usage                          ;
++---------------------------------------------+--------------------------------+
+; Estimated Total logic elements              ; 7                              ;
+;                                             ;                                ;
+; Total combinational functions               ; 7                              ;
+; Logic element usage by number of LUT inputs ;                                ;
+;     -- 4 input functions                    ; 4                              ;
+;     -- 3 input functions                    ; 3                              ;
+;     -- <=2 input functions                  ; 0                              ;
+;                                             ;                                ;
+; Logic elements by mode                      ;                                ;
+;     -- normal mode                          ; 7                              ;
+;     -- arithmetic mode                      ; 0                              ;
+;                                             ;                                ;
+; Total registers                             ; 4                              ;
+;     -- Dedicated logic registers            ; 4                              ;
+;     -- I/O registers                        ; 0                              ;
+;                                             ;                                ;
+; I/O pins                                    ; 19                             ;
+; Embedded Multiplier 9-bit elements          ; 0                              ;
+; Maximum fan-out node                        ; flipFlopJK:\RFOR:0:FFN|qsignal ;
+; Maximum fan-out                             ; 5                              ;
+; Total fan-out                               ; 37                             ;
+; Average fan-out                             ; 1.23                           ;
++---------------------------------------------+--------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -209,16 +205,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+--------------+
 ; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name             ; Library Name ;
 +-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+--------------+
-; |PCcomJK                    ; 20 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |PCcomJK                        ;              ;
+; |PCcomJK                    ; 7 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |PCcomJK                        ;              ;
 ;    |flipFlopJK:\RFOR:0:FFN| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PCcomJK|flipFlopJK:\RFOR:0:FFN ;              ;
 ;    |flipFlopJK:\RFOR:1:FFN| ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PCcomJK|flipFlopJK:\RFOR:1:FFN ;              ;
 ;    |flipFlopJK:\RFOR:2:FFN| ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PCcomJK|flipFlopJK:\RFOR:2:FFN ;              ;
 ;    |flipFlopJK:\RFOR:3:FFN| ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PCcomJK|flipFlopJK:\RFOR:3:FFN ;              ;
-;    |flipFlopJK:\RFOR:4:FFN| ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PCcomJK|flipFlopJK:\RFOR:4:FFN ;              ;
-;    |flipFlopJK:\RFOR:5:FFN| ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PCcomJK|flipFlopJK:\RFOR:5:FFN ;              ;
-;    |flipFlopJK:\RFOR:6:FFN| ; 4 (4)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PCcomJK|flipFlopJK:\RFOR:6:FFN ;              ;
-;    |flipFlopJK:\RFOR:7:FFN| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PCcomJK|flipFlopJK:\RFOR:7:FFN ;              ;
-;    |soma:somalabel|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PCcomJK|soma:somalabel         ;              ;
 +-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -228,7 +219,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 8     ;
+; Total registers                              ; 4     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -236,50 +227,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "flipFlopJK:\RFOR:7:FFN"                                                               ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; preset ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; clear  ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "flipFlopJK:\RFOR:6:FFN"                                                               ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; preset ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; clear  ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "flipFlopJK:\RFOR:5:FFN"                                                               ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; preset ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; clear  ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "flipFlopJK:\RFOR:4:FFN"                                                               ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; preset ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; clear  ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------+
@@ -326,14 +273,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------+
-; Port Connectivity Checks: "soma:somalabel" ;
-+---------+-------+----------+---------------+
-; Port    ; Type  ; Severity ; Details       ;
-+---------+-------+----------+---------------+
-; b[7..1] ; Input ; Info     ; Stuck at GND  ;
-; b[0]    ; Input ; Info     ; Stuck at VCC  ;
-+---------+-------+----------+---------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "soma:somalabel"                                                                           ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; a[7..4]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; b[7..1]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; b[0]       ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; soma[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -349,9 +298,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Analysis & Synthesis
+Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Fri Jun 21 18:06:49 2019
+    Info: Processing started: Sat Jun 22 14:41:09 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off archPCcomJK -c archPCcomJK
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file pccomjk.vhd
@@ -366,18 +315,29 @@ Info (12021): Found 2 design units, including 1 entities, in source file flipflo
 Info (12021): Found 1 design units, including 1 entities, in source file teste.bdf
     Info (12023): Found entity 1: teste
 Info (12127): Elaborating entity "PCcomJK" for the top level hierarchy
+Warning (10873): Using initial value X (don't care) for net "Qs[7..4]" at PCcomJK.vhd(35)
 Info (12128): Elaborating entity "soma" for hierarchy "soma:somalabel"
 Info (12128): Elaborating entity "flipFlopJK" for hierarchy "flipFlopJK:\RFOR:0:FFN"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "E[4]" is stuck at GND
+    Warning (13410): Pin "E[5]" is stuck at GND
+    Warning (13410): Pin "E[6]" is stuck at GND
+    Warning (13410): Pin "E[7]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 39 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "R[4]"
+    Warning (15610): No output dependent on input pin "R[5]"
+    Warning (15610): No output dependent on input pin "R[6]"
+    Warning (15610): No output dependent on input pin "R[7]"
+Info (21057): Implemented 26 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 20 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 424 megabytes
-    Info: Processing ended: Fri Jun 21 18:06:52 2019
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info (21061): Implemented 7 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4660 megabytes
+    Info: Processing ended: Sat Jun 22 14:41:11 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 
