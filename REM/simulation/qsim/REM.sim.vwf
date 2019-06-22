@@ -52,7 +52,7 @@ SIGNAL("clk")
 	PARENT = "";
 }
 
-SIGNAL("entrada")
+SIGNAL("endereco_in")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -62,84 +62,174 @@ SIGNAL("entrada")
 	PARENT = "";
 }
 
-SIGNAL("entrada[7]")
+SIGNAL("endereco_in[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "entrada";
+	PARENT = "endereco_in";
 }
 
-SIGNAL("entrada[6]")
+SIGNAL("endereco_in[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "entrada";
+	PARENT = "endereco_in";
 }
 
-SIGNAL("entrada[5]")
+SIGNAL("endereco_in[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "entrada";
+	PARENT = "endereco_in";
 }
 
-SIGNAL("entrada[4]")
+SIGNAL("endereco_in[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "entrada";
+	PARENT = "endereco_in";
 }
 
-SIGNAL("entrada[3]")
+SIGNAL("endereco_in[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "entrada";
+	PARENT = "endereco_in";
 }
 
-SIGNAL("entrada[2]")
+SIGNAL("endereco_in[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "entrada";
+	PARENT = "endereco_in";
 }
 
-SIGNAL("entrada[1]")
+SIGNAL("endereco_in[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "entrada";
+	PARENT = "endereco_in";
 }
 
-SIGNAL("entrada[0]")
+SIGNAL("endereco_in[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "entrada";
+	PARENT = "endereco_in";
+}
+
+SIGNAL("endereco_out")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 8;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("endereco_out[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "endereco_out";
+}
+
+SIGNAL("endereco_out[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "endereco_out";
+}
+
+SIGNAL("endereco_out[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "endereco_out";
+}
+
+SIGNAL("endereco_out[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "endereco_out";
+}
+
+SIGNAL("endereco_out[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "endereco_out";
+}
+
+SIGNAL("endereco_out[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "endereco_out";
+}
+
+SIGNAL("endereco_out[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "endereco_out";
+}
+
+SIGNAL("endereco_out[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "endereco_out";
 }
 
 SIGNAL("load")
@@ -150,96 +240,6 @@ SIGNAL("load")
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
 	PARENT = "";
-}
-
-SIGNAL("output")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
-	LSB_INDEX = 0;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("output[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "output";
-}
-
-SIGNAL("output[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "output";
-}
-
-SIGNAL("output[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "output";
-}
-
-SIGNAL("output[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "output";
-}
-
-SIGNAL("output[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "output";
-}
-
-SIGNAL("output[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "output";
-}
-
-SIGNAL("output[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "output";
-}
-
-SIGNAL("output[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "output";
 }
 
 SIGNAL("preset")
@@ -275,115 +275,231 @@ TRANSITION_LIST("clk")
 	}
 }
 
-TRANSITION_LIST("entrada[7]")
+TRANSITION_LIST("endereco_in[7]")
 {
 	NODE
 	{
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 20;
-			LEVEL 0 FOR 25.0;
-			LEVEL 1 FOR 25.0;
+			REPEAT = 16;
+			LEVEL 0 FOR 30.0;
+			LEVEL 1 FOR 30.0;
 		}
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
 	}
 }
 
-TRANSITION_LIST("entrada[6]")
+TRANSITION_LIST("endereco_in[6]")
 {
 	NODE
 	{
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 20;
-			LEVEL 0 FOR 25.0;
-			LEVEL 1 FOR 25.0;
+			REPEAT = 16;
+			LEVEL 0 FOR 30.0;
+			LEVEL 1 FOR 30.0;
 		}
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
 	}
 }
 
-TRANSITION_LIST("entrada[5]")
+TRANSITION_LIST("endereco_in[5]")
 {
 	NODE
 	{
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 20;
-			LEVEL 0 FOR 25.0;
-			LEVEL 1 FOR 25.0;
+			REPEAT = 16;
+			LEVEL 0 FOR 30.0;
+			LEVEL 1 FOR 30.0;
 		}
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
 	}
 }
 
-TRANSITION_LIST("entrada[4]")
+TRANSITION_LIST("endereco_in[4]")
 {
 	NODE
 	{
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 20;
-			LEVEL 0 FOR 25.0;
-			LEVEL 1 FOR 25.0;
+			REPEAT = 16;
+			LEVEL 0 FOR 30.0;
+			LEVEL 1 FOR 30.0;
 		}
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
 	}
 }
 
-TRANSITION_LIST("entrada[3]")
+TRANSITION_LIST("endereco_in[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 20;
-			LEVEL 0 FOR 25.0;
-			LEVEL 1 FOR 25.0;
+			REPEAT = 16;
+			LEVEL 0 FOR 30.0;
+			LEVEL 1 FOR 30.0;
 		}
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
 	}
 }
 
-TRANSITION_LIST("entrada[2]")
+TRANSITION_LIST("endereco_in[2]")
 {
 	NODE
 	{
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 20;
-			LEVEL 0 FOR 25.0;
-			LEVEL 1 FOR 25.0;
+			REPEAT = 16;
+			LEVEL 0 FOR 30.0;
+			LEVEL 1 FOR 30.0;
 		}
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
 	}
 }
 
-TRANSITION_LIST("entrada[1]")
+TRANSITION_LIST("endereco_in[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 20;
-			LEVEL 0 FOR 25.0;
-			LEVEL 1 FOR 25.0;
+			REPEAT = 16;
+			LEVEL 0 FOR 30.0;
+			LEVEL 1 FOR 30.0;
 		}
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
 	}
 }
 
-TRANSITION_LIST("entrada[0]")
+TRANSITION_LIST("endereco_in[0]")
 {
 	NODE
 	{
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 20;
-			LEVEL 0 FOR 25.0;
-			LEVEL 1 FOR 25.0;
+			REPEAT = 16;
+			LEVEL 0 FOR 30.0;
+			LEVEL 1 FOR 30.0;
 		}
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("endereco_out[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("endereco_out[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("endereco_out[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("endereco_out[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("endereco_out[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 16;
+			LEVEL 0 FOR 30.0;
+			LEVEL 1 FOR 30.0;
+		}
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("endereco_out[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 16;
+			LEVEL 0 FOR 30.0;
+			LEVEL 1 FOR 30.0;
+		}
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("endereco_out[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 16;
+			LEVEL 0 FOR 30.0;
+			LEVEL 1 FOR 30.0;
+		}
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("endereco_out[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 16;
+			LEVEL 0 FOR 30.0;
+			LEVEL 1 FOR 30.0;
+		}
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
 	}
 }
 
@@ -394,122 +510,11 @@ TRANSITION_LIST("load")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 50;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
+			REPEAT = 33;
+			LEVEL 0 FOR 15.0;
+			LEVEL 1 FOR 15.0;
 		}
-	}
-}
-
-TRANSITION_LIST("output[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 20;
-			LEVEL 0 FOR 30.0;
-			LEVEL 1 FOR 20.0;
-		}
-	}
-}
-
-TRANSITION_LIST("output[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 20;
-			LEVEL 0 FOR 30.0;
-			LEVEL 1 FOR 20.0;
-		}
-	}
-}
-
-TRANSITION_LIST("output[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 20;
-			LEVEL 0 FOR 30.0;
-			LEVEL 1 FOR 20.0;
-		}
-	}
-}
-
-TRANSITION_LIST("output[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 20;
-			LEVEL 0 FOR 30.0;
-			LEVEL 1 FOR 20.0;
-		}
-	}
-}
-
-TRANSITION_LIST("output[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 20;
-			LEVEL 0 FOR 30.0;
-			LEVEL 1 FOR 20.0;
-		}
-	}
-}
-
-TRANSITION_LIST("output[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 20;
-			LEVEL 0 FOR 30.0;
-			LEVEL 1 FOR 20.0;
-		}
-	}
-}
-
-TRANSITION_LIST("output[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 20;
-			LEVEL 0 FOR 30.0;
-			LEVEL 1 FOR 20.0;
-		}
-	}
-}
-
-TRANSITION_LIST("output[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 20;
-			LEVEL 0 FOR 30.0;
-			LEVEL 1 FOR 20.0;
-		}
+		LEVEL 0 FOR 10.0;
 	}
 }
 
@@ -533,7 +538,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "clear";
+	CHANNEL = "load";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
@@ -542,7 +547,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "entrada";
+	CHANNEL = "endereco_in";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -552,7 +557,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "entrada[7]";
+	CHANNEL = "endereco_in[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
@@ -562,7 +567,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "entrada[6]";
+	CHANNEL = "endereco_in[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
@@ -572,7 +577,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "entrada[5]";
+	CHANNEL = "endereco_in[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
@@ -582,7 +587,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "entrada[4]";
+	CHANNEL = "endereco_in[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
@@ -592,7 +597,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "entrada[3]";
+	CHANNEL = "endereco_in[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
@@ -602,7 +607,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "entrada[2]";
+	CHANNEL = "endereco_in[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
@@ -612,7 +617,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "entrada[1]";
+	CHANNEL = "endereco_in[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
@@ -622,7 +627,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "entrada[0]";
+	CHANNEL = "endereco_in[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
@@ -632,7 +637,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "load";
+	CHANNEL = "clear";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
@@ -641,7 +646,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "output";
+	CHANNEL = "endereco_out";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
@@ -651,7 +656,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "output[7]";
+	CHANNEL = "endereco_out[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 13;
@@ -661,7 +666,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "output[6]";
+	CHANNEL = "endereco_out[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
@@ -671,7 +676,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "output[5]";
+	CHANNEL = "endereco_out[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 15;
@@ -681,7 +686,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "output[4]";
+	CHANNEL = "endereco_out[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 16;
@@ -691,7 +696,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "output[3]";
+	CHANNEL = "endereco_out[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 17;
@@ -701,7 +706,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "output[2]";
+	CHANNEL = "endereco_out[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 18;
@@ -711,7 +716,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "output[1]";
+	CHANNEL = "endereco_out[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 19;
@@ -721,7 +726,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "output[0]";
+	CHANNEL = "endereco_out[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 20;

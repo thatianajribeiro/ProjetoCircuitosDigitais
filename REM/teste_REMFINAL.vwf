@@ -26,7 +26,7 @@ HEADER
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
 	DATA_DURATION = 1000.0;
-	SIMULATION_TIME = 1000.0;
+	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 10.0;
 	GRID_DUTY_CYCLE = 50;
@@ -408,7 +408,7 @@ TRANSITION_LIST("endereco_out[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -417,7 +417,7 @@ TRANSITION_LIST("endereco_out[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -426,7 +426,7 @@ TRANSITION_LIST("endereco_out[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -435,7 +435,7 @@ TRANSITION_LIST("endereco_out[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -444,14 +444,7 @@ TRANSITION_LIST("endereco_out[3]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 16;
-			LEVEL 0 FOR 30.0;
-			LEVEL 1 FOR 30.0;
-		}
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -460,14 +453,7 @@ TRANSITION_LIST("endereco_out[2]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 16;
-			LEVEL 0 FOR 30.0;
-			LEVEL 1 FOR 30.0;
-		}
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -476,14 +462,7 @@ TRANSITION_LIST("endereco_out[1]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 16;
-			LEVEL 0 FOR 30.0;
-			LEVEL 1 FOR 30.0;
-		}
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -492,14 +471,7 @@ TRANSITION_LIST("endereco_out[0]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 16;
-			LEVEL 0 FOR 30.0;
-			LEVEL 1 FOR 30.0;
-		}
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 

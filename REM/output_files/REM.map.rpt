@@ -1,5 +1,5 @@
 Analysis & Synthesis report for REM
-Fri Jun 21 17:11:37 2019
+Sat Jun 22 15:20:11 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -14,16 +14,12 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "flipFlopJK:\RFOR:7:FFN"
- 10. Port Connectivity Checks: "flipFlopJK:\RFOR:6:FFN"
- 11. Port Connectivity Checks: "flipFlopJK:\RFOR:5:FFN"
- 12. Port Connectivity Checks: "flipFlopJK:\RFOR:4:FFN"
- 13. Port Connectivity Checks: "flipFlopJK:\RFOR:3:FFN"
- 14. Port Connectivity Checks: "flipFlopJK:\RFOR:2:FFN"
- 15. Port Connectivity Checks: "flipFlopJK:\RFOR:1:FFN"
- 16. Port Connectivity Checks: "flipFlopJK:FF0"
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "flipFlopJK:\RFOR:3:FFN"
+ 10. Port Connectivity Checks: "flipFlopJK:\RFOR:2:FFN"
+ 11. Port Connectivity Checks: "flipFlopJK:\RFOR:1:FFN"
+ 12. Port Connectivity Checks: "flipFlopJK:\RFOR:0:FFN"
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -49,15 +45,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jun 21 17:11:37 2019      ;
+; Analysis & Synthesis Status        ; Successful - Sat Jun 22 15:20:11 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; REM                                        ;
 ; Top-level Entity Name              ; Registrador8bits                           ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 8                                          ;
+; Total logic elements               ; 4                                          ;
 ;     Total combinational functions  ; 0                                          ;
-;     Dedicated logic registers      ; 8                                          ;
-; Total registers                    ; 8                                          ;
+;     Dedicated logic registers      ; 4                                          ;
+; Total registers                    ; 4                                          ;
 ; Total pins                         ; 20                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -177,7 +173,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 8     ;
+; Estimated Total logic elements              ; 4     ;
 ;                                             ;       ;
 ; Total combinational functions               ; 0     ;
 ; Logic element usage by number of LUT inputs ;       ;
@@ -189,16 +185,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- normal mode                          ; 0     ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 8     ;
-;     -- Dedicated logic registers            ; 8     ;
+; Total registers                             ; 4     ;
+;     -- Dedicated logic registers            ; 4     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 20    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 8     ;
-; Total fan-out                               ; 24    ;
-; Average fan-out                             ; 0.86  ;
+; Maximum fan-out                             ; 4     ;
+; Total fan-out                               ; 12    ;
+; Average fan-out                             ; 0.50  ;
 +---------------------------------------------+-------+
 
 
@@ -207,15 +203,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
 ; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Library Name ;
 +-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
-; |Registrador8bits           ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |Registrador8bits                        ;              ;
-;    |flipFlopJK:FF0|         ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Registrador8bits|flipFlopJK:FF0         ;              ;
+; |Registrador8bits           ; 0 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |Registrador8bits                        ;              ;
+;    |flipFlopJK:\RFOR:0:FFN| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Registrador8bits|flipFlopJK:\RFOR:0:FFN ;              ;
 ;    |flipFlopJK:\RFOR:1:FFN| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Registrador8bits|flipFlopJK:\RFOR:1:FFN ;              ;
 ;    |flipFlopJK:\RFOR:2:FFN| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Registrador8bits|flipFlopJK:\RFOR:2:FFN ;              ;
 ;    |flipFlopJK:\RFOR:3:FFN| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Registrador8bits|flipFlopJK:\RFOR:3:FFN ;              ;
-;    |flipFlopJK:\RFOR:4:FFN| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Registrador8bits|flipFlopJK:\RFOR:4:FFN ;              ;
-;    |flipFlopJK:\RFOR:5:FFN| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Registrador8bits|flipFlopJK:\RFOR:5:FFN ;              ;
-;    |flipFlopJK:\RFOR:6:FFN| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Registrador8bits|flipFlopJK:\RFOR:6:FFN ;              ;
-;    |flipFlopJK:\RFOR:7:FFN| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Registrador8bits|flipFlopJK:\RFOR:7:FFN ;              ;
 +-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -225,7 +217,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 8     ;
+; Total registers                              ; 4     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -233,50 +225,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "flipFlopJK:\RFOR:7:FFN"                                                               ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; clear  ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; preset ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "flipFlopJK:\RFOR:6:FFN"                                                               ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; clear  ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; preset ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "flipFlopJK:\RFOR:5:FFN"                                                               ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; clear  ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; preset ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "flipFlopJK:\RFOR:4:FFN"                                                               ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; clear  ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; preset ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------+
@@ -313,7 +261,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "flipFlopJK:FF0"                                                                       ;
+; Port Connectivity Checks: "flipFlopJK:\RFOR:0:FFN"                                                               ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port   ; Type   ; Severity ; Details                                                                             ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
@@ -338,7 +286,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Fri Jun 21 17:11:31 2019
+    Info: Processing started: Sat Jun 22 15:20:09 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off REM -c REM
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file registrador8bits.vhd
@@ -348,22 +296,31 @@ Info (12021): Found 2 design units, including 1 entities, in source file flipflo
     Info (12022): Found design unit 1: flipFlopJK-flipFlopArch
     Info (12023): Found entity 1: flipFlopJK
 Info (12127): Elaborating entity "Registrador8bits" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at Registrador8bits.vhd(28): object "Qs_bar" assigned a value but never read
-Info (12128): Elaborating entity "flipFlopJK" for hierarchy "flipFlopJK:FF0"
+Warning (10036): Verilog HDL or VHDL warning at Registrador8bits.vhd(29): object "Qs_bar" assigned a value but never read
+Info (12128): Elaborating entity "flipFlopJK" for hierarchy "flipFlopJK:\RFOR:0:FFN"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "endereco_out[4]" is stuck at GND
+    Warning (13410): Pin "endereco_out[5]" is stuck at GND
+    Warning (13410): Pin "endereco_out[6]" is stuck at GND
+    Warning (13410): Pin "endereco_out[7]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 3 input pin(s) that do not drive logic
+Warning (21074): Design contains 7 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "clear"
     Warning (15610): No output dependent on input pin "load"
     Warning (15610): No output dependent on input pin "preset"
-Info (21057): Implemented 28 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "endereco_in[4]"
+    Warning (15610): No output dependent on input pin "endereco_in[5]"
+    Warning (15610): No output dependent on input pin "endereco_in[6]"
+    Warning (15610): No output dependent on input pin "endereco_in[7]"
+Info (21057): Implemented 24 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 8 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4664 megabytes
-    Info: Processing ended: Fri Jun 21 17:11:37 2019
-    Info: Elapsed time: 00:00:06
+    Info (21061): Implemented 4 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4663 megabytes
+    Info: Processing ended: Sat Jun 22 15:20:11 2019
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

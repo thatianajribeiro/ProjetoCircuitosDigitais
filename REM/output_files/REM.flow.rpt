@@ -1,5 +1,5 @@
 Flow report for REM
-Fri Jun 21 17:11:59 2019
+Sat Jun 22 15:20:25 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Fri Jun 21 17:11:59 2019      ;
+; Flow Status                        ; Successful - Sat Jun 22 15:20:25 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; REM                                        ;
 ; Top-level Entity Name              ; Registrador8bits                           ;
 ; Family                             ; Cyclone II                                 ;
 ; Device                             ; EP2C35F672C6                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 8 / 33,216 ( < 1 % )                       ;
+; Total logic elements               ; 4 / 33,216 ( < 1 % )                       ;
 ;     Total combinational functions  ; 0 / 33,216 ( 0 % )                         ;
-;     Dedicated logic registers      ; 8 / 33,216 ( < 1 % )                       ;
-; Total registers                    ; 8                                          ;
+;     Dedicated logic registers      ; 4 / 33,216 ( < 1 % )                       ;
+; Total registers                    ; 4                                          ;
 ; Total pins                         ; 20 / 475 ( 4 % )                           ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                        ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/21/2019 17:11:32 ;
+; Start date & time ; 06/22/2019 15:20:09 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; REM                 ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+------------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name      ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 251172783841068.156114789204472 ; --            ; --               ; --             ;
+; COMPILER_SIGNATURE_ID               ; 251172783841068.156122760912520 ; --            ; --               ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --               ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --               ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --               ; --             ;
@@ -93,12 +93,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 4653 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:10     ; 1.0                     ; 4896 MB             ; 00:00:06                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4572 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4653 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:06     ; 1.0                     ; 4898 MB             ; 00:00:06                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4581 MB             ; 00:00:02                           ;
 ; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4556 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4528 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:19     ; --                      ; --                  ; 00:00:10                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4527 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:11     ; --                      ; --                  ; 00:00:10                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
