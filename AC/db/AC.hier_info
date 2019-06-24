@@ -1,0 +1,173 @@
+|Registrador8bits
+clk => flipFlopJK:RFOR:0:FFN.clk
+clk => flipFlopJK:RFOR:1:FFN.clk
+clk => flipFlopJK:RFOR:2:FFN.clk
+clk => flipFlopJK:RFOR:3:FFN.clk
+clk => flipFlopJK:RFOR:4:FFN.clk
+clk => flipFlopJK:RFOR:5:FFN.clk
+clk => flipFlopJK:RFOR:6:FFN.clk
+clk => flipFlopJK:RFOR:7:FFN.clk
+clear => ~NO_FANOUT~
+load => flipFlopJK:RFOR:0:FFN.load
+load => flipFlopJK:RFOR:1:FFN.load
+load => flipFlopJK:RFOR:2:FFN.load
+load => flipFlopJK:RFOR:3:FFN.load
+load => flipFlopJK:RFOR:4:FFN.load
+load => flipFlopJK:RFOR:5:FFN.load
+load => flipFlopJK:RFOR:6:FFN.load
+load => flipFlopJK:RFOR:7:FFN.load
+preset => ~NO_FANOUT~
+dado_ULA[0] => flipFlopJK:RFOR:0:FFN.K
+dado_ULA[0] => flipFlopJK:RFOR:0:FFN.J
+dado_ULA[1] => flipFlopJK:RFOR:1:FFN.K
+dado_ULA[1] => flipFlopJK:RFOR:1:FFN.J
+dado_ULA[2] => flipFlopJK:RFOR:2:FFN.K
+dado_ULA[2] => flipFlopJK:RFOR:2:FFN.J
+dado_ULA[3] => flipFlopJK:RFOR:3:FFN.K
+dado_ULA[3] => flipFlopJK:RFOR:3:FFN.J
+dado_ULA[4] => flipFlopJK:RFOR:4:FFN.K
+dado_ULA[4] => flipFlopJK:RFOR:4:FFN.J
+dado_ULA[5] => flipFlopJK:RFOR:5:FFN.K
+dado_ULA[5] => flipFlopJK:RFOR:5:FFN.J
+dado_ULA[6] => flipFlopJK:RFOR:6:FFN.K
+dado_ULA[6] => flipFlopJK:RFOR:6:FFN.J
+dado_ULA[7] => flipFlopJK:RFOR:7:FFN.K
+dado_ULA[7] => flipFlopJK:RFOR:7:FFN.J
+saida_AC[0] <= flipFlopJK:RFOR:0:FFN.Q
+saida_AC[1] <= flipFlopJK:RFOR:1:FFN.Q
+saida_AC[2] <= flipFlopJK:RFOR:2:FFN.Q
+saida_AC[3] <= flipFlopJK:RFOR:3:FFN.Q
+saida_AC[4] <= flipFlopJK:RFOR:4:FFN.Q
+saida_AC[5] <= flipFlopJK:RFOR:5:FFN.Q
+saida_AC[6] <= flipFlopJK:RFOR:6:FFN.Q
+saida_AC[7] <= flipFlopJK:RFOR:7:FFN.Q
+
+
+|Registrador8bits|flipFlopJK:\RFOR:0:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+load => qsignal.ENA
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registrador8bits|flipFlopJK:\RFOR:1:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+load => qsignal.ENA
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registrador8bits|flipFlopJK:\RFOR:2:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+load => qsignal.ENA
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registrador8bits|flipFlopJK:\RFOR:3:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+load => qsignal.ENA
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registrador8bits|flipFlopJK:\RFOR:4:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+load => qsignal.ENA
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registrador8bits|flipFlopJK:\RFOR:5:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+load => qsignal.ENA
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registrador8bits|flipFlopJK:\RFOR:6:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+load => qsignal.ENA
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registrador8bits|flipFlopJK:\RFOR:7:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+load => qsignal.ENA
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
