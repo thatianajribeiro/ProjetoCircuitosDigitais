@@ -24,7 +24,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "Registrador8bits")
-  (DATE "06/22/2019 15:20:25")
+  (DATE "06/24/2019 12:35:01")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Web Edition")
@@ -69,7 +69,7 @@
     (INSTANCE \\endereco_in\[0\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (475:475:475) (475:475:475))
+        (IOPATH padio combout (485:485:485) (485:485:485))
       )
     )
   )
@@ -78,8 +78,17 @@
     (INSTANCE \\RFOR\:0\:FFN\|qsignal\~feeder\\)
     (DELAY
       (ABSOLUTE
-        (PORT datad (2820:2820:2820) (2820:2820:2820))
+        (PORT datad (3162:3162:3162) (3162:3162:3162))
         (IOPATH datad combout (59:59:59) (59:59:59))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_asynch_io")
+    (INSTANCE \\load\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (464:464:464) (464:464:464))
       )
     )
   )
@@ -88,13 +97,15 @@
     (INSTANCE \\RFOR\:0\:FFN\|qsignal\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (1011:1011:1011) (1011:1011:1011))
+        (PORT clk (999:999:999) (999:999:999))
         (PORT datain (42:42:42) (42:42:42))
+        (PORT ena (3069:3069:3069) (3069:3069:3069))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
     (TIMINGCHECK
       (HOLD datain (posedge clk) (152:152:152))
+      (HOLD ena (posedge clk) (152:152:152))
     )
   )
   (CELL
@@ -102,17 +113,7 @@
     (INSTANCE \\endereco_in\[1\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (494:494:494) (494:494:494))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\RFOR\:1\:FFN\|qsignal\~feeder\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (3062:3062:3062) (3062:3062:3062))
-        (IOPATH datad combout (59:59:59) (59:59:59))
+        (IOPATH padio combout (474:474:474) (474:474:474))
       )
     )
   )
@@ -121,13 +122,15 @@
     (INSTANCE \\RFOR\:1\:FFN\|qsignal\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (1001:1001:1001) (1001:1001:1001))
-        (PORT datain (42:42:42) (42:42:42))
+        (PORT clk (999:999:999) (999:999:999))
+        (PORT sdata (3030:3030:3030) (3030:3030:3030))
+        (PORT ena (3069:3069:3069) (3069:3069:3069))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
     (TIMINGCHECK
-      (HOLD datain (posedge clk) (152:152:152))
+      (HOLD sdata (posedge clk) (152:152:152))
+      (HOLD ena (posedge clk) (152:152:152))
     )
   )
   (CELL
@@ -135,7 +138,7 @@
     (INSTANCE \\endereco_in\[2\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (464:464:464) (464:464:464))
+        (IOPATH padio combout (484:484:484) (484:484:484))
       )
     )
   )
@@ -144,7 +147,7 @@
     (INSTANCE \\RFOR\:2\:FFN\|qsignal\~feeder\\)
     (DELAY
       (ABSOLUTE
-        (PORT datad (3284:3284:3284) (3284:3284:3284))
+        (PORT datad (2707:2707:2707) (2707:2707:2707))
         (IOPATH datad combout (59:59:59) (59:59:59))
       )
     )
@@ -154,13 +157,15 @@
     (INSTANCE \\RFOR\:2\:FFN\|qsignal\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (1001:1001:1001) (1001:1001:1001))
+        (PORT clk (999:999:999) (999:999:999))
         (PORT datain (42:42:42) (42:42:42))
+        (PORT ena (3069:3069:3069) (3069:3069:3069))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
     (TIMINGCHECK
       (HOLD datain (posedge clk) (152:152:152))
+      (HOLD ena (posedge clk) (152:152:152))
     )
   )
   (CELL
@@ -168,17 +173,7 @@
     (INSTANCE \\endereco_in\[3\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (454:454:454) (454:454:454))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\RFOR\:3\:FFN\|qsignal\~feeder\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (2704:2704:2704) (2704:2704:2704))
-        (IOPATH datad combout (59:59:59) (59:59:59))
+        (IOPATH padio combout (484:484:484) (484:484:484))
       )
     )
   )
@@ -187,13 +182,15 @@
     (INSTANCE \\RFOR\:3\:FFN\|qsignal\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (1007:1007:1007) (1007:1007:1007))
-        (PORT datain (42:42:42) (42:42:42))
+        (PORT clk (999:999:999) (999:999:999))
+        (PORT sdata (3016:3016:3016) (3016:3016:3016))
+        (PORT ena (3069:3069:3069) (3069:3069:3069))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
     (TIMINGCHECK
-      (HOLD datain (posedge clk) (152:152:152))
+      (HOLD sdata (posedge clk) (152:152:152))
+      (HOLD ena (posedge clk) (152:152:152))
     )
   )
   (CELL
@@ -201,8 +198,8 @@
     (INSTANCE \\endereco_out\[0\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (300:300:300) (300:300:300))
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (PORT datain (259:259:259) (259:259:259))
+        (IOPATH datain padio (1428:1428:1428) (1428:1428:1428))
       )
     )
   )
@@ -211,8 +208,8 @@
     (INSTANCE \\endereco_out\[1\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (723:723:723) (723:723:723))
-        (IOPATH datain padio (1563:1563:1563) (1563:1563:1563))
+        (PORT datain (260:260:260) (260:260:260))
+        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
       )
     )
   )
@@ -221,8 +218,8 @@
     (INSTANCE \\endereco_out\[2\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (1057:1057:1057) (1057:1057:1057))
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (PORT datain (386:386:386) (386:386:386))
+        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
       )
     )
   )
@@ -231,8 +228,8 @@
     (INSTANCE \\endereco_out\[3\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (259:259:259) (259:259:259))
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (PORT datain (385:385:385) (385:385:385))
+        (IOPATH datain padio (1438:1438:1438) (1438:1438:1438))
       )
     )
   )
@@ -241,7 +238,7 @@
     (INSTANCE \\endereco_out\[4\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1428:1428:1428) (1428:1428:1428))
+        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
       )
     )
   )
@@ -250,7 +247,7 @@
     (INSTANCE \\endereco_out\[5\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (1523:1523:1523) (1523:1523:1523))
       )
     )
   )
@@ -259,7 +256,7 @@
     (INSTANCE \\endereco_out\[6\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
       )
     )
   )
@@ -268,7 +265,7 @@
     (INSTANCE \\endereco_out\[7\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
       )
     )
   )

@@ -18,7 +18,7 @@ architecture archRegistrador8bits of Registrador8bits is
 component flipFlopJK is
 port(
 	J,K : in std_logic;
-	clear, preset : in std_logic;
+	clear, preset, load : in std_logic;
 	clk : in std_logic;
 	Q, Qbar: out std_logic
 );
@@ -42,7 +42,7 @@ end component;
 		--ESTA É A LOGICA PENSANDO NO REM NO CONJUNTO DO NEANDER, POIS SÓ INTERESSA REALMENTE OS 4 ULTIMOS BITS
 		--FF0 é o conjunto de flipflops que juntos armazenarão os 8 bits, sendo (XXXX YYYY) X->referente a operacao a ser realizada e Y-> que é realmente o endereco da memoria(de 0 a 15)
 					RFOR : for I in 0 to 3 generate
-						FFN: flipFlopJK port map (not(endereco_in(I)),endereco_in(I),'1','1', clk, Qs(I), Qs_bar(I)); --clear e preset sempre estão setados em 1 devido a logica utilizada pelo professor em sala, mas nao necessariamente precisaria ser 1.
+						FFN: flipFlopJK port map (not(endereco_in(I)),endereco_in(I),'1','1',load, clk, Qs(I), Qs_bar(I)); --clear e preset sempre estão setados em 1 devido a logica utilizada pelo professor em sala, mas nao necessariamente precisaria ser 1.
 						endereco_out(I) <= Qs(I);
 				end generate RFOR;
 			

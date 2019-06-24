@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for REM
-Sat Jun 22 15:20:22 2019
+Mon Jun 24 12:34:59 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -171,11 +171,12 @@ No paths to report.
 +-----------------+------------+-------+-------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------------+------------+-------+-------+------------+-----------------+
-; endereco_in[*]  ; clk        ; 3.975 ; 3.975 ; Fall       ; clk             ;
-;  endereco_in[0] ; clk        ; 3.148 ; 3.148 ; Fall       ; clk             ;
-;  endereco_in[1] ; clk        ; 3.569 ; 3.569 ; Fall       ; clk             ;
-;  endereco_in[2] ; clk        ; 3.975 ; 3.975 ; Fall       ; clk             ;
-;  endereco_in[3] ; clk        ; 2.815 ; 2.815 ; Fall       ; clk             ;
+; endereco_in[*]  ; clk        ; 3.860 ; 3.860 ; Fall       ; clk             ;
+;  endereco_in[0] ; clk        ; 3.860 ; 3.860 ; Fall       ; clk             ;
+;  endereco_in[1] ; clk        ; 3.287 ; 3.287 ; Fall       ; clk             ;
+;  endereco_in[2] ; clk        ; 2.857 ; 2.857 ; Fall       ; clk             ;
+;  endereco_in[3] ; clk        ; 3.275 ; 3.275 ; Fall       ; clk             ;
+; load            ; clk        ; 3.207 ; 3.207 ; Fall       ; clk             ;
 +-----------------+------------+-------+-------+------------+-----------------+
 
 
@@ -184,11 +185,12 @@ No paths to report.
 +-----------------+------------+--------+--------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------------+------------+--------+--------+------------+-----------------+
-; endereco_in[*]  ; clk        ; -2.585 ; -2.585 ; Fall       ; clk             ;
-;  endereco_in[0] ; clk        ; -2.918 ; -2.918 ; Fall       ; clk             ;
-;  endereco_in[1] ; clk        ; -3.339 ; -3.339 ; Fall       ; clk             ;
-;  endereco_in[2] ; clk        ; -3.745 ; -3.745 ; Fall       ; clk             ;
-;  endereco_in[3] ; clk        ; -2.585 ; -2.585 ; Fall       ; clk             ;
+; endereco_in[*]  ; clk        ; -2.627 ; -2.627 ; Fall       ; clk             ;
+;  endereco_in[0] ; clk        ; -3.630 ; -3.630 ; Fall       ; clk             ;
+;  endereco_in[1] ; clk        ; -3.057 ; -3.057 ; Fall       ; clk             ;
+;  endereco_in[2] ; clk        ; -2.627 ; -2.627 ; Fall       ; clk             ;
+;  endereco_in[3] ; clk        ; -3.045 ; -3.045 ; Fall       ; clk             ;
+; load            ; clk        ; -2.977 ; -2.977 ; Fall       ; clk             ;
 +-----------------+------------+--------+--------+------------+-----------------+
 
 
@@ -197,11 +199,11 @@ No paths to report.
 +------------------+------------+-------+-------+------------+-----------------+
 ; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +------------------+------------+-------+-------+------------+-----------------+
-; endereco_out[*]  ; clk        ; 7.906 ; 7.906 ; Fall       ; clk             ;
-;  endereco_out[0] ; clk        ; 6.359 ; 6.359 ; Fall       ; clk             ;
-;  endereco_out[1] ; clk        ; 7.304 ; 7.304 ; Fall       ; clk             ;
-;  endereco_out[2] ; clk        ; 7.906 ; 7.906 ; Fall       ; clk             ;
-;  endereco_out[3] ; clk        ; 6.062 ; 6.062 ; Fall       ; clk             ;
+; endereco_out[*]  ; clk        ; 6.376 ; 6.376 ; Fall       ; clk             ;
+;  endereco_out[0] ; clk        ; 6.084 ; 6.084 ; Fall       ; clk             ;
+;  endereco_out[1] ; clk        ; 6.066 ; 6.066 ; Fall       ; clk             ;
+;  endereco_out[2] ; clk        ; 6.361 ; 6.361 ; Fall       ; clk             ;
+;  endereco_out[3] ; clk        ; 6.376 ; 6.376 ; Fall       ; clk             ;
 +------------------+------------+-------+-------+------------+-----------------+
 
 
@@ -210,11 +212,11 @@ No paths to report.
 +------------------+------------+-------+-------+------------+-----------------+
 ; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +------------------+------------+-------+-------+------------+-----------------+
-; endereco_out[*]  ; clk        ; 6.062 ; 6.062 ; Fall       ; clk             ;
-;  endereco_out[0] ; clk        ; 6.359 ; 6.359 ; Fall       ; clk             ;
-;  endereco_out[1] ; clk        ; 7.304 ; 7.304 ; Fall       ; clk             ;
-;  endereco_out[2] ; clk        ; 7.906 ; 7.906 ; Fall       ; clk             ;
-;  endereco_out[3] ; clk        ; 6.062 ; 6.062 ; Fall       ; clk             ;
+; endereco_out[*]  ; clk        ; 6.066 ; 6.066 ; Fall       ; clk             ;
+;  endereco_out[0] ; clk        ; 6.084 ; 6.084 ; Fall       ; clk             ;
+;  endereco_out[1] ; clk        ; 6.066 ; 6.066 ; Fall       ; clk             ;
+;  endereco_out[2] ; clk        ; 6.361 ; 6.361 ; Fall       ; clk             ;
+;  endereco_out[3] ; clk        ; 6.376 ; 6.376 ; Fall       ; clk             ;
 +------------------+------------+-------+-------+------------+-----------------+
 
 
@@ -287,11 +289,12 @@ No paths to report.
 +-----------------+------------+-------+-------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------------+------------+-------+-------+------------+-----------------+
-; endereco_in[*]  ; clk        ; 2.164 ; 2.164 ; Fall       ; clk             ;
-;  endereco_in[0] ; clk        ; 1.701 ; 1.701 ; Fall       ; clk             ;
-;  endereco_in[1] ; clk        ; 1.972 ; 1.972 ; Fall       ; clk             ;
-;  endereco_in[2] ; clk        ; 2.164 ; 2.164 ; Fall       ; clk             ;
-;  endereco_in[3] ; clk        ; 1.568 ; 1.568 ; Fall       ; clk             ;
+; endereco_in[*]  ; clk        ; 2.065 ; 2.065 ; Fall       ; clk             ;
+;  endereco_in[0] ; clk        ; 2.065 ; 2.065 ; Fall       ; clk             ;
+;  endereco_in[1] ; clk        ; 1.821 ; 1.821 ; Fall       ; clk             ;
+;  endereco_in[2] ; clk        ; 1.609 ; 1.609 ; Fall       ; clk             ;
+;  endereco_in[3] ; clk        ; 1.817 ; 1.817 ; Fall       ; clk             ;
+; load            ; clk        ; 1.850 ; 1.850 ; Fall       ; clk             ;
 +-----------------+------------+-------+-------+------------+-----------------+
 
 
@@ -300,11 +303,12 @@ No paths to report.
 +-----------------+------------+--------+--------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------------+------------+--------+--------+------------+-----------------+
-; endereco_in[*]  ; clk        ; -1.448 ; -1.448 ; Fall       ; clk             ;
-;  endereco_in[0] ; clk        ; -1.581 ; -1.581 ; Fall       ; clk             ;
-;  endereco_in[1] ; clk        ; -1.852 ; -1.852 ; Fall       ; clk             ;
-;  endereco_in[2] ; clk        ; -2.044 ; -2.044 ; Fall       ; clk             ;
-;  endereco_in[3] ; clk        ; -1.448 ; -1.448 ; Fall       ; clk             ;
+; endereco_in[*]  ; clk        ; -1.489 ; -1.489 ; Fall       ; clk             ;
+;  endereco_in[0] ; clk        ; -1.945 ; -1.945 ; Fall       ; clk             ;
+;  endereco_in[1] ; clk        ; -1.701 ; -1.701 ; Fall       ; clk             ;
+;  endereco_in[2] ; clk        ; -1.489 ; -1.489 ; Fall       ; clk             ;
+;  endereco_in[3] ; clk        ; -1.697 ; -1.697 ; Fall       ; clk             ;
+; load            ; clk        ; -1.730 ; -1.730 ; Fall       ; clk             ;
 +-----------------+------------+--------+--------+------------+-----------------+
 
 
@@ -313,11 +317,11 @@ No paths to report.
 +------------------+------------+-------+-------+------------+-----------------+
 ; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +------------------+------------+-------+-------+------------+-----------------+
-; endereco_out[*]  ; clk        ; 4.384 ; 4.384 ; Fall       ; clk             ;
-;  endereco_out[0] ; clk        ; 3.647 ; 3.647 ; Fall       ; clk             ;
-;  endereco_out[1] ; clk        ; 4.080 ; 4.080 ; Fall       ; clk             ;
-;  endereco_out[2] ; clk        ; 4.384 ; 4.384 ; Fall       ; clk             ;
-;  endereco_out[3] ; clk        ; 3.457 ; 3.457 ; Fall       ; clk             ;
+; endereco_out[*]  ; clk        ; 3.615 ; 3.615 ; Fall       ; clk             ;
+;  endereco_out[0] ; clk        ; 3.479 ; 3.479 ; Fall       ; clk             ;
+;  endereco_out[1] ; clk        ; 3.460 ; 3.460 ; Fall       ; clk             ;
+;  endereco_out[2] ; clk        ; 3.596 ; 3.596 ; Fall       ; clk             ;
+;  endereco_out[3] ; clk        ; 3.615 ; 3.615 ; Fall       ; clk             ;
 +------------------+------------+-------+-------+------------+-----------------+
 
 
@@ -326,11 +330,11 @@ No paths to report.
 +------------------+------------+-------+-------+------------+-----------------+
 ; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +------------------+------------+-------+-------+------------+-----------------+
-; endereco_out[*]  ; clk        ; 3.457 ; 3.457 ; Fall       ; clk             ;
-;  endereco_out[0] ; clk        ; 3.647 ; 3.647 ; Fall       ; clk             ;
-;  endereco_out[1] ; clk        ; 4.080 ; 4.080 ; Fall       ; clk             ;
-;  endereco_out[2] ; clk        ; 4.384 ; 4.384 ; Fall       ; clk             ;
-;  endereco_out[3] ; clk        ; 3.457 ; 3.457 ; Fall       ; clk             ;
+; endereco_out[*]  ; clk        ; 3.460 ; 3.460 ; Fall       ; clk             ;
+;  endereco_out[0] ; clk        ; 3.479 ; 3.479 ; Fall       ; clk             ;
+;  endereco_out[1] ; clk        ; 3.460 ; 3.460 ; Fall       ; clk             ;
+;  endereco_out[2] ; clk        ; 3.596 ; 3.596 ; Fall       ; clk             ;
+;  endereco_out[3] ; clk        ; 3.615 ; 3.615 ; Fall       ; clk             ;
 +------------------+------------+-------+-------+------------+-----------------+
 
 
@@ -351,11 +355,12 @@ No paths to report.
 +-----------------+------------+-------+-------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------------+------------+-------+-------+------------+-----------------+
-; endereco_in[*]  ; clk        ; 3.975 ; 3.975 ; Fall       ; clk             ;
-;  endereco_in[0] ; clk        ; 3.148 ; 3.148 ; Fall       ; clk             ;
-;  endereco_in[1] ; clk        ; 3.569 ; 3.569 ; Fall       ; clk             ;
-;  endereco_in[2] ; clk        ; 3.975 ; 3.975 ; Fall       ; clk             ;
-;  endereco_in[3] ; clk        ; 2.815 ; 2.815 ; Fall       ; clk             ;
+; endereco_in[*]  ; clk        ; 3.860 ; 3.860 ; Fall       ; clk             ;
+;  endereco_in[0] ; clk        ; 3.860 ; 3.860 ; Fall       ; clk             ;
+;  endereco_in[1] ; clk        ; 3.287 ; 3.287 ; Fall       ; clk             ;
+;  endereco_in[2] ; clk        ; 2.857 ; 2.857 ; Fall       ; clk             ;
+;  endereco_in[3] ; clk        ; 3.275 ; 3.275 ; Fall       ; clk             ;
+; load            ; clk        ; 3.207 ; 3.207 ; Fall       ; clk             ;
 +-----------------+------------+-------+-------+------------+-----------------+
 
 
@@ -364,11 +369,12 @@ No paths to report.
 +-----------------+------------+--------+--------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------------+------------+--------+--------+------------+-----------------+
-; endereco_in[*]  ; clk        ; -1.448 ; -1.448 ; Fall       ; clk             ;
-;  endereco_in[0] ; clk        ; -1.581 ; -1.581 ; Fall       ; clk             ;
-;  endereco_in[1] ; clk        ; -1.852 ; -1.852 ; Fall       ; clk             ;
-;  endereco_in[2] ; clk        ; -2.044 ; -2.044 ; Fall       ; clk             ;
-;  endereco_in[3] ; clk        ; -1.448 ; -1.448 ; Fall       ; clk             ;
+; endereco_in[*]  ; clk        ; -1.489 ; -1.489 ; Fall       ; clk             ;
+;  endereco_in[0] ; clk        ; -1.945 ; -1.945 ; Fall       ; clk             ;
+;  endereco_in[1] ; clk        ; -1.701 ; -1.701 ; Fall       ; clk             ;
+;  endereco_in[2] ; clk        ; -1.489 ; -1.489 ; Fall       ; clk             ;
+;  endereco_in[3] ; clk        ; -1.697 ; -1.697 ; Fall       ; clk             ;
+; load            ; clk        ; -1.730 ; -1.730 ; Fall       ; clk             ;
 +-----------------+------------+--------+--------+------------+-----------------+
 
 
@@ -377,11 +383,11 @@ No paths to report.
 +------------------+------------+-------+-------+------------+-----------------+
 ; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +------------------+------------+-------+-------+------------+-----------------+
-; endereco_out[*]  ; clk        ; 7.906 ; 7.906 ; Fall       ; clk             ;
-;  endereco_out[0] ; clk        ; 6.359 ; 6.359 ; Fall       ; clk             ;
-;  endereco_out[1] ; clk        ; 7.304 ; 7.304 ; Fall       ; clk             ;
-;  endereco_out[2] ; clk        ; 7.906 ; 7.906 ; Fall       ; clk             ;
-;  endereco_out[3] ; clk        ; 6.062 ; 6.062 ; Fall       ; clk             ;
+; endereco_out[*]  ; clk        ; 6.376 ; 6.376 ; Fall       ; clk             ;
+;  endereco_out[0] ; clk        ; 6.084 ; 6.084 ; Fall       ; clk             ;
+;  endereco_out[1] ; clk        ; 6.066 ; 6.066 ; Fall       ; clk             ;
+;  endereco_out[2] ; clk        ; 6.361 ; 6.361 ; Fall       ; clk             ;
+;  endereco_out[3] ; clk        ; 6.376 ; 6.376 ; Fall       ; clk             ;
 +------------------+------------+-------+-------+------------+-----------------+
 
 
@@ -390,11 +396,11 @@ No paths to report.
 +------------------+------------+-------+-------+------------+-----------------+
 ; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +------------------+------------+-------+-------+------------+-----------------+
-; endereco_out[*]  ; clk        ; 3.457 ; 3.457 ; Fall       ; clk             ;
-;  endereco_out[0] ; clk        ; 3.647 ; 3.647 ; Fall       ; clk             ;
-;  endereco_out[1] ; clk        ; 4.080 ; 4.080 ; Fall       ; clk             ;
-;  endereco_out[2] ; clk        ; 4.384 ; 4.384 ; Fall       ; clk             ;
-;  endereco_out[3] ; clk        ; 3.457 ; 3.457 ; Fall       ; clk             ;
+; endereco_out[*]  ; clk        ; 3.460 ; 3.460 ; Fall       ; clk             ;
+;  endereco_out[0] ; clk        ; 3.479 ; 3.479 ; Fall       ; clk             ;
+;  endereco_out[1] ; clk        ; 3.460 ; 3.460 ; Fall       ; clk             ;
+;  endereco_out[2] ; clk        ; 3.596 ; 3.596 ; Fall       ; clk             ;
+;  endereco_out[3] ; clk        ; 3.615 ; 3.615 ; Fall       ; clk             ;
 +------------------+------------+-------+-------+------------+-----------------+
 
 
@@ -423,8 +429,8 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 4     ; 4    ;
-; Unconstrained Input Port Paths  ; 4     ; 4    ;
+; Unconstrained Input Ports       ; 5     ; 5    ;
+; Unconstrained Input Port Paths  ; 8     ; 8    ;
 ; Unconstrained Output Ports      ; 4     ; 4    ;
 ; Unconstrained Output Port Paths ; 4     ; 4    ;
 +---------------------------------+-------+------+
@@ -436,7 +442,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sat Jun 22 15:20:21 2019
+    Info: Processing started: Mon Jun 24 12:34:57 2019
 Info: Command: quartus_sta REM -c REM
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -474,8 +480,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4556 megabytes
-    Info: Processing ended: Sat Jun 22 15:20:22 2019
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Mon Jun 24 12:34:59 2019
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Web Edition"
 
--- DATE "06/22/2019 15:20:25"
+-- DATE "06/24/2019 12:35:01"
 
 -- 
 -- Device: Altera EP2C35F672C6 Package FBGA672
@@ -44,25 +44,25 @@ END Registrador8bits;
 
 -- Design Ports Information
 -- clear	=>  Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- load	=>  Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- preset	=>  Location: PIN_G15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- endereco_in[4]	=>  Location: PIN_D8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- endereco_in[5]	=>  Location: PIN_J25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- endereco_in[6]	=>  Location: PIN_AA20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- endereco_in[7]	=>  Location: PIN_AD15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- endereco_out[0]	=>  Location: PIN_AC5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- endereco_out[1]	=>  Location: PIN_A4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- endereco_out[2]	=>  Location: PIN_D16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- endereco_out[3]	=>  Location: PIN_M22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- endereco_out[4]	=>  Location: PIN_AA2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- endereco_out[5]	=>  Location: PIN_R25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- endereco_out[6]	=>  Location: PIN_T2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- endereco_out[7]	=>  Location: PIN_K23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- endereco_in[0]	=>  Location: PIN_AC6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- preset	=>  Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- endereco_in[4]	=>  Location: PIN_D14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- endereco_in[5]	=>  Location: PIN_T3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- endereco_in[6]	=>  Location: PIN_F14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- endereco_in[7]	=>  Location: PIN_U1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- endereco_out[0]	=>  Location: PIN_F24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- endereco_out[1]	=>  Location: PIN_J20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- endereco_out[2]	=>  Location: PIN_N18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- endereco_out[3]	=>  Location: PIN_D25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- endereco_out[4]	=>  Location: PIN_R25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- endereco_out[5]	=>  Location: PIN_AC16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- endereco_out[6]	=>  Location: PIN_P6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- endereco_out[7]	=>  Location: PIN_F18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- endereco_in[0]	=>  Location: PIN_J16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 -- clk	=>  Location: PIN_P2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- endereco_in[1]	=>  Location: PIN_B3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- endereco_in[2]	=>  Location: PIN_R2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- endereco_in[3]	=>  Location: PIN_M23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- load	=>  Location: PIN_J21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- endereco_in[1]	=>  Location: PIN_P18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- endereco_in[2]	=>  Location: PIN_F23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- endereco_in[3]	=>  Location: PIN_F26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
 
 ARCHITECTURE structure OF Registrador8bits IS
@@ -85,12 +85,11 @@ SIGNAL \clk~clkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \clk~combout\ : std_logic;
 SIGNAL \clk~clkctrl_outclk\ : std_logic;
 SIGNAL \RFOR:0:FFN|qsignal~feeder_combout\ : std_logic;
+SIGNAL \load~combout\ : std_logic;
 SIGNAL \RFOR:0:FFN|qsignal~regout\ : std_logic;
-SIGNAL \RFOR:1:FFN|qsignal~feeder_combout\ : std_logic;
 SIGNAL \RFOR:1:FFN|qsignal~regout\ : std_logic;
 SIGNAL \RFOR:2:FFN|qsignal~feeder_combout\ : std_logic;
 SIGNAL \RFOR:2:FFN|qsignal~regout\ : std_logic;
-SIGNAL \RFOR:3:FFN|qsignal~feeder_combout\ : std_logic;
 SIGNAL \RFOR:3:FFN|qsignal~regout\ : std_logic;
 SIGNAL \endereco_in~combout\ : std_logic_vector(7 DOWNTO 0);
 SIGNAL \ALT_INV_clk~clkctrl_outclk\ : std_logic;
@@ -149,7 +148,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	outclk => \clk~clkctrl_outclk\);
 
--- Location: PIN_AC6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: PIN_J16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \endereco_in[0]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -175,7 +174,7 @@ PORT MAP (
 	padio => ww_endereco_in(0),
 	combout => \endereco_in~combout\(0));
 
--- Location: LCCOMB_X1_Y1_N16
+-- Location: LCCOMB_X64_Y30_N0
 \RFOR:0:FFN|qsignal~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \RFOR:0:FFN|qsignal~feeder_combout\ = \endereco_in~combout\(0)
@@ -189,16 +188,43 @@ PORT MAP (
 	datad => \endereco_in~combout\(0),
 	combout => \RFOR:0:FFN|qsignal~feeder_combout\);
 
--- Location: LCFF_X1_Y1_N17
+-- Location: PIN_J21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\load~I\ : cycloneii_io
+-- pragma translate_off
+GENERIC MAP (
+	input_async_reset => "none",
+	input_power_up => "low",
+	input_register_mode => "none",
+	input_sync_reset => "none",
+	oe_async_reset => "none",
+	oe_power_up => "low",
+	oe_register_mode => "none",
+	oe_sync_reset => "none",
+	operation_mode => "input",
+	output_async_reset => "none",
+	output_power_up => "low",
+	output_register_mode => "none",
+	output_sync_reset => "none")
+-- pragma translate_on
+PORT MAP (
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	devoe => ww_devoe,
+	oe => GND,
+	padio => ww_load,
+	combout => \load~combout\);
+
+-- Location: LCFF_X64_Y30_N1
 \RFOR:0:FFN|qsignal\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \ALT_INV_clk~clkctrl_outclk\,
 	datain => \RFOR:0:FFN|qsignal~feeder_combout\,
+	ena => \load~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \RFOR:0:FFN|qsignal~regout\);
 
--- Location: PIN_B3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: PIN_P18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \endereco_in[1]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -224,30 +250,18 @@ PORT MAP (
 	padio => ww_endereco_in(1),
 	combout => \endereco_in~combout\(1));
 
--- Location: LCCOMB_X16_Y35_N16
-\RFOR:1:FFN|qsignal~feeder\ : cycloneii_lcell_comb
--- Equation(s):
--- \RFOR:1:FFN|qsignal~feeder_combout\ = \endereco_in~combout\(1)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111111100000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datad => \endereco_in~combout\(1),
-	combout => \RFOR:1:FFN|qsignal~feeder_combout\);
-
--- Location: LCFF_X16_Y35_N17
+-- Location: LCFF_X64_Y30_N19
 \RFOR:1:FFN|qsignal\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \ALT_INV_clk~clkctrl_outclk\,
-	datain => \RFOR:1:FFN|qsignal~feeder_combout\,
+	sdata => \endereco_in~combout\(1),
+	sload => VCC,
+	ena => \load~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \RFOR:1:FFN|qsignal~regout\);
 
--- Location: PIN_R2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: PIN_F23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \endereco_in[2]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -273,7 +287,7 @@ PORT MAP (
 	padio => ww_endereco_in(2),
 	combout => \endereco_in~combout\(2));
 
--- Location: LCCOMB_X38_Y18_N24
+-- Location: LCCOMB_X64_Y30_N12
 \RFOR:2:FFN|qsignal~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \RFOR:2:FFN|qsignal~feeder_combout\ = \endereco_in~combout\(2)
@@ -287,16 +301,17 @@ PORT MAP (
 	datad => \endereco_in~combout\(2),
 	combout => \RFOR:2:FFN|qsignal~feeder_combout\);
 
--- Location: LCFF_X38_Y18_N25
+-- Location: LCFF_X64_Y30_N13
 \RFOR:2:FFN|qsignal\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \ALT_INV_clk~clkctrl_outclk\,
 	datain => \RFOR:2:FFN|qsignal~feeder_combout\,
+	ena => \load~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \RFOR:2:FFN|qsignal~regout\);
 
--- Location: PIN_M23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: PIN_F26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \endereco_in[3]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -322,25 +337,13 @@ PORT MAP (
 	padio => ww_endereco_in(3),
 	combout => \endereco_in~combout\(3));
 
--- Location: LCCOMB_X64_Y22_N0
-\RFOR:3:FFN|qsignal~feeder\ : cycloneii_lcell_comb
--- Equation(s):
--- \RFOR:3:FFN|qsignal~feeder_combout\ = \endereco_in~combout\(3)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111111100000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datad => \endereco_in~combout\(3),
-	combout => \RFOR:3:FFN|qsignal~feeder_combout\);
-
--- Location: LCFF_X64_Y22_N1
+-- Location: LCFF_X64_Y30_N23
 \RFOR:3:FFN|qsignal\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \ALT_INV_clk~clkctrl_outclk\,
-	datain => \RFOR:3:FFN|qsignal~feeder_combout\,
+	sdata => \endereco_in~combout\(3),
+	sload => VCC,
+	ena => \load~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \RFOR:3:FFN|qsignal~regout\);
@@ -371,31 +374,6 @@ PORT MAP (
 	padio => ww_clear);
 
 -- Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\load~I\ : cycloneii_io
--- pragma translate_off
-GENERIC MAP (
-	input_async_reset => "none",
-	input_power_up => "low",
-	input_register_mode => "none",
-	input_sync_reset => "none",
-	oe_async_reset => "none",
-	oe_power_up => "low",
-	oe_register_mode => "none",
-	oe_sync_reset => "none",
-	operation_mode => "input",
-	output_async_reset => "none",
-	output_power_up => "low",
-	output_register_mode => "none",
-	output_sync_reset => "none")
--- pragma translate_on
-PORT MAP (
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	devoe => ww_devoe,
-	oe => GND,
-	padio => ww_load);
-
--- Location: PIN_G15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \preset~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -420,7 +398,7 @@ PORT MAP (
 	oe => GND,
 	padio => ww_preset);
 
--- Location: PIN_D8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: PIN_D14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \endereco_in[4]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -445,7 +423,7 @@ PORT MAP (
 	oe => GND,
 	padio => ww_endereco_in(4));
 
--- Location: PIN_J25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: PIN_T3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \endereco_in[5]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -470,7 +448,7 @@ PORT MAP (
 	oe => GND,
 	padio => ww_endereco_in(5));
 
--- Location: PIN_AA20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: PIN_F14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \endereco_in[6]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -495,7 +473,7 @@ PORT MAP (
 	oe => GND,
 	padio => ww_endereco_in(6));
 
--- Location: PIN_AD15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: PIN_U1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \endereco_in[7]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -520,7 +498,7 @@ PORT MAP (
 	oe => GND,
 	padio => ww_endereco_in(7));
 
--- Location: PIN_AC5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_F24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \endereco_out[0]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -546,7 +524,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_endereco_out(0));
 
--- Location: PIN_A4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_J20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \endereco_out[1]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -572,7 +550,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_endereco_out(1));
 
--- Location: PIN_D16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_N18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \endereco_out[2]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -598,7 +576,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_endereco_out(2));
 
--- Location: PIN_M22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_D25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \endereco_out[3]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -624,7 +602,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_endereco_out(3));
 
--- Location: PIN_AA2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_R25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \endereco_out[4]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -650,7 +628,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_endereco_out(4));
 
--- Location: PIN_R25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_AC16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \endereco_out[5]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -676,7 +654,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_endereco_out(5));
 
--- Location: PIN_T2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_P6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \endereco_out[6]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -702,7 +680,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_endereco_out(6));
 
--- Location: PIN_K23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_F18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \endereco_out[7]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (

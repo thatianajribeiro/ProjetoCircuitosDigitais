@@ -4,7 +4,7 @@ use ieee.std_logic_1164.all;
 entity flipFlopJK is
 port(
 	J,K : in std_logic;
-	clear, preset : in std_logic;
+	clear, preset,load : in std_logic;
 	clk : in std_logic;
 	Q, Qbar: out std_logic
 );
@@ -19,7 +19,7 @@ begin
 			qsignal <= '0';
 		elsif(preset = '0')	then
 			qsignal <= '1';
-		elsif(clk'event and clk = '0') then 
+		elsif(clk'event and clk = '0' and load = '1') then 
 			if(J = '0' and K = '1') then
 				qsignal <= '1';
 			elsif(J = '1' and K = '0') then
