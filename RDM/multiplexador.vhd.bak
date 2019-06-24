@@ -1,0 +1,38 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity multiplexador is
+port
+	(
+		ResultSoma, ResultSub, ResultGreater, ResultLess, ResultInv : in std_logic_vector (4 downto 0);
+		seletor: in std_logic_vector(2 downto 0);
+		ligadesliga: in std_logic;
+		SaidaMuxCo: out std_logic;
+		SaidaMuxCTRL: out std_logic_vector(1 downto 0);
+		SaidaMux: out std_logic_vector(4 downto 0)		
+	);
+end multiplexador;
+
+architecture archmultiplexador of multiplexador is
+
+begin
+WITH seletor SELECT 
+	saidaMux <= ResultSoma when "000", 
+					Resultsub when "001",
+					ResultGreater when "010",
+					ResultLess when "011",
+					ResultInv when "100",
+					"00000" when others;
+WITH seletor SELECT					
+	saidaMuxCTRL(0) <=ResultSub(4) when "001", 
+							'0' when others;	
+	saidaMuxCTRL(1) <= not(ligadesliga);	
+WITH seletor SELECT
+	saidaMuxCo <= ligadesliga and ResultSoma(4) when "000",
+					  ligadesliga and ResultSub(4) when "001",
+					  ligadesliga and ResultGreater(0) when "010",
+					  ligadesliga and ResultLess(0) when "011",
+					  '0' when others;
+
+	
+end archmultiplexador;

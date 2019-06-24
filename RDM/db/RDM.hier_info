@@ -1,0 +1,202 @@
+|Registrador8bits
+clk => flipFlopJK:RFOR:0:FFN.clk
+clk => flipFlopJK:RFOR:1:FFN.clk
+clk => flipFlopJK:RFOR:2:FFN.clk
+clk => flipFlopJK:RFOR:3:FFN.clk
+clk => flipFlopJK:RFOR:4:FFN.clk
+clk => flipFlopJK:RFOR:5:FFN.clk
+clk => flipFlopJK:RFOR:6:FFN.clk
+clk => flipFlopJK:RFOR:7:FFN.clk
+clear => ~NO_FANOUT~
+load[0] => multiplexador:Muxentrada.seletor[0]
+load[1] => multiplexador:Muxentrada.seletor[1]
+preset => ~NO_FANOUT~
+input_AC[0] => multiplexador:Muxentrada.ACinput[0]
+input_AC[1] => multiplexador:Muxentrada.ACinput[1]
+input_AC[2] => multiplexador:Muxentrada.ACinput[2]
+input_AC[3] => multiplexador:Muxentrada.ACinput[3]
+input_AC[4] => multiplexador:Muxentrada.ACinput[4]
+input_AC[5] => multiplexador:Muxentrada.ACinput[5]
+input_AC[6] => multiplexador:Muxentrada.ACinput[6]
+input_AC[7] => multiplexador:Muxentrada.ACinput[7]
+input_Mem[0] => multiplexador:Muxentrada.MemInput[0]
+input_Mem[1] => multiplexador:Muxentrada.MemInput[1]
+input_Mem[2] => multiplexador:Muxentrada.MemInput[2]
+input_Mem[3] => multiplexador:Muxentrada.MemInput[3]
+input_Mem[4] => multiplexador:Muxentrada.MemInput[4]
+input_Mem[5] => multiplexador:Muxentrada.MemInput[5]
+input_Mem[6] => multiplexador:Muxentrada.MemInput[6]
+input_Mem[7] => multiplexador:Muxentrada.MemInput[7]
+endereco_out[0] <= flipFlopJK:RFOR:0:FFN.Q
+endereco_out[1] <= flipFlopJK:RFOR:1:FFN.Q
+endereco_out[2] <= flipFlopJK:RFOR:2:FFN.Q
+endereco_out[3] <= flipFlopJK:RFOR:3:FFN.Q
+endereco_out[4] <= flipFlopJK:RFOR:4:FFN.Q
+endereco_out[5] <= flipFlopJK:RFOR:5:FFN.Q
+endereco_out[6] <= flipFlopJK:RFOR:6:FFN.Q
+endereco_out[7] <= flipFlopJK:RFOR:7:FFN.Q
+
+
+|Registrador8bits|multiplexador:Muxentrada
+MemInput[0] => Mux7.IN2
+MemInput[1] => Mux6.IN2
+MemInput[2] => Mux5.IN2
+MemInput[3] => Mux4.IN2
+MemInput[4] => Mux3.IN2
+MemInput[5] => Mux2.IN2
+MemInput[6] => Mux1.IN2
+MemInput[7] => Mux0.IN2
+ACinput[0] => Mux7.IN3
+ACinput[1] => Mux6.IN3
+ACinput[2] => Mux5.IN3
+ACinput[3] => Mux4.IN3
+ACinput[4] => Mux3.IN3
+ACinput[5] => Mux2.IN3
+ACinput[6] => Mux1.IN3
+ACinput[7] => Mux0.IN3
+seletor[0] => Mux0.IN5
+seletor[0] => Mux1.IN5
+seletor[0] => Mux2.IN5
+seletor[0] => Mux3.IN5
+seletor[0] => Mux4.IN5
+seletor[0] => Mux5.IN5
+seletor[0] => Mux6.IN5
+seletor[0] => Mux7.IN5
+seletor[1] => Mux0.IN4
+seletor[1] => Mux1.IN4
+seletor[1] => Mux2.IN4
+seletor[1] => Mux3.IN4
+seletor[1] => Mux4.IN4
+seletor[1] => Mux5.IN4
+seletor[1] => Mux6.IN4
+seletor[1] => Mux7.IN4
+SaidaMux[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+SaidaMux[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+SaidaMux[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+SaidaMux[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+SaidaMux[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+SaidaMux[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+SaidaMux[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+SaidaMux[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registrador8bits|flipFlopJK:\RFOR:0:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registrador8bits|flipFlopJK:\RFOR:1:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registrador8bits|flipFlopJK:\RFOR:2:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registrador8bits|flipFlopJK:\RFOR:3:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registrador8bits|flipFlopJK:\RFOR:4:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registrador8bits|flipFlopJK:\RFOR:5:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registrador8bits|flipFlopJK:\RFOR:6:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registrador8bits|flipFlopJK:\RFOR:7:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
