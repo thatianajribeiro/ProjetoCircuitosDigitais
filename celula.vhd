@@ -37,8 +37,8 @@ begin
 	en <= aux(0) and aux(1) and aux(2) and aux(3);
 	
 	FOR01: for i in 0 to (N-1) generate	
-		cont1: FlipFlopJK port map(not(E(i)) or not(en), E(i) and rw, '1', '1', clk and rw, Qs(i));
-		S(i) <= Qs(i) and rw;
+		cont1: FlipFlopJK port map(not(E(i)) or not(en), E(i) or not(en), '1', '1', clk and rw, Qs(i));
+		S(i) <= Qs(i) and not(rw) and en; 		-- rw '1' é escrita, não mostra nada.
 	end generate;
 	M <= Qs;
 
