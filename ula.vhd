@@ -7,7 +7,7 @@ entity ula is
 		b        : in std_logic_vector(7 downto 0);
 		operacao : in std_logic_vector(2 downto 0);
 		y        : out std_logic_vector(7 downto 0);
-		N, Z		: out std_logic
+		NZ			: out std_logic_vector(1 downto 0)
 		);
 end ula;
 
@@ -21,23 +21,24 @@ component soma is
 			);
 end component;
 
-   signal ySoma 		: std_logic_vector(7 downto 0);
-	signal Carry_Soma	: std_logic;
-	signal Z_aux : std_logic_vector(7 downto 0);
+   signal ySoma 						: std_logic_vector(7 downto 0);
+	signal Carry_Soma					: std_logic;
+	signal Z_resultado 				: std_logic;
+	signal Z_auxiliar, N_auxiliar	: std_logic;
 
 begin
 
   total : soma port map(a, b, ySoma, Carry_Soma);
   
-  N <= ySoma(7);
+  Z_auxiliar <= '0';
   
-	Z_aux <= ySoma;
+  Z_resultado <= (ySoma(7) xnor Z_auxiliar) and (ySoma(6) xnor Z_auxiliar) and (ySoma(5) xnor Z_auxiliar) and
+				(ySoma(4) xnor Z_auxiliar) and (ySoma(3) xnor Z_auxiliar) and (ySoma(2) xnor Z_auxiliar) and 
+							(ySoma(1) xnor Z_auxiliar) and (ySoma(0) xnor Z_auxiliar);
   
-	FOR01: for i in 1 to (7) generate	
-		Z_aux(i) <= Z_aux(i-1) nor ySoma(i);
-	end generate; 
+  NZ(1) <= ySoma(7) and  '1'; -- Saber se é negativo o resultado da soma
+  NZ(0) <= Z_resultado; 		-- Saber se o resultado da soma é zero
 
-	Z <= not(Z_aux(0));	-- Resolvi de forma burra, está funcionando, mas não sei onde está o erro. A saída Z está invertida, alterar o operador de "nor" para "or" não resolveu.
 	
   WITH operacao SELECT
 		y <=  ySoma   WHEN "000",
