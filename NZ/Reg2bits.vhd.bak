@@ -1,0 +1,35 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Reg2bits is 
+port(
+	clk : in std_logic;
+	clear : in std_logic;
+	load : in std_logic;
+	preset : in std_logic;
+	entrada : in std_logic_vector(1 downto 0);
+	Output : out std_logic_vector(1 downto 0)
+	);
+end Reg2bits;
+
+architecture archReg2bits of Reg2bits is
+
+component FFJK is
+port(
+	J,K : in std_logic;
+	clear, preset : in std_logic;
+	clk : in std_logic;
+	Q, Qbar: out std_logic
+);
+end component;
+
+	signal Qs: std_logic_vector (1 downto 0);
+	signal QsBar: std_logic_vector (1 downto 0);
+	
+begin 
+		
+	FF0: FFJK port map (not(entrada(0)),entrada(0),'1','1',clk,Qs(0), QsBar(0));	
+	FF1: FFJK port map (not(entrada(1)),entrada(1),'1','1', clk, Qs(1), QsBar(1));			
+	Output <= Qs;
+
+end archReg2bits;
