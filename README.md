@@ -30,3 +30,24 @@ O habilitador de leitura/escrita da célula funciona da seguinte maneira:
 Quando "rw" possui valor um, a célula está habilitada para escrita, caso contrário ela estará disponível só para leitura de dados.
 
 É importante frizar que enquanto há a escrita de dados dentro da célula, não deve ser exibido nenhuma informação na saída, neste aspecto foi desenvolvida uma lógica na saída com a finalidade de inibir a exbição de informações no momento em que há a escrita na célula. A lógica na saída da célula garante que o que é exibido se trata realmente da informação solicitada à célula, uma vez que depende do "enable". Por fim, a lógica na saída da célula exige que o habilitador de leitura/escrita, "rw", esteja desativado para que a informação a ser lida seja atribuída à saída da memória.
+
+__________________________________________________________________________________________________
+Por Robson da Costa Carneiro
+
+
+# Decodificador
+
+
+O decodificador serve para receber um codigo recebido de *opcode* em uma instrução para a *Unidade de Controle (UC)*, tivemos uma entrada que se chama *instrução* que contém oito bits de memória, poque os quatros primeiros bits foram reservadas para memória de dados e os quatro últimos são reservados para as instruções que ativará as variáveis que contém na *UC*, que é o cérebro de todo o programa. Também temos uma saída que é um vetor de onze posições, onde cada posição correlaciona com uma variável da *UC*, sendo:
+1a: *NOP (nenhuma operação)*;
+2a: *STA (armazena acumulador)*;
+3a: *LDA (carrega o acumulador)*;
+4a: *ADD (soma)*;
+5a: *OR (ou lógico)*;
+6a: *AND (e lógico)*;
+7a: *NOT (inverte acumulador)*;
+8a: *JMP (desvio incondicional)*;
+9a: *JN (desvio condicional a negativo)*;
+10a: *JZ (desvio condicional ao zero)*;
+11a: *HLT (termina a execução)*.
+Foi escolhido vetor, porque assim o código ficaria mais enxuto e não precisaria se preocupa quando zerar outras varivaeis que não será desejada o uso para ser processada em *UC*
