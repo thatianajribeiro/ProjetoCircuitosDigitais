@@ -31,9 +31,9 @@ Como já dito anteriormente, cada célula é enumerada de forma binária com nú
 A chamada para os flip flops JK foram feitas dentro de uma estrutura de FOR com intuito de somente agilizar o processo de criação dos port maps. A célula implementada permite que apenas seja gravado qualquer informação no momento da descida do clock, uma vez que os flip flops utilizados são sensíveis à borda de descida, além disso o habilitador "rw" também deve estar ativado para que haja a execução da tarefa. Dentro do port map do flip flop JK há uma lógica que habilita a célula para leitura e escrita quando socilitado.
 
 O habilitador de leitura/escrita da célula funciona da seguinte maneira:
-Quando "rw" possui valor um, a célula está habilitada para escrita, caso contrário ela estará disponível só para leitura de dados.
+Quando "rw" possui valor um, a célula está habilitada para escrita, caso contrário ela estará disponível unicamente para leitura de dados.
 
-É importante frizar que enquanto há a escrita de dados dentro da célula, não deve ser exibido nenhuma informação na saída, neste aspecto foi desenvolvida uma lógica na saída com a finalidade de inibir a exbição de informações no momento em que há a escrita na célula. A lógica na saída da célula garante que o que é exibido se trata realmente da informação solicitada à célula, uma vez que depende do "enable". Por fim, a lógica na saída da célula exige que o habilitador de leitura/escrita, "rw", esteja desativado para que a informação a ser lida seja atribuída à saída da memória.
+É importante frizar que enquanto há a escrita de dados dentro da célula, não deve ser exibido nenhuma informação na saída, neste aspecto foi desenvolvida uma lógica na saída com a finalidade de inibir a exbição de informações no momento em que há a escrita na célula. A lógica na saída da célula garante que o dado exibido se trata realmente da informação solicitada à célula, uma vez que depende do "enable". Por fim, a lógica na saída da célula exige que o habilitador de leitura/escrita, "rw", esteja desativado para que a informação a ser lida seja atribuída à saída da memória.
 
 __________________________________________________________________________________________________
 Por Robson da Costa Carneiro
