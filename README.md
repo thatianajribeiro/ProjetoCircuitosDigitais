@@ -5,7 +5,6 @@ Projeto final da disciplina de Circuitos Digitais: implementação do NEANDER.
 Componentes: Igor, Ítalo, Ricardo, Robson, Rony e Thatiana.
 
 ___________________________________________________________________________
-Por Igor Carvalho de Brito Batista
 
 
 
@@ -36,7 +35,6 @@ Quando "rw" possui valor um, a célula está habilitada para escrita, caso contr
 É importante frizar que enquanto há a escrita de dados dentro da célula, não deve ser exibido nenhuma informação na saída, neste aspecto foi desenvolvida uma lógica na saída com a finalidade de inibir a exbição de informações no momento em que há a escrita na célula. A lógica na saída da célula garante que o dado exibido se trata realmente da informação solicitada à célula, uma vez que depende do "enable". Por fim, a lógica na saída da célula exige que o habilitador de leitura/escrita, "rw", esteja desativado para que a informação a ser lida seja atribuída à saída da memória.
 
 __________________________________________________________________________________________________
-Por Robson da Costa Carneiro
 
 
 # Decodificador
@@ -57,7 +55,6 @@ O decodificador serve para receber um codigo recebido de *opcode* em uma instru�
 Foi escolhido vetor, porque assim o código ficaria mais enxuto e não precisaria se preocupa quando zerar outras varivaeis que não será desejada o uso para ser processada em *UC*
 
 ________________________________________________________________________________________________
-Por Robson da Costa Carneiro e aperfeiçoado por Thatiana
 
 # PC (contador de Programa)
 
