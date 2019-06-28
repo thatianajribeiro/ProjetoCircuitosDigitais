@@ -146,14 +146,7 @@ Para implementar a lógica, foi necessário fazer uma estrutura de for com um co
         <br>
         <sub><b>Robson Carneiro</b></sub>
       </a><br>
-    </td>
-    <td align="center">
-      <a href="https://github.com/ricardomvv">
-        <img src="https://avatars0.githubusercontent.com/u/48896758?s=460&v=4" width="100px;" alt="Ricardo Varela" style="max-width:100%;">
-        <br>
-        <sub><b>Ricardo Varela</b></sub>
-      </a><br>
-    </td>
+   </td>
     <td align="center">
       <a href="https://github.com/thatianajribeiro">
         <img src="https://avatars2.githubusercontent.com/u/51245283?s=460&v=4" width = "100px;" alt="Thatiana Ribeiro" style="max-width:100%;">
