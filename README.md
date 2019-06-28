@@ -128,7 +128,7 @@ Para implementar a lógica, foi necessário fazer uma estrutura de for com um co
       </a><br>
     </td> <td align="center">
       <a href="https://github.com/italoaurilio">
-        <img src="https://avatars0.githubusercontent.com/u/48896758?s=460&v=4" width="100px;" alt="Ítalo" style="max-width:100%;">
+        <img src="https://avatars1.githubusercontent.com/u/52167534?s=460&v=4" width="100px;" alt="Ítalo" style="max-width:100%;">
         <br>
         <sub><b>Ítalo Aurílio </b></sub>
       </a><br>
@@ -142,11 +142,18 @@ Para implementar a lógica, foi necessário fazer uma estrutura de for com um co
     </td>
     <td align="center">
       <a href="https://github.com/RobsondCCarneiro">
-        <img src="https://avatars0.githubusercontent.com/u/48896758?s=460&v=4" width="100px;" alt="Robson Carneiro" style="max-width:100%;">
+        <img src="https://avatars2.githubusercontent.com/u/43090615?s=460&v=4" width="100px;" alt="Robson Carneiro" style="max-width:100%;">
         <br>
         <sub><b>Robson Carneiro</b></sub>
       </a><br>
-   </td>
+    </td>
+    <td align="center">
+      <a href="https://github.com/ronydesena">
+        <img src="https://avatars0.githubusercontent.com/u/19894638?s=460&v=4" width="100px;" alt="Rony Lourenço" style="max-width:100%;">
+        <br>
+        <sub><b>Rony Lourenço</b></sub>
+      </a><br>
+    </td>
     <td align="center">
       <a href="https://github.com/thatianajribeiro">
         <img src="https://avatars2.githubusercontent.com/u/51245283?s=460&v=4" width = "100px;" alt="Thatiana Ribeiro" style="max-width:100%;">
