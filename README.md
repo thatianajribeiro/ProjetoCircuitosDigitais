@@ -75,7 +75,7 @@ ________________________________________________________________________________
 
 # ULA e AC
 
-A ULA é a parte do processador que realiza cálculos de lógica aritmética e lógicas. A ULA deste trabalho possui duas entradas de 8 bits, 1 seletor de 3 bits, 1 saída 8 bits e outra saída de 2 bits. Além disso, possui um component chamado Soma para que, dessa forma, esse bloco possa realizar a operação de adição. A ULA realiza quatro tipos de operação, para isso foi necessário fazer o uso da estrutura with select para codificar com 3 bits cada uma, o resultado foi armazenado em y. Ainda, existe uma saída chamada NZ para indicar se o número é positivo ou zero. 
+A ULA é a parte do processador que realiza cálculos de lógica aritmética e lógicas. A ULA deste trabalho possui duas entradas de 8 bits, 1 seletor de 3 bits, 1 saída 8 bits e outra saída de 2 bits. Além disso, possui um componente chamado Soma para que, dessa forma, esse bloco possa realizar a operação de adição. A ULA realiza quatro tipos de operação, para isso foi necessário fazer o uso da estrutura with select para codificar com 3 bits cada uma, o resultado foi armazenado em y. Ainda, existe uma saída chamada NZ para indicar se o número é positivo ou zero. 
 
 De forma simplifificada, a saída NZ conta com dois bits, dos quais o primeiro representa o caso de o número ser negativo e a segundo o caso do número ser zero. A lista a seguir indica as possibilidades de saída para NZ.
 
