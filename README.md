@@ -38,17 +38,19 @@ ________________________________________________________________________________
 
 
 O decodificador serve para receber um codigo recebido de *opcode* em uma instrução para a *Unidade de Controle (UC)*, tivemos uma entrada que se chama *instrução* que contém oito bits de memória, poque os quatros primeiros bits foram reservadas para memória de dados e os quatro últimos são reservados para as instruções que ativará as variáveis que contém na *UC*, que é o cérebro de todo o programa. Também temos uma saída que é um vetor de onze posições, onde cada posição correlaciona com uma variável da *UC*, sendo:
-1a: *NOP (nenhuma operação)*;
-2a: *STA (armazena acumulador)*;
-3a: *LDA (carrega o acumulador)*;
-4a: *ADD (soma)*;
-5a: *OR (ou lógico)*;
-6a: *AND (e lógico)*;
-7a: *NOT (inverte acumulador)*;
-8a: *JMP (desvio incondicional)*;
-9a: *JN (desvio condicional a negativo)*;
-10a: *JZ (desvio condicional ao zero)*;
-11a: *HLT (termina a execução)*.
+
+* 1a: *NOP (nenhuma operação)*;
+* 2a: *STA (armazena acumulador)*;
+* 3a: *LDA (carrega o acumulador)*;
+* 4a: *ADD (soma)*;
+* 5a: *OR (ou lógico)*;
+* 6a: *AND (e lógico)*;
+* 7a: *NOT (inverte acumulador)*;
+* 8a: *JMP (desvio incondicional)*;
+* 9a: *JN (desvio condicional a negativo)*;
+* 10a: *JZ (desvio condicional ao zero)*;
+* 11a: *HLT (termina a execução)*.
+
 Foi escolhido vetor, porque assim o código ficaria mais enxuto e não precisaria se preocupa quando zerar outras varivaeis que não será desejada o uso para ser processada em *UC*
 
 ________________________________________________________________________________________________
@@ -64,8 +66,8 @@ A saída só tem a E que é a memória que atualizará o Endereço de memória.
 
 Na architecture archPCcomJK, há o componente FlipFlopJK que foi implementado durante as aulas pelo professor, também tem um documento do flipflop nessa branch.
 Assim como foi desenvolvida a fórmula que será as entradas J e K do FlipFlop, sendo:
-J(I) <= (not(R(I)) and carga) or (incrementa and not(Carga) and not(soma_result(I)));
-K(I) <= (R(I) and carga) or (incrementa and not(carga) and soma_result(I));, onde R é um vetor de 8 bits, 
+* J(I) <= (not(R(I)) and carga) or (incrementa and not(Carga) and not(soma_result(I)));
+* K(I) <= (R(I) and carga) or (incrementa and not(carga) and soma_result(I));, onde R é um vetor de 8 bits, 
 por isso é necessário 8 flipflops, pois cada um só trabalha com um bit, o Q representa a saída do flipflop JK.
 
 ________________________________________________________________________________________________
