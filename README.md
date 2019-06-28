@@ -82,3 +82,12 @@ A AUL é a parte do processador que realiza cálculos de lógica aritmética e l
 * 11: don't care.
 
 AC é um registrador que acumulada uma determinada informação, ele recebe o resultado da unidade lógica aritmética (AUL), a qual realiza uma operação entre um valor do RDM e do AC. O resultado dessa operação fica acumulado no AC. No port, as estruturas principais que merecem destaque são: uma entrada chamada dado_ULA, que é um resultado da operação proveniente da AUL, e uma saída chamada saida_AC, que é um valor que estava armazenado proveniente da ULA, que pode ir para a memória ou de volta para ULA. No architecture archRegistrador8bits, há o componente FlipFlopJK, a qual foi utilizado para poder fazer um port map e, assim, poder ter os 8 bits de saída através de um conjunto de flip flops. Como são 8 bits, foi necessário utilizar a estrututa de for para simplificar código.
+
+________________________________________________________________________________________________
+
+# Multiplexador
+O multiplexador, neste trabalho, é um dispositivo que seleciona entre duas entradas de 8 bits, o endereco de memoria do PC ou o endereço de memória da RDM. Para isso, existe uma chave seletora que varia entre 0 ou 1. Ainda, existe uma saída de 8 bits que vai servir como entrada para o REM.
+
+________________________________________________________________________________________________
+
+# RDM
