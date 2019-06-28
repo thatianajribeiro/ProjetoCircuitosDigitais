@@ -59,16 +59,16 @@ ________________________________________________________________________________
 
 Há quatro entradas, sendo o *clk (clock)*; 
 o *R* representa o endereço de memória atual onde os digitos menos significativo (da posição 7 para 4) representa a instrução e os mais significativos (da posição 3 para 0) serve para dados recebidos pelo usuário;
-*carga* serve escolher o dado recebido da entrada *R* ou o valor que esteja "rodando" dentro do PC, sendo assim ele desabilita o incrementa;
-*incrementa* serva para para escolher entre o valor que esteja "rodando" dentro do PC ou se escolhe o valor incrementado por um somador.
+*carga* serve escolher o dado recebido da entrada *R* ou o valor que esteja "rodando" dentro do PC, sendo assim ele desabilita o *incrementa*;
+a variável *incrementa* serva para  escolher entre o valor que esteja "rodando" dentro do PC ou se escolhe o valor incrementado por um somador.
 
 A saída só tem a E que é a memória que atualizará o Endereço de memória.
 
 Na architecture archPCcomJK, há o componente FlipFlopJK que foi implementado durante as aulas pelo professor, também tem um documento do flipflop nessa branch.
 Assim como foi desenvolvida a fórmula que será as entradas J e K do FlipFlop, sendo:
 * J(I) <= (not(R(I)) and carga) or (incrementa and not(Carga) and not(soma_result(I)));
-* K(I) <= (R(I) and carga) or (incrementa and not(carga) and soma_result(I));, onde R é um vetor de 8 bits, 
-por isso é necessário 8 flipflops, pois cada um só trabalha com um bit, o Q representa a saída do flipflop JK.
+* K(I) <= (R(I) and carga) or (incrementa and not(carga) and soma_result(I));
+### onde R é um vetor de 8 bits, por isso é necessário 8 flipflops, pois cada um só trabalha com um bit, o Q representa a saída do flipflop JK.
 
 ________________________________________________________________________________________________
 
