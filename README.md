@@ -68,7 +68,7 @@ Na architecture archPCcomJK, há o componente FlipFlopJK que foi implementado du
 Assim como foi desenvolvida a fórmula que será as entradas J e K do FlipFlop, sendo:
 * J(I) <= (not(R(I)) and carga) or (incrementa and not(Carga) and not(soma_result(I)));
 * K(I) <= (R(I) and carga) or (incrementa and not(carga) and soma_result(I));
-### onde R é um vetor de 8 bits, por isso é necessário 8 flipflops, pois cada um só trabalha com um bit, o Q representa a saída do flipflop JK.
+#### onde R é um vetor de 8 bits, por isso é necessário 8 flipflops, pois cada um só trabalha com um bit, o Q representa a saída do flipflop JK.
 
 ________________________________________________________________________________________________
 
