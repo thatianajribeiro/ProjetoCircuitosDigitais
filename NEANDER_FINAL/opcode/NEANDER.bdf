@@ -46,6 +46,14 @@ applicable agreement for further details.
 	(block_io "carga" (input))
 	(block_io "incrementa" (input))
 	(block_io "E[7..0]" (output))
+	(mapper
+		(pt 168 48)
+		(bidir)
+		)
+	(mapper
+		(pt 0 64)
+		(bidir)
+		)
 )
 (block
 	(rect 1224 224 1432 384)
@@ -56,6 +64,10 @@ applicable agreement for further details.
 	(block_io "input_AC[7..0]" (input))
 	(block_io "input_Mem[7..0]" (input))
 	(block_io "endereco_out[7..0]" (output))
+	(mapper
+		(pt 0 72)
+		(bidir)
+		)
 )
 (block
 	(rect 984 32 1192 184)
@@ -65,11 +77,23 @@ applicable agreement for further details.
 	(block_io "preset" (input))
 	(block_io "endereco_in[7..0]" (input))
 	(block_io "endereco_out[7..0]" (output))
+	(mapper
+		(pt 0 72)
+		(bidir)
+		)
+	(mapper
+		(pt 208 72)
+		(bidir)
+		)
 )
 (block
-	(rect 928 504 1128 600)
+	(rect 928 520 1128 616)
 	(text "decodificador" (rect 5 5 71 17)(font "Arial" ))	(text "inst5" (rect 5 94 28 106)(font "Arial" ))	(block_io "instrucao[7..0]" (input))
 	(block_io "out_decod[10..0]" (output))
+	(mapper
+		(pt 96 0)
+		(bidir)
+		)
 )
 (block
 	(rect 792 48 928 168)
@@ -77,6 +101,18 @@ applicable agreement for further details.
 	(block_io "y[7..0]" (input))
 	(block_io "s" (input))
 	(block_io "z[7..0]" (output))
+	(mapper
+		(pt 0 64)
+		(bidir)
+		)
+	(mapper
+		(pt 136 56)
+		(bidir)
+		)
+	(mapper
+		(pt 0 104)
+		(bidir)
+		)
 )
 (block
 	(rect 384 408 568 544)
@@ -85,6 +121,18 @@ applicable agreement for further details.
 	(block_io "operacao[2..0]" (input))
 	(block_io "y[7..0]" (output))
 	(block_io "NZ[1..0]" (output))
+	(mapper
+		(pt 152 0)
+		(bidir)
+		)
+	(mapper
+		(pt 88 136)
+		(bidir)
+		)
+	(mapper
+		(pt 184 32)
+		(bidir)
+		)
 )
 (block
 	(rect 920 336 1128 488)
@@ -94,6 +142,10 @@ applicable agreement for further details.
 	(block_io "preset" (input))
 	(block_io "dado_RDM[7..0]" (input))
 	(block_io "operacao_out[7..0]" (output))
+	(mapper
+		(pt 104 152)
+		(bidir)
+		)
 )
 (block
 	(rect 1236 36 1420 172)
@@ -103,3 +155,132 @@ applicable agreement for further details.
 	(block_io "Dados[7..0]" (input))
 	(block_io "S[7..0]" (output))
 )
+(connector
+	(pt 1320 176)
+	(pt 1320 232)
+	(conduit)
+)
+(connector
+	(pt 1016 344)
+	(pt 1008 344)
+	(conduit)
+)
+(connector
+	(pt 1016 328)
+	(pt 536 328)
+	(conduit)
+)
+(connector
+	(pt 1016 296)
+	(pt 1016 328)
+	(conduit)
+)
+(connector
+	(pt 1016 328)
+	(pt 1016 344)
+	(conduit)
+)
+(connector
+	(pt 536 328)
+	(pt 536 408)
+	(conduit)
+)
+(connector
+	(pt 472 544)
+	(pt 472 680)
+	(conduit)
+)
+(connector
+	(pt 168 680)
+	(pt 472 680)
+	(conduit)
+)
+(connector
+	(pt 168 144)
+	(pt 168 680)
+	(conduit)
+)
+(connector
+	(pt 368 144)
+	(pt 168 144)
+	(conduit)
+)
+(connector
+	(pt 368 144)
+	(pt 368 216)
+	(conduit)
+)
+(connector
+	(pt 744 112)
+	(pt 792 112)
+	(conduit)
+)
+(connector
+	(pt 928 104)
+	(pt 984 104)
+	(conduit)
+)
+(connector
+	(pt 792 152)
+	(pt 768 152)
+	(conduit)
+)
+(connector
+	(pt 768 152)
+	(pt 768 296)
+	(conduit)
+)
+(connector
+	(pt 1016 296)
+	(pt 1224 296)
+	(conduit)
+)
+(connector
+	(pt 1192 104)
+	(pt 1240 104)
+	(conduit)
+)
+(connector
+	(pt 528 296)
+	(pt 528 128)
+	(conduit)
+)
+(connector
+	(pt 528 296)
+	(pt 768 296)
+	(conduit)
+)
+(connector
+	(pt 768 296)
+	(pt 1016 296)
+	(conduit)
+)
+(connector
+	(pt 528 128)
+	(pt 576 128)
+	(conduit)
+)
+(connector
+	(pt 568 440)
+	(pt 688 440)
+	(conduit)
+)
+(connector
+	(pt 688 432)
+	(pt 688 440)
+	(conduit)
+)
+(connector
+	(pt 688 440)
+	(pt 688 488)
+	(conduit)
+)
+(connector
+	(pt 1024 488)
+	(pt 1024 520)
+	(conduit)
+)
+(junction (pt 1016 328))
+(junction (pt 1016 296))
+(junction (pt 768 296))
+(junction (pt 688 440))

@@ -9,8 +9,8 @@ port(
 	preset : in std_logic;
 	input : in std_logic_vector(1 downto 0);
 	Output : out std_logic_vector(1 downto 0);
-	Output_bar : out std_logic_vector(1 downto 0);
-	Output_toCTRL: out std_logic
+	Output_bar : out std_logic_vector(1 downto 0)
+	--Output_toCTRL: out std_logic
 
 	);
 end RegNZ;
@@ -39,7 +39,7 @@ begin
 	
 	Output <= Qs;
 	Output_bar <= QsBar;
-	Output_toCTRL <= Qs(1) and not(Qs(0));
+	--Output_toCTRL <= Qs(1) and not(Qs(0));
 
 
 

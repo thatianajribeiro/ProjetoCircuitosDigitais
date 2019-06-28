@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity UnidadeControle is
+port(
+	Entrada: in std_logic_vector(10 downto 0);	-- saida do decodificador -> OPERACAO 
+	SaidaN: in std_logic;
+	SaidaZ: in std_logic;
+	CargaAC, CargaULA, CargaPC, IncrementaPC, Sel, CargaREM, r, w, cargaRDM, cargaOP, cargaNZ: out std_logic;
+
+);
+
+end UnidadeControle;
+
+architecture archUnidadeControle of UnidadeControle is
+
+
+
+begin
+
+
+
+end archUnidadeControle;

@@ -1,0 +1,59 @@
+--library ieee;
+--use ieee.std_logic_1164.all;
+--
+--entity UnidadeControle is
+--port(
+--	Entrada: in std_logic_vector(10 downto 0);	-- saida do decodificador -> OPERACAO 
+--	SaidaN: in std_logic;
+--	SaidaZ: in std_logic;
+--	Sel: out std_logic_vector(2 downto 0);
+--	cargaRDM: out std_logic_vector(1 downto 0);
+--	CargaAC, CargaULA, CargaPC, IncrementaPC, CargaREM, r, w, cargaOP, cargaN, cargaZ: out std_logic
+--
+--);
+--
+--end UnidadeControle;
+--
+--architecture archUnidadeControle of UnidadeControle is
+--
+--signal saida_combinacional: std_logic_vector(2 downto 0);
+--
+--component flipFlopJK is
+--port(
+--	J,K : in std_logic;
+--	clear, preset, load : in std_logic;
+--	clk : in std_logic;
+--	Q, Qbar: out std_logic
+--);
+--end component;
+--
+--
+--
+--begin
+--
+-- 
+--if (estado = '0' and entrada = '10000000000') --nop
+--	IncrementaPC = '1';
+--else
+--	IncrementaPC = '0';
+--	if (estado = '0' and entrada = '01000000000') -- sta
+--	estado = '1';
+--	
+--	
+--
+--WITH seletor SELECT
+--	estado <= MemInput when "00000000000", 
+--					ACinput when "01",
+--					"00000000" when others;
+--
+--
+--
+--	
+--				RFOR : for I in 0 to 7 generate
+--						FFN: flipFlopJK port map (not(Entrada(I)),Entrada(I),'1','1',load, clk, Qs(I), Qs_bar(I)); --clear e preset sempre estão setados em 1 devido a logica utilizada pelo professor em sala, mas nao necessariamente precisaria ser 1.
+--				end generate RFOR;
+--
+--	
+--
+--
+--end archUnidadeControle;
