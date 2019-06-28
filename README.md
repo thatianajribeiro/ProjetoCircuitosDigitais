@@ -102,7 +102,7 @@ Para obter essa saída, foi necessário fazer o uso de um conjunto de FlipFlops 
 ________________________________________________________________________________________________
 
 # RDM
-O RDM tem a função de armazenar o dado que vem da memória. No momento em que o endereço entra no REM, a memória libera o conteúdo na saída, esse conteúdo não entra automaticamente na RDM, ele entra a partir do momento que é dado um clock nele. As entradas Input_AC, resultado da operação da AUL, e InputMem, conteúdo que é passado da memória para o RDM, são entradas de oito bits.  Além disso, ele possui uma saída chamada endereco_out. Foi utilizado um multiplexador para considerar as alteração no load.
+O RDM tem a função de armazenar o dado que vem da memória. No momento em que o endereço entra no REM, a memória libera o conteúdo na saída, esse conteúdo não entra automaticamente na RDM, ele entra a partir do momento que é dado um clock nele. As entradas Input_AC, resultado da operação da AUL, e InputMem, conteúdo que é passado da memória para o RDM, são entradas de oito bits.  Além disso, ele possui uma saída chamada endereco_out. Foi utilizado um multiplexador para considerar as alteração no load com as seguinte configurações.
 * 00- carrega memoria;
 * 01- carrega AC;
 * 10- nada acontece;
