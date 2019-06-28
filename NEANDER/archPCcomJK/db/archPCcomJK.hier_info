@@ -1,0 +1,164 @@
+|RegPC
+clk => FlipFlopJK:RFOR:0:FFN.clk
+clk => FlipFlopJK:RFOR:1:FFN.clk
+clk => FlipFlopJK:RFOR:2:FFN.clk
+clk => FlipFlopJK:RFOR:3:FFN.clk
+R[0] => Kpc~0.IN0
+R[0] => Jpc~0.IN0
+R[1] => Kpc~3.IN0
+R[1] => Jpc~3.IN0
+R[2] => Kpc~6.IN0
+R[2] => Jpc~6.IN0
+R[3] => Kpc~9.IN0
+R[3] => Jpc~9.IN0
+R[4] => ~NO_FANOUT~
+R[5] => ~NO_FANOUT~
+R[6] => ~NO_FANOUT~
+R[7] => ~NO_FANOUT~
+carga => Jpc~0.IN1
+carga => Kpc~0.IN1
+carga => Jpc~3.IN1
+carga => Kpc~3.IN1
+carga => Jpc~6.IN1
+carga => Kpc~6.IN1
+carga => Jpc~9.IN1
+carga => Kpc~9.IN1
+carga => Jpc~1.IN0
+carga => Kpc~1.IN0
+carga => Jpc~4.IN0
+carga => Kpc~4.IN0
+carga => Jpc~7.IN0
+carga => Kpc~7.IN0
+carga => Jpc~10.IN0
+carga => Kpc~10.IN0
+incrementa => Jpc~1.IN1
+incrementa => Kpc~1.IN1
+incrementa => Jpc~4.IN1
+incrementa => Kpc~4.IN1
+incrementa => Jpc~7.IN1
+incrementa => Kpc~7.IN1
+incrementa => Jpc~10.IN1
+incrementa => Kpc~10.IN1
+E[0] <= FlipFlopJK:RFOR:0:FFN.Q
+E[1] <= FlipFlopJK:RFOR:1:FFN.Q
+E[2] <= FlipFlopJK:RFOR:2:FFN.Q
+E[3] <= FlipFlopJK:RFOR:3:FFN.Q
+E[4] <= <GND>
+E[5] <= <GND>
+E[6] <= <GND>
+E[7] <= <GND>
+
+
+|RegPC|soma2:somalabel
+A[0] => soma~0.IN0
+A[0] => c_out[0].IN0
+A[1] => soma~1.IN0
+A[1] => c_out~0.IN0
+A[1] => c_out~1.IN1
+A[2] => soma~3.IN0
+A[2] => c_out~4.IN0
+A[2] => c_out~5.IN1
+A[3] => soma~5.IN0
+A[3] => c_out~8.IN0
+A[3] => c_out~9.IN1
+A[4] => soma~7.IN0
+A[4] => c_out~12.IN0
+A[4] => c_out~13.IN1
+A[5] => soma~9.IN0
+A[5] => c_out~16.IN0
+A[5] => c_out~17.IN1
+A[6] => soma~11.IN0
+A[6] => c_out~20.IN0
+A[6] => c_out~21.IN1
+A[7] => soma~13.IN0
+B[0] => soma~0.IN1
+B[0] => c_out[0].IN1
+B[1] => soma~1.IN1
+B[1] => c_out~0.IN1
+B[1] => c_out~3.IN1
+B[2] => soma~3.IN1
+B[2] => c_out~4.IN1
+B[2] => c_out~7.IN1
+B[3] => soma~5.IN1
+B[3] => c_out~8.IN1
+B[3] => c_out~11.IN1
+B[4] => soma~7.IN1
+B[4] => c_out~12.IN1
+B[4] => c_out~15.IN1
+B[5] => soma~9.IN1
+B[5] => c_out~16.IN1
+B[5] => c_out~19.IN1
+B[6] => soma~11.IN1
+B[6] => c_out~20.IN1
+B[6] => c_out~23.IN1
+B[7] => soma~13.IN1
+soma[0] <= soma~0.DB_MAX_OUTPUT_PORT_TYPE
+soma[1] <= soma~2.DB_MAX_OUTPUT_PORT_TYPE
+soma[2] <= soma~4.DB_MAX_OUTPUT_PORT_TYPE
+soma[3] <= soma~6.DB_MAX_OUTPUT_PORT_TYPE
+soma[4] <= soma~8.DB_MAX_OUTPUT_PORT_TYPE
+soma[5] <= soma~10.DB_MAX_OUTPUT_PORT_TYPE
+soma[6] <= soma~12.DB_MAX_OUTPUT_PORT_TYPE
+soma[7] <= soma~14.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegPC|flipFlopJK:\RFOR:0:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegPC|flipFlopJK:\RFOR:1:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegPC|flipFlopJK:\RFOR:2:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegPC|flipFlopJK:\RFOR:3:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,43 @@
+|multiplexador
+x[0] => z~0.IN0
+x[1] => z~3.IN0
+x[2] => z~6.IN0
+x[3] => z~9.IN0
+x[4] => z~12.IN0
+x[5] => z~15.IN0
+x[6] => z~18.IN0
+x[7] => z~21.IN0
+y[0] => z~1.IN0
+y[1] => z~4.IN0
+y[2] => z~7.IN0
+y[3] => z~10.IN0
+y[4] => z~13.IN0
+y[5] => z~16.IN0
+y[6] => z~19.IN0
+y[7] => z~22.IN0
+s => z~1.IN1
+s => z~4.IN1
+s => z~7.IN1
+s => z~10.IN1
+s => z~13.IN1
+s => z~16.IN1
+s => z~19.IN1
+s => z~22.IN1
+s => z~21.IN1
+s => z~18.IN1
+s => z~15.IN1
+s => z~12.IN1
+s => z~9.IN1
+s => z~6.IN1
+s => z~3.IN1
+s => z~0.IN1
+z[0] <= z~2.DB_MAX_OUTPUT_PORT_TYPE
+z[1] <= z~5.DB_MAX_OUTPUT_PORT_TYPE
+z[2] <= z~8.DB_MAX_OUTPUT_PORT_TYPE
+z[3] <= z~11.DB_MAX_OUTPUT_PORT_TYPE
+z[4] <= z~14.DB_MAX_OUTPUT_PORT_TYPE
+z[5] <= z~17.DB_MAX_OUTPUT_PORT_TYPE
+z[6] <= z~20.DB_MAX_OUTPUT_PORT_TYPE
+z[7] <= z~23.DB_MAX_OUTPUT_PORT_TYPE
+
+

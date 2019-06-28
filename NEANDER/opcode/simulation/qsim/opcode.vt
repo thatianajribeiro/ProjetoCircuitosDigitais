@@ -1,0 +1,1208 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "06/27/2019 20:29:07"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    RegOpcode
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module RegOpcode_vlg_sample_tst(
+	clear,
+	clk,
+	dado_RDM,
+	load,
+	preset,
+	sampler_tx
+);
+input  clear;
+input  clk;
+input [7:0] dado_RDM;
+input  load;
+input  preset;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(clear or clk or dado_RDM or load or preset)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module RegOpcode_vlg_check_tst (
+	operacao_out,
+	sampler_rx
+);
+input [7:0] operacao_out;
+input sampler_rx;
+
+reg [7:0] operacao_out_expected;
+
+reg [7:0] operacao_out_prev;
+
+reg [7:0] operacao_out_expected_prev;
+
+reg [7:0] last_operacao_out_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:1] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 1'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	operacao_out_prev = operacao_out;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	operacao_out_expected_prev = operacao_out_expected;
+end
+
+
+// expected operacao_out[ 7 ]
+initial
+begin
+	operacao_out_expected[7] = 1'bX;
+end 
+// expected operacao_out[ 6 ]
+initial
+begin
+	operacao_out_expected[6] = 1'bX;
+end 
+// expected operacao_out[ 5 ]
+initial
+begin
+	operacao_out_expected[5] = 1'bX;
+end 
+// expected operacao_out[ 4 ]
+initial
+begin
+	operacao_out_expected[4] = 1'bX;
+end 
+// expected operacao_out[ 3 ]
+initial
+begin
+	operacao_out_expected[3] = 1'bX;
+end 
+// expected operacao_out[ 2 ]
+initial
+begin
+	operacao_out_expected[2] = 1'bX;
+end 
+// expected operacao_out[ 1 ]
+initial
+begin
+	operacao_out_expected[1] = 1'bX;
+end 
+// expected operacao_out[ 0 ]
+initial
+begin
+	operacao_out_expected[0] = 1'bX;
+end 
+// generate trigger
+always @(operacao_out_expected or operacao_out)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected operacao_out = %b | ",operacao_out_expected_prev);
+	$display("| real operacao_out = %b | ",operacao_out_prev);
+`endif
+	if (
+		( operacao_out_expected_prev[0] !== 1'bx ) && ( operacao_out_prev[0] !== operacao_out_expected_prev[0] )
+		&& ((operacao_out_expected_prev[0] !== last_operacao_out_exp[0]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port operacao_out[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", operacao_out_expected_prev);
+		$display ("     Real value = %b", operacao_out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_operacao_out_exp[0] = operacao_out_expected_prev[0];
+	end
+	if (
+		( operacao_out_expected_prev[1] !== 1'bx ) && ( operacao_out_prev[1] !== operacao_out_expected_prev[1] )
+		&& ((operacao_out_expected_prev[1] !== last_operacao_out_exp[1]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port operacao_out[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", operacao_out_expected_prev);
+		$display ("     Real value = %b", operacao_out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_operacao_out_exp[1] = operacao_out_expected_prev[1];
+	end
+	if (
+		( operacao_out_expected_prev[2] !== 1'bx ) && ( operacao_out_prev[2] !== operacao_out_expected_prev[2] )
+		&& ((operacao_out_expected_prev[2] !== last_operacao_out_exp[2]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port operacao_out[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", operacao_out_expected_prev);
+		$display ("     Real value = %b", operacao_out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_operacao_out_exp[2] = operacao_out_expected_prev[2];
+	end
+	if (
+		( operacao_out_expected_prev[3] !== 1'bx ) && ( operacao_out_prev[3] !== operacao_out_expected_prev[3] )
+		&& ((operacao_out_expected_prev[3] !== last_operacao_out_exp[3]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port operacao_out[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", operacao_out_expected_prev);
+		$display ("     Real value = %b", operacao_out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_operacao_out_exp[3] = operacao_out_expected_prev[3];
+	end
+	if (
+		( operacao_out_expected_prev[4] !== 1'bx ) && ( operacao_out_prev[4] !== operacao_out_expected_prev[4] )
+		&& ((operacao_out_expected_prev[4] !== last_operacao_out_exp[4]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port operacao_out[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", operacao_out_expected_prev);
+		$display ("     Real value = %b", operacao_out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_operacao_out_exp[4] = operacao_out_expected_prev[4];
+	end
+	if (
+		( operacao_out_expected_prev[5] !== 1'bx ) && ( operacao_out_prev[5] !== operacao_out_expected_prev[5] )
+		&& ((operacao_out_expected_prev[5] !== last_operacao_out_exp[5]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port operacao_out[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", operacao_out_expected_prev);
+		$display ("     Real value = %b", operacao_out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_operacao_out_exp[5] = operacao_out_expected_prev[5];
+	end
+	if (
+		( operacao_out_expected_prev[6] !== 1'bx ) && ( operacao_out_prev[6] !== operacao_out_expected_prev[6] )
+		&& ((operacao_out_expected_prev[6] !== last_operacao_out_exp[6]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port operacao_out[6] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", operacao_out_expected_prev);
+		$display ("     Real value = %b", operacao_out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_operacao_out_exp[6] = operacao_out_expected_prev[6];
+	end
+	if (
+		( operacao_out_expected_prev[7] !== 1'bx ) && ( operacao_out_prev[7] !== operacao_out_expected_prev[7] )
+		&& ((operacao_out_expected_prev[7] !== last_operacao_out_exp[7]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port operacao_out[7] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", operacao_out_expected_prev);
+		$display ("     Real value = %b", operacao_out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_operacao_out_exp[7] = operacao_out_expected_prev[7];
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module RegOpcode_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clear;
+reg clk;
+reg [7:0] dado_RDM;
+reg load;
+reg preset;
+// wires                                               
+wire [7:0] operacao_out;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+RegOpcode i1 (
+// port map - connection between master ports and signals/registers   
+	.clear(clear),
+	.clk(clk),
+	.dado_RDM(dado_RDM),
+	.load(load),
+	.operacao_out(operacao_out),
+	.preset(preset)
+);
+
+// clk
+initial
+begin
+	repeat(76)
+	begin
+		clk = 1'b0;
+		clk = #6500 1'b1;
+		# 6500;
+	end
+	clk = 1'b0;
+	clk = #6500 1'b1;
+end 
+
+// load
+initial
+begin
+	repeat(37)
+	begin
+		load = 1'b0;
+		load = #13500 1'b1;
+		# 13500;
+	end
+	load = 1'b0;
+end 
+// dado_RDM[ 7 ]
+initial
+begin
+	dado_RDM[7] = 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #5000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #15000 1'b1;
+	dado_RDM[7] = #15000 1'b0;
+	dado_RDM[7] = #5000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #10000 1'b1;
+	dado_RDM[7] = #10000 1'b0;
+	dado_RDM[7] = #20000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #5000 1'b1;
+	dado_RDM[7] = #10000 1'b0;
+	dado_RDM[7] = #10000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #30000 1'b1;
+	dado_RDM[7] = #15000 1'b0;
+	dado_RDM[7] = #10000 1'b1;
+	dado_RDM[7] = #25000 1'b0;
+	dado_RDM[7] = #5000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #10000 1'b1;
+	dado_RDM[7] = #15000 1'b0;
+	dado_RDM[7] = #15000 1'b1;
+	dado_RDM[7] = #15000 1'b0;
+	dado_RDM[7] = #15000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #10000 1'b1;
+	dado_RDM[7] = #15000 1'b0;
+	dado_RDM[7] = #5000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #20000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #20000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #10000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #5000 1'b1;
+	dado_RDM[7] = #10000 1'b0;
+	dado_RDM[7] = #5000 1'b1;
+	dado_RDM[7] = #15000 1'b0;
+	dado_RDM[7] = #5000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #15000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #15000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #15000 1'b1;
+	dado_RDM[7] = #10000 1'b0;
+	dado_RDM[7] = #50000 1'b1;
+	dado_RDM[7] = #10000 1'b0;
+	dado_RDM[7] = #10000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #10000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #15000 1'b1;
+	dado_RDM[7] = #10000 1'b0;
+	dado_RDM[7] = #5000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #10000 1'b1;
+	dado_RDM[7] = #20000 1'b0;
+	dado_RDM[7] = #5000 1'b1;
+	dado_RDM[7] = #10000 1'b0;
+	dado_RDM[7] = #5000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #5000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #15000 1'b1;
+	dado_RDM[7] = #10000 1'b0;
+	dado_RDM[7] = #5000 1'b1;
+	dado_RDM[7] = #10000 1'b0;
+	dado_RDM[7] = #20000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #15000 1'b1;
+	dado_RDM[7] = #15000 1'b0;
+	dado_RDM[7] = #10000 1'b1;
+	dado_RDM[7] = #10000 1'b0;
+	dado_RDM[7] = #5000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #10000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #5000 1'b1;
+	dado_RDM[7] = #15000 1'b0;
+	dado_RDM[7] = #5000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #15000 1'b1;
+	dado_RDM[7] = #15000 1'b0;
+	dado_RDM[7] = #20000 1'b1;
+	dado_RDM[7] = #20000 1'b0;
+	dado_RDM[7] = #30000 1'b1;
+	dado_RDM[7] = #5000 1'b0;
+	dado_RDM[7] = #10000 1'b1;
+	dado_RDM[7] = #10000 1'b0;
+	dado_RDM[7] = #5000 1'b1;
+end 
+// dado_RDM[ 6 ]
+initial
+begin
+	dado_RDM[6] = 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #10000 1'b1;
+	dado_RDM[6] = #20000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #10000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #10000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #15000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #15000 1'b1;
+	dado_RDM[6] = #10000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #10000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #10000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #20000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #10000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #10000 1'b0;
+	dado_RDM[6] = #10000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #10000 1'b1;
+	dado_RDM[6] = #20000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #10000 1'b0;
+	dado_RDM[6] = #25000 1'b1;
+	dado_RDM[6] = #10000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #10000 1'b0;
+	dado_RDM[6] = #15000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #20000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #20000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #10000 1'b1;
+	dado_RDM[6] = #15000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #10000 1'b0;
+	dado_RDM[6] = #20000 1'b1;
+	dado_RDM[6] = #15000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #10000 1'b1;
+	dado_RDM[6] = #20000 1'b0;
+	dado_RDM[6] = #10000 1'b1;
+	dado_RDM[6] = #20000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #15000 1'b1;
+	dado_RDM[6] = #10000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #15000 1'b0;
+	dado_RDM[6] = #35000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #15000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #25000 1'b0;
+	dado_RDM[6] = #20000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #10000 1'b0;
+	dado_RDM[6] = #10000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #10000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #15000 1'b1;
+	dado_RDM[6] = #10000 1'b0;
+	dado_RDM[6] = #20000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #10000 1'b1;
+	dado_RDM[6] = #10000 1'b0;
+	dado_RDM[6] = #10000 1'b1;
+	dado_RDM[6] = #15000 1'b0;
+	dado_RDM[6] = #5000 1'b1;
+	dado_RDM[6] = #5000 1'b0;
+	dado_RDM[6] = #10000 1'b1;
+end 
+// dado_RDM[ 5 ]
+initial
+begin
+	dado_RDM[5] = 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #10000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #10000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #15000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #10000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #10000 1'b1;
+	dado_RDM[5] = #10000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #15000 1'b0;
+	dado_RDM[5] = #10000 1'b1;
+	dado_RDM[5] = #10000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #10000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #10000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #15000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #15000 1'b0;
+	dado_RDM[5] = #10000 1'b1;
+	dado_RDM[5] = #10000 1'b0;
+	dado_RDM[5] = #10000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #10000 1'b1;
+	dado_RDM[5] = #15000 1'b0;
+	dado_RDM[5] = #10000 1'b1;
+	dado_RDM[5] = #35000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #15000 1'b0;
+	dado_RDM[5] = #15000 1'b1;
+	dado_RDM[5] = #10000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #15000 1'b0;
+	dado_RDM[5] = #10000 1'b1;
+	dado_RDM[5] = #40000 1'b0;
+	dado_RDM[5] = #10000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #30000 1'b1;
+	dado_RDM[5] = #15000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #15000 1'b0;
+	dado_RDM[5] = #25000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #10000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #15000 1'b0;
+	dado_RDM[5] = #15000 1'b1;
+	dado_RDM[5] = #10000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #15000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #15000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #25000 1'b0;
+	dado_RDM[5] = #10000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #20000 1'b1;
+	dado_RDM[5] = #10000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #10000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #20000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #10000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #5000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #20000 1'b1;
+	dado_RDM[5] = #5000 1'b0;
+	dado_RDM[5] = #15000 1'b1;
+	dado_RDM[5] = #15000 1'b0;
+	dado_RDM[5] = #15000 1'b1;
+end 
+// dado_RDM[ 4 ]
+initial
+begin
+	dado_RDM[4] = 1'b1;
+	dado_RDM[4] = #20000 1'b0;
+	dado_RDM[4] = #15000 1'b1;
+	dado_RDM[4] = #10000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+	dado_RDM[4] = #10000 1'b1;
+	dado_RDM[4] = #15000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #10000 1'b0;
+	dado_RDM[4] = #10000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+	dado_RDM[4] = #15000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #10000 1'b0;
+	dado_RDM[4] = #30000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #10000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #15000 1'b0;
+	dado_RDM[4] = #10000 1'b1;
+	dado_RDM[4] = #15000 1'b0;
+	dado_RDM[4] = #10000 1'b1;
+	dado_RDM[4] = #15000 1'b0;
+	dado_RDM[4] = #10000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #30000 1'b0;
+	dado_RDM[4] = #15000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+	dado_RDM[4] = #10000 1'b1;
+	dado_RDM[4] = #35000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #10000 1'b0;
+	dado_RDM[4] = #15000 1'b1;
+	dado_RDM[4] = #10000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #10000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+	dado_RDM[4] = #15000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #10000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #10000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #20000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #15000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+	dado_RDM[4] = #10000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #30000 1'b0;
+	dado_RDM[4] = #50000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #10000 1'b0;
+	dado_RDM[4] = #20000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+	dado_RDM[4] = #20000 1'b1;
+	dado_RDM[4] = #10000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #10000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #10000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #10000 1'b0;
+	dado_RDM[4] = #15000 1'b1;
+	dado_RDM[4] = #30000 1'b0;
+	dado_RDM[4] = #25000 1'b1;
+	dado_RDM[4] = #10000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+	dado_RDM[4] = #10000 1'b1;
+	dado_RDM[4] = #15000 1'b0;
+	dado_RDM[4] = #15000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+	dado_RDM[4] = #10000 1'b1;
+	dado_RDM[4] = #15000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #10000 1'b0;
+	dado_RDM[4] = #5000 1'b1;
+	dado_RDM[4] = #5000 1'b0;
+end 
+// dado_RDM[ 3 ]
+initial
+begin
+	dado_RDM[3] = 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #15000 1'b0;
+	dado_RDM[3] = #15000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #10000 1'b1;
+	dado_RDM[3] = #10000 1'b0;
+	dado_RDM[3] = #40000 1'b1;
+	dado_RDM[3] = #10000 1'b0;
+	dado_RDM[3] = #10000 1'b1;
+	dado_RDM[3] = #10000 1'b0;
+	dado_RDM[3] = #20000 1'b1;
+	dado_RDM[3] = #10000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #20000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #25000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #25000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #10000 1'b0;
+	dado_RDM[3] = #10000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #20000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #10000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #15000 1'b0;
+	dado_RDM[3] = #10000 1'b1;
+	dado_RDM[3] = #20000 1'b0;
+	dado_RDM[3] = #10000 1'b1;
+	dado_RDM[3] = #15000 1'b0;
+	dado_RDM[3] = #15000 1'b1;
+	dado_RDM[3] = #35000 1'b0;
+	dado_RDM[3] = #10000 1'b1;
+	dado_RDM[3] = #15000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #15000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #15000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #15000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #10000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #10000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #10000 1'b0;
+	dado_RDM[3] = #10000 1'b1;
+	dado_RDM[3] = #15000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #10000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #20000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #10000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #25000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #10000 1'b0;
+	dado_RDM[3] = #20000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #10000 1'b0;
+	dado_RDM[3] = #10000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #10000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #25000 1'b1;
+	dado_RDM[3] = #15000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #20000 1'b0;
+	dado_RDM[3] = #5000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #30000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+	dado_RDM[3] = #10000 1'b1;
+	dado_RDM[3] = #5000 1'b0;
+end 
+// dado_RDM[ 2 ]
+initial
+begin
+	dado_RDM[2] = 1'b0;
+	dado_RDM[2] = #10000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #20000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #10000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #20000 1'b1;
+	dado_RDM[2] = #15000 1'b0;
+	dado_RDM[2] = #10000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #10000 1'b1;
+	dado_RDM[2] = #10000 1'b0;
+	dado_RDM[2] = #10000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #10000 1'b1;
+	dado_RDM[2] = #10000 1'b0;
+	dado_RDM[2] = #10000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #10000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #10000 1'b0;
+	dado_RDM[2] = #10000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #15000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #10000 1'b1;
+	dado_RDM[2] = #10000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #15000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #10000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #15000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #20000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #20000 1'b1;
+	dado_RDM[2] = #15000 1'b0;
+	dado_RDM[2] = #15000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #20000 1'b1;
+	dado_RDM[2] = #15000 1'b0;
+	dado_RDM[2] = #40000 1'b1;
+	dado_RDM[2] = #10000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #10000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #10000 1'b0;
+	dado_RDM[2] = #10000 1'b1;
+	dado_RDM[2] = #15000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #25000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #20000 1'b1;
+	dado_RDM[2] = #15000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #15000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #10000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #10000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #15000 1'b1;
+	dado_RDM[2] = #15000 1'b0;
+	dado_RDM[2] = #30000 1'b1;
+	dado_RDM[2] = #10000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #10000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #15000 1'b0;
+	dado_RDM[2] = #10000 1'b1;
+	dado_RDM[2] = #15000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #10000 1'b1;
+	dado_RDM[2] = #10000 1'b0;
+	dado_RDM[2] = #10000 1'b1;
+	dado_RDM[2] = #10000 1'b0;
+	dado_RDM[2] = #10000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+	dado_RDM[2] = #5000 1'b1;
+	dado_RDM[2] = #5000 1'b0;
+end 
+// dado_RDM[ 1 ]
+initial
+begin
+	dado_RDM[1] = 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #10000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #25000 1'b0;
+	dado_RDM[1] = #10000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #15000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #25000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #10000 1'b0;
+	dado_RDM[1] = #10000 1'b1;
+	dado_RDM[1] = #15000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #30000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #10000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #25000 1'b0;
+	dado_RDM[1] = #20000 1'b1;
+	dado_RDM[1] = #10000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #15000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #10000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #10000 1'b1;
+	dado_RDM[1] = #10000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #10000 1'b1;
+	dado_RDM[1] = #15000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #20000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #15000 1'b1;
+	dado_RDM[1] = #10000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #15000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #15000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #10000 1'b1;
+	dado_RDM[1] = #10000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #25000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #30000 1'b0;
+	dado_RDM[1] = #10000 1'b1;
+	dado_RDM[1] = #20000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #10000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #10000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #15000 1'b0;
+	dado_RDM[1] = #15000 1'b1;
+	dado_RDM[1] = #10000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #10000 1'b0;
+	dado_RDM[1] = #10000 1'b1;
+	dado_RDM[1] = #35000 1'b0;
+	dado_RDM[1] = #10000 1'b1;
+	dado_RDM[1] = #15000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #10000 1'b1;
+	dado_RDM[1] = #35000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #10000 1'b0;
+	dado_RDM[1] = #10000 1'b1;
+	dado_RDM[1] = #15000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #5000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #10000 1'b1;
+	dado_RDM[1] = #5000 1'b0;
+	dado_RDM[1] = #10000 1'b1;
+end 
+// dado_RDM[ 0 ]
+initial
+begin
+	dado_RDM[0] = 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #15000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #20000 1'b0;
+	dado_RDM[0] = #15000 1'b1;
+	dado_RDM[0] = #35000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #15000 1'b1;
+	dado_RDM[0] = #10000 1'b0;
+	dado_RDM[0] = #15000 1'b1;
+	dado_RDM[0] = #15000 1'b0;
+	dado_RDM[0] = #15000 1'b1;
+	dado_RDM[0] = #20000 1'b0;
+	dado_RDM[0] = #10000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #10000 1'b0;
+	dado_RDM[0] = #30000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #10000 1'b1;
+	dado_RDM[0] = #25000 1'b0;
+	dado_RDM[0] = #30000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #10000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #10000 1'b1;
+	dado_RDM[0] = #10000 1'b0;
+	dado_RDM[0] = #20000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #10000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #10000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #10000 1'b0;
+	dado_RDM[0] = #15000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #15000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #20000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #25000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #10000 1'b0;
+	dado_RDM[0] = #10000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #10000 1'b1;
+	dado_RDM[0] = #10000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #15000 1'b0;
+	dado_RDM[0] = #15000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #20000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #10000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #10000 1'b1;
+	dado_RDM[0] = #10000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #20000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #10000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #10000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #20000 1'b0;
+	dado_RDM[0] = #30000 1'b1;
+	dado_RDM[0] = #15000 1'b0;
+	dado_RDM[0] = #10000 1'b1;
+	dado_RDM[0] = #5000 1'b0;
+	dado_RDM[0] = #5000 1'b1;
+	dado_RDM[0] = #20000 1'b0;
+	dado_RDM[0] = #20000 1'b1;
+	dado_RDM[0] = #10000 1'b0;
+	dado_RDM[0] = #10000 1'b1;
+end 
+
+// clear
+initial
+begin
+	clear = 1'b0;
+end 
+
+// preset
+initial
+begin
+	preset = 1'b0;
+end 
+
+RegOpcode_vlg_sample_tst tb_sample (
+	.clear(clear),
+	.clk(clk),
+	.dado_RDM(dado_RDM),
+	.load(load),
+	.preset(preset),
+	.sampler_tx(sampler)
+);
+
+RegOpcode_vlg_check_tst tb_out(
+	.operacao_out(operacao_out),
+	.sampler_rx(sampler)
+);
+endmodule
+
