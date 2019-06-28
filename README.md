@@ -90,4 +90,12 @@ O multiplexador, neste trabalho, é um dispositivo que seleciona entre duas entr
 
 ________________________________________________________________________________________________
 
+# REM
+REM tem a função de endereçar  a memória. Ele possui dois ports principais: endereco_in que é endereço de memória de 8 bits proveniente do multiplexador, e a saída endereco_out de 8 bits, que é o endereco de memória que vai acionar determinada célula de memória.
+
+Para obter essa saída, foi necessário fazer o uso de um conjunto de flipflops JK, então foi usado o FlipFlop JK como component e  elaborado um laço com o for no port map. Como resultado, foi obtido um uma saída de oito bits no formato XXXX YYYY em que XXXX se refere a operação a ser realizada e Y é o endereço de memória. As 4 primeiras posições da saída foram preencidas com 0 e as quatro restantes com 4 últimas com o endereço de memória.
+
+________________________________________________________________________________________________
+
 # RDM
+O RDM tem a função de armazenar o dado que vem da memória. No momento o endereço entra o REM, a memória libera o conteúdo na saída, esse conteúdo não entra automaticamente na RDM, ele entra a partir do momento que é dado um clock nele. 
