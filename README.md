@@ -77,4 +77,4 @@ ________________________________________________________________________________
 
 AC é um registrador que acumulada uma determinada informação, ele recebe o resultado da unidade lógica aritmética (AUL), a qual realiza uma operação entre um valor do RDM e do AC e o resultado dessa operação ficar acumulado AC.
 
-O AC
+No architecture archRegistrador8bits, há o componente FlipFlopJK, a qual foi utilizado para poder fazer um port map e, assim, poder os 8 bits de saída em um conjunto de flip flops.
