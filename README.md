@@ -75,6 +75,10 @@ ________________________________________________________________________________
 
 # AUL e AC
 
-A AUL é a parte do processador que realiza cálculos de lógica aritmética e lógicas. A AUL deste trabalho possui duas entradas de 8 bits, 1 seletor de 3 bits, 1 saída 8 bits e outra saída de 2 bits. Além disso, possui um component chamado Soma. A AUL realiza quatro tipos de operação, para isso foi necessário fazer o uso da estrutura with select para codificar com 3 bits cada uma, o resultado foi armazenado em y. Ainda, existe uma saída chamada NZ para indicar se o número é positivo ou zero.
+A AUL é a parte do processador que realiza cálculos de lógica aritmética e lógicas. A AUL deste trabalho possui duas entradas de 8 bits, 1 seletor de 3 bits, 1 saída 8 bits e outra saída de 2 bits. Além disso, possui um component chamado Soma para que, dessa forma, esse bloco possa realizar a operação de adição. A AUL realiza quatro tipos de operação, para isso foi necessário fazer o uso da estrutura with select para codificar com 3 bits cada uma, o resultado foi armazenado em y. Ainda, existe uma saída chamada NZ para indicar se o número é positivo ou zero. A lista a seguir indica as possibilidades de saída para NZ.
+* 00: número não é negativo, nem 0;
+* 01: número não é negativo e é 0;
+* 10: número é negativo e não é zero;
+* 11: número é negativo e é zero.
 
 AC é um registrador que acumulada uma determinada informação, ele recebe o resultado da unidade lógica aritmética (AUL), a qual realiza uma operação entre um valor do RDM e do AC. O resultado dessa operação fica acumulado no AC. No port, as estruturas principais que merecem destaque são: uma entrada chamada dado_ULA, que é um resultado da operação proveniente da AUL, e uma saída chamada saida_AC, que é um valor que estava armazenado proveniente da ULA, que pode ir para a memória ou de volta para ULA. No architecture archRegistrador8bits, há o componente FlipFlopJK, a qual foi utilizado para poder fazer um port map e, assim, poder ter os 8 bits de saída através de um conjunto de flip flops. Como são 8 bits, foi necessário utilizar a estrututa de for para simplificar código.
