@@ -172,16 +172,6 @@ SIGNAL("preset")
 	PARENT = "";
 }
 
-SIGNAL("seletor")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
 TRANSITION_LIST("clear")
 {
 	NODE
@@ -592,15 +582,6 @@ TRANSITION_LIST("preset")
 	}
 }
 
-TRANSITION_LIST("seletor")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
 DISPLAY_LINE
 {
 	CHANNEL = "clk";
@@ -729,19 +710,10 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "seletor";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 13;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
 	CHANNEL = "clear";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 14;
+	TREE_INDEX = 13;
 	TREE_LEVEL = 0;
 }
 

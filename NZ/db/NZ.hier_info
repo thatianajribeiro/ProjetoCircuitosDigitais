@@ -13,19 +13,19 @@ Output[0] <= flipFlopJK:FF0.Q
 Output[1] <= flipFlopJK:FF1.Q
 Output_bar[0] <= flipFlopJK:FF0.Qbar
 Output_bar[1] <= flipFlopJK:FF1.Qbar
-Output_toCTRL <= Output_toCTRL.DB_MAX_OUTPUT_PORT_TYPE
+Output_toCTRL <= Output_toCTRL~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Reg2bits|flipFlopJK:FF0
-J => process_0.IN0
-J => process_0.IN0
-J => process_0.IN0
-K => process_0.IN1
-K => process_0.IN1
-K => process_0.IN1
-clear => qsignal.IN0
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
 clear => qsignal.ACLR
-preset => qsignal.IN1
+preset => qsignal~3.IN1
 load => qsignal.ENA
 clk => qsignal.CLK
 Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
@@ -33,15 +33,15 @@ Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Reg2bits|flipFlopJK:FF1
-J => process_0.IN0
-J => process_0.IN0
-J => process_0.IN0
-K => process_0.IN1
-K => process_0.IN1
-K => process_0.IN1
-clear => qsignal.IN0
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
 clear => qsignal.ACLR
-preset => qsignal.IN1
+preset => qsignal~3.IN1
 load => qsignal.ENA
 clk => qsignal.CLK
 Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
