@@ -73,15 +73,21 @@ por isso é necessário 8 flipflops, pois cada um só trabalha com um bit, o Q r
 
 ________________________________________________________________________________________________
 
-# AUL e AC
+# ULA e AC
 
-A AUL é a parte do processador que realiza cálculos de lógica aritmética e lógicas. A AUL deste trabalho possui duas entradas de 8 bits, 1 seletor de 3 bits, 1 saída 8 bits e outra saída de 2 bits. Além disso, possui um component chamado Soma para que, dessa forma, esse bloco possa realizar a operação de adição. A AUL realiza quatro tipos de operação, para isso foi necessário fazer o uso da estrutura with select para codificar com 3 bits cada uma, o resultado foi armazenado em y. Ainda, existe uma saída chamada NZ para indicar se o número é positivo ou zero. A lista a seguir indica as possibilidades de saída para NZ.
+A ULA é a parte do processador que realiza cálculos de lógica aritmética e lógicas. A ULA deste trabalho possui duas entradas de 8 bits, 1 seletor de 3 bits, 1 saída 8 bits e outra saída de 2 bits. Além disso, possui um component chamado Soma para que, dessa forma, esse bloco possa realizar a operação de adição. A ULA realiza quatro tipos de operação, para isso foi necessário fazer o uso da estrutura with select para codificar com 3 bits cada uma, o resultado foi armazenado em y. Ainda, existe uma saída chamada NZ para indicar se o número é positivo ou zero. 
+
+De forma simplifificada, a saída NZ conta com dois bits, dos quais o primeiro representa o caso de o número ser negativo e a segundo o caso do número ser zero. A lista a seguir indica as possibilidades de saída para NZ.
+
 * 00: número não é negativo, nem 0;
 * 01: número não é negativo e é 0;
 * 10: número é negativo e não é zero;
 * 11: don't care.
 
-AC é um registrador que acumulada uma determinada informação, ele recebe o resultado da unidade lógica aritmética (AUL), a qual realiza uma operação entre um valor do RDM e do AC. O resultado dessa operação fica acumulado no AC. No port, as estruturas principais que merecem destaque são: uma entrada chamada dado_ULA, que é um resultado da operação proveniente da AUL, e uma saída chamada saida_AC, que é um valor que estava armazenado proveniente da ULA, que pode ir para a memória ou de volta para ULA. No architecture archRegistrador8bits, há o componente FlipFlopJK, a qual foi utilizado para poder fazer um port map e, assim, poder ter os 8 bits de saída através de um conjunto de flip flops. Como são 8 bits, foi necessário utilizar a estrututa de for para simplificar código.
+Para implementar a identificação de resultados negativos de maneira bem simples, basta realizar uma operação lógica AND entre o bit mais significativo do sinal que guarda o resultado da soma e um bit de valor 1. O resultado da operação lógica fica guardado no primeiro bit de NZ.
+Já para idenficar se o resultado da soma é zero, demanda um pouco mais de complexidade. Foi necessário separar o sinal que guarda o valor da soma e compará-lo bit a bit utilizando uma porta lógica XNOR com um sinal auxiliar que guarda um bit 0. Vale lembrar que a porta XNOR retorna o valor 1 sempre que as entradas forem iguais. Depois da comparação, somente foi necessário fazer uma operação AND entre todas as operações de XNOR com todos os bits e o sinal auxiliar de maneira a agregar todo o resultado no segundo bit da saída NZ.
+
+AC é um registrador que acumulada uma determinada informação, ele recebe o resultado da unidade lógica aritmética (ULA), a qual realiza uma operação entre um valor do RDM e do AC. O resultado dessa operação fica acumulado no AC. No port, as estruturas principais que merecem destaque são: uma entrada chamada dado_ULA, que é um resultado da operação proveniente da ULA, e uma saída chamada saida_AC, que é um valor que estava armazenado proveniente da ULA, que pode ir para a memória ou de volta para ULA. No architecture archRegistrador8bits, há o componente FlipFlopJK, a qual foi utilizado para poder fazer um port map e, assim, poder ter os 8 bits de saída através de um conjunto de flip flops. Como são 8 bits, foi necessário utilizar a estrututa de for para simplificar código.
 
 ________________________________________________________________________________________________
 
@@ -90,12 +96,4 @@ O multiplexador, neste trabalho, é um dispositivo que seleciona entre duas entr
 
 ________________________________________________________________________________________________
 
-# REM
-REM tem a função de endereçar  a memória. Ele possui dois ports principais: endereco_in que é endereço de memória de 8 bits proveniente do multiplexador, e a saída endereco_out de 8 bits, que é o endereco de memória que vai acionar determinada célula de memória.
-
-Para obter essa saída, foi necessário fazer o uso de um conjunto de FlipFlops JK, então foi usado o FlipFlop JK como component e  elaborado um laço com o for no port map. Como resultado, foi obtido um uma saída de oito bits no formato XXXX YYYY em que XXXX se refere a operação a ser realizada e Y é o endereço de memória. As 4 primeiras posições da saída foram preencidas com 0 e as quatro restantes com 4 últimas com o endereço de memória.
-
-________________________________________________________________________________________________
-
 # RDM
-O RDM tem a função de armazenar o dado que vem da memória. No momento em que o endereço entra no REM, a memória libera o conteúdo na saída, esse conteúdo não entra automaticamente na RDM, ele entra a partir do momento que é dado um clock nele. 
