@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jun 27 21:01:04 2019
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Revision Name : archPCcomJK
+Top-level Entity Name : RegPC
+Family : Cyclone II
+Total logic elements : 7
+    Total combinational functions : 7
+    Dedicated logic registers : 4
+Total registers : 4
+Total pins : 19
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

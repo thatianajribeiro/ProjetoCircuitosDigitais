@@ -1,0 +1,50 @@
+|RegNZ
+clk => flipFlopJK:FF0.clk
+clk => flipFlopJK:FF1.clk
+clear => ~NO_FANOUT~
+load => flipFlopJK:FF0.load
+load => flipFlopJK:FF1.load
+preset => ~NO_FANOUT~
+input[0] => flipFlopJK:FF0.K
+input[0] => flipFlopJK:FF0.J
+input[1] => flipFlopJK:FF1.K
+input[1] => flipFlopJK:FF1.J
+Output[0] <= flipFlopJK:FF0.Q
+Output[1] <= flipFlopJK:FF1.Q
+Output_bar[0] <= flipFlopJK:FF0.Qbar
+Output_bar[1] <= flipFlopJK:FF1.Qbar
+Output_toCTRL <= Output_toCTRL~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegNZ|flipFlopJK:FF0
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+load => qsignal.ENA
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegNZ|flipFlopJK:FF1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+load => qsignal.ENA
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
