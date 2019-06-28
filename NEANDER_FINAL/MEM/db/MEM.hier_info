@@ -1,0 +1,3231 @@
+|memoria
+rw => celula:CEL00.rw
+rw => celula:CEL01.rw
+rw => celula:CEL02.rw
+rw => celula:CEL03.rw
+rw => celula:CEL04.rw
+rw => celula:CEL05.rw
+rw => celula:CEL06.rw
+rw => celula:CEL07.rw
+rw => celula:CEL08.rw
+rw => celula:CEL09.rw
+rw => celula:CEL10.rw
+rw => celula:CEL11.rw
+rw => celula:CEL12.rw
+rw => celula:CEL13.rw
+rw => celula:CEL14.rw
+rw => celula:CEL15.rw
+clk => celula:CEL00.clk
+clk => celula:CEL01.clk
+clk => celula:CEL02.clk
+clk => celula:CEL03.clk
+clk => celula:CEL04.clk
+clk => celula:CEL05.clk
+clk => celula:CEL06.clk
+clk => celula:CEL07.clk
+clk => celula:CEL08.clk
+clk => celula:CEL09.clk
+clk => celula:CEL10.clk
+clk => celula:CEL11.clk
+clk => celula:CEL12.clk
+clk => celula:CEL13.clk
+clk => celula:CEL14.clk
+clk => celula:CEL15.clk
+rem_end[0] => celula:CEL00.T[0]
+rem_end[0] => celula:CEL01.T[0]
+rem_end[0] => celula:CEL02.T[0]
+rem_end[0] => celula:CEL03.T[0]
+rem_end[0] => celula:CEL04.T[0]
+rem_end[0] => celula:CEL05.T[0]
+rem_end[0] => celula:CEL06.T[0]
+rem_end[0] => celula:CEL07.T[0]
+rem_end[0] => celula:CEL08.T[0]
+rem_end[0] => celula:CEL09.T[0]
+rem_end[0] => celula:CEL10.T[0]
+rem_end[0] => celula:CEL11.T[0]
+rem_end[0] => celula:CEL12.T[0]
+rem_end[0] => celula:CEL13.T[0]
+rem_end[0] => celula:CEL14.T[0]
+rem_end[0] => celula:CEL15.T[0]
+rem_end[1] => celula:CEL00.T[1]
+rem_end[1] => celula:CEL01.T[1]
+rem_end[1] => celula:CEL02.T[1]
+rem_end[1] => celula:CEL03.T[1]
+rem_end[1] => celula:CEL04.T[1]
+rem_end[1] => celula:CEL05.T[1]
+rem_end[1] => celula:CEL06.T[1]
+rem_end[1] => celula:CEL07.T[1]
+rem_end[1] => celula:CEL08.T[1]
+rem_end[1] => celula:CEL09.T[1]
+rem_end[1] => celula:CEL10.T[1]
+rem_end[1] => celula:CEL11.T[1]
+rem_end[1] => celula:CEL12.T[1]
+rem_end[1] => celula:CEL13.T[1]
+rem_end[1] => celula:CEL14.T[1]
+rem_end[1] => celula:CEL15.T[1]
+rem_end[2] => celula:CEL00.T[2]
+rem_end[2] => celula:CEL01.T[2]
+rem_end[2] => celula:CEL02.T[2]
+rem_end[2] => celula:CEL03.T[2]
+rem_end[2] => celula:CEL04.T[2]
+rem_end[2] => celula:CEL05.T[2]
+rem_end[2] => celula:CEL06.T[2]
+rem_end[2] => celula:CEL07.T[2]
+rem_end[2] => celula:CEL08.T[2]
+rem_end[2] => celula:CEL09.T[2]
+rem_end[2] => celula:CEL10.T[2]
+rem_end[2] => celula:CEL11.T[2]
+rem_end[2] => celula:CEL12.T[2]
+rem_end[2] => celula:CEL13.T[2]
+rem_end[2] => celula:CEL14.T[2]
+rem_end[2] => celula:CEL15.T[2]
+rem_end[3] => celula:CEL00.T[3]
+rem_end[3] => celula:CEL01.T[3]
+rem_end[3] => celula:CEL02.T[3]
+rem_end[3] => celula:CEL03.T[3]
+rem_end[3] => celula:CEL04.T[3]
+rem_end[3] => celula:CEL05.T[3]
+rem_end[3] => celula:CEL06.T[3]
+rem_end[3] => celula:CEL07.T[3]
+rem_end[3] => celula:CEL08.T[3]
+rem_end[3] => celula:CEL09.T[3]
+rem_end[3] => celula:CEL10.T[3]
+rem_end[3] => celula:CEL11.T[3]
+rem_end[3] => celula:CEL12.T[3]
+rem_end[3] => celula:CEL13.T[3]
+rem_end[3] => celula:CEL14.T[3]
+rem_end[3] => celula:CEL15.T[3]
+rem_end[4] => ~NO_FANOUT~
+rem_end[5] => ~NO_FANOUT~
+rem_end[6] => ~NO_FANOUT~
+rem_end[7] => ~NO_FANOUT~
+Dados[0] => celula:CEL00.E[0]
+Dados[0] => celula:CEL01.E[0]
+Dados[0] => celula:CEL02.E[0]
+Dados[0] => celula:CEL03.E[0]
+Dados[0] => celula:CEL04.E[0]
+Dados[0] => celula:CEL05.E[0]
+Dados[0] => celula:CEL06.E[0]
+Dados[0] => celula:CEL07.E[0]
+Dados[0] => celula:CEL08.E[0]
+Dados[0] => celula:CEL09.E[0]
+Dados[0] => celula:CEL10.E[0]
+Dados[0] => celula:CEL11.E[0]
+Dados[0] => celula:CEL12.E[0]
+Dados[0] => celula:CEL13.E[0]
+Dados[0] => celula:CEL14.E[0]
+Dados[0] => celula:CEL15.E[0]
+Dados[1] => celula:CEL00.E[1]
+Dados[1] => celula:CEL01.E[1]
+Dados[1] => celula:CEL02.E[1]
+Dados[1] => celula:CEL03.E[1]
+Dados[1] => celula:CEL04.E[1]
+Dados[1] => celula:CEL05.E[1]
+Dados[1] => celula:CEL06.E[1]
+Dados[1] => celula:CEL07.E[1]
+Dados[1] => celula:CEL08.E[1]
+Dados[1] => celula:CEL09.E[1]
+Dados[1] => celula:CEL10.E[1]
+Dados[1] => celula:CEL11.E[1]
+Dados[1] => celula:CEL12.E[1]
+Dados[1] => celula:CEL13.E[1]
+Dados[1] => celula:CEL14.E[1]
+Dados[1] => celula:CEL15.E[1]
+Dados[2] => celula:CEL00.E[2]
+Dados[2] => celula:CEL01.E[2]
+Dados[2] => celula:CEL02.E[2]
+Dados[2] => celula:CEL03.E[2]
+Dados[2] => celula:CEL04.E[2]
+Dados[2] => celula:CEL05.E[2]
+Dados[2] => celula:CEL06.E[2]
+Dados[2] => celula:CEL07.E[2]
+Dados[2] => celula:CEL08.E[2]
+Dados[2] => celula:CEL09.E[2]
+Dados[2] => celula:CEL10.E[2]
+Dados[2] => celula:CEL11.E[2]
+Dados[2] => celula:CEL12.E[2]
+Dados[2] => celula:CEL13.E[2]
+Dados[2] => celula:CEL14.E[2]
+Dados[2] => celula:CEL15.E[2]
+Dados[3] => celula:CEL00.E[3]
+Dados[3] => celula:CEL01.E[3]
+Dados[3] => celula:CEL02.E[3]
+Dados[3] => celula:CEL03.E[3]
+Dados[3] => celula:CEL04.E[3]
+Dados[3] => celula:CEL05.E[3]
+Dados[3] => celula:CEL06.E[3]
+Dados[3] => celula:CEL07.E[3]
+Dados[3] => celula:CEL08.E[3]
+Dados[3] => celula:CEL09.E[3]
+Dados[3] => celula:CEL10.E[3]
+Dados[3] => celula:CEL11.E[3]
+Dados[3] => celula:CEL12.E[3]
+Dados[3] => celula:CEL13.E[3]
+Dados[3] => celula:CEL14.E[3]
+Dados[3] => celula:CEL15.E[3]
+Dados[4] => celula:CEL00.E[4]
+Dados[4] => celula:CEL01.E[4]
+Dados[4] => celula:CEL02.E[4]
+Dados[4] => celula:CEL03.E[4]
+Dados[4] => celula:CEL04.E[4]
+Dados[4] => celula:CEL05.E[4]
+Dados[4] => celula:CEL06.E[4]
+Dados[4] => celula:CEL07.E[4]
+Dados[4] => celula:CEL08.E[4]
+Dados[4] => celula:CEL09.E[4]
+Dados[4] => celula:CEL10.E[4]
+Dados[4] => celula:CEL11.E[4]
+Dados[4] => celula:CEL12.E[4]
+Dados[4] => celula:CEL13.E[4]
+Dados[4] => celula:CEL14.E[4]
+Dados[4] => celula:CEL15.E[4]
+Dados[5] => celula:CEL00.E[5]
+Dados[5] => celula:CEL01.E[5]
+Dados[5] => celula:CEL02.E[5]
+Dados[5] => celula:CEL03.E[5]
+Dados[5] => celula:CEL04.E[5]
+Dados[5] => celula:CEL05.E[5]
+Dados[5] => celula:CEL06.E[5]
+Dados[5] => celula:CEL07.E[5]
+Dados[5] => celula:CEL08.E[5]
+Dados[5] => celula:CEL09.E[5]
+Dados[5] => celula:CEL10.E[5]
+Dados[5] => celula:CEL11.E[5]
+Dados[5] => celula:CEL12.E[5]
+Dados[5] => celula:CEL13.E[5]
+Dados[5] => celula:CEL14.E[5]
+Dados[5] => celula:CEL15.E[5]
+Dados[6] => celula:CEL00.E[6]
+Dados[6] => celula:CEL01.E[6]
+Dados[6] => celula:CEL02.E[6]
+Dados[6] => celula:CEL03.E[6]
+Dados[6] => celula:CEL04.E[6]
+Dados[6] => celula:CEL05.E[6]
+Dados[6] => celula:CEL06.E[6]
+Dados[6] => celula:CEL07.E[6]
+Dados[6] => celula:CEL08.E[6]
+Dados[6] => celula:CEL09.E[6]
+Dados[6] => celula:CEL10.E[6]
+Dados[6] => celula:CEL11.E[6]
+Dados[6] => celula:CEL12.E[6]
+Dados[6] => celula:CEL13.E[6]
+Dados[6] => celula:CEL14.E[6]
+Dados[6] => celula:CEL15.E[6]
+Dados[7] => celula:CEL00.E[7]
+Dados[7] => celula:CEL01.E[7]
+Dados[7] => celula:CEL02.E[7]
+Dados[7] => celula:CEL03.E[7]
+Dados[7] => celula:CEL04.E[7]
+Dados[7] => celula:CEL05.E[7]
+Dados[7] => celula:CEL06.E[7]
+Dados[7] => celula:CEL07.E[7]
+Dados[7] => celula:CEL08.E[7]
+Dados[7] => celula:CEL09.E[7]
+Dados[7] => celula:CEL10.E[7]
+Dados[7] => celula:CEL11.E[7]
+Dados[7] => celula:CEL12.E[7]
+Dados[7] => celula:CEL13.E[7]
+Dados[7] => celula:CEL14.E[7]
+Dados[7] => celula:CEL15.E[7]
+S[0] <= S~112.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~113.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~114.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~115.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S~116.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S~117.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S~118.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S~119.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL00
+clk => FOR01~2.IN0
+clk => FOR01~5.IN0
+clk => FOR01~8.IN0
+clk => FOR01~11.IN0
+clk => FOR01~14.IN0
+clk => FOR01~17.IN0
+clk => FOR01~20.IN0
+clk => FOR01~23.IN0
+rw => FOR01~2.IN1
+rw => FOR01~5.IN1
+rw => FOR01~8.IN1
+rw => FOR01~11.IN1
+rw => FOR01~14.IN1
+rw => FOR01~17.IN1
+rw => FOR01~20.IN1
+rw => FOR01~23.IN1
+rw => S~14.IN1
+rw => S~12.IN1
+rw => S~10.IN1
+rw => S~8.IN1
+rw => S~6.IN1
+rw => S~4.IN1
+rw => S~2.IN1
+rw => S~0.IN1
+E[0] => FOR01~1.IN1
+E[0] => FOR01~0.IN1
+E[1] => FOR01~4.IN1
+E[1] => FOR01~3.IN1
+E[2] => FOR01~7.IN1
+E[2] => FOR01~6.IN1
+E[3] => FOR01~10.IN1
+E[3] => FOR01~9.IN1
+E[4] => FOR01~13.IN1
+E[4] => FOR01~12.IN1
+E[5] => FOR01~16.IN1
+E[5] => FOR01~15.IN1
+E[6] => FOR01~19.IN1
+E[6] => FOR01~18.IN1
+E[7] => FOR01~22.IN1
+E[7] => FOR01~21.IN1
+T[0] => aux[0].IN0
+T[1] => aux[1].IN0
+T[2] => aux[2].IN0
+T[3] => aux[3].IN0
+P[0] => aux[0].IN1
+P[1] => aux[1].IN1
+P[2] => aux[2].IN1
+P[3] => aux[3].IN1
+S[0] <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~5.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S~9.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S~11.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S~13.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S~15.DB_MAX_OUTPUT_PORT_TYPE
+M[0] <= FlipFlopJK2:FOR01:0:cont1.Q
+M[1] <= FlipFlopJK2:FOR01:1:cont1.Q
+M[2] <= FlipFlopJK2:FOR01:2:cont1.Q
+M[3] <= FlipFlopJK2:FOR01:3:cont1.Q
+M[4] <= FlipFlopJK2:FOR01:4:cont1.Q
+M[5] <= FlipFlopJK2:FOR01:5:cont1.Q
+M[6] <= FlipFlopJK2:FOR01:6:cont1.Q
+M[7] <= FlipFlopJK2:FOR01:7:cont1.Q
+
+
+|memoria|celula:CEL00|flipFlopJK2:\FOR01:0:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL00|flipFlopJK2:\FOR01:1:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL00|flipFlopJK2:\FOR01:2:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL00|flipFlopJK2:\FOR01:3:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL00|flipFlopJK2:\FOR01:4:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL00|flipFlopJK2:\FOR01:5:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL00|flipFlopJK2:\FOR01:6:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL00|flipFlopJK2:\FOR01:7:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL01
+clk => FOR01~2.IN0
+clk => FOR01~5.IN0
+clk => FOR01~8.IN0
+clk => FOR01~11.IN0
+clk => FOR01~14.IN0
+clk => FOR01~17.IN0
+clk => FOR01~20.IN0
+clk => FOR01~23.IN0
+rw => FOR01~2.IN1
+rw => FOR01~5.IN1
+rw => FOR01~8.IN1
+rw => FOR01~11.IN1
+rw => FOR01~14.IN1
+rw => FOR01~17.IN1
+rw => FOR01~20.IN1
+rw => FOR01~23.IN1
+rw => S~14.IN1
+rw => S~12.IN1
+rw => S~10.IN1
+rw => S~8.IN1
+rw => S~6.IN1
+rw => S~4.IN1
+rw => S~2.IN1
+rw => S~0.IN1
+E[0] => FOR01~1.IN1
+E[0] => FOR01~0.IN1
+E[1] => FOR01~4.IN1
+E[1] => FOR01~3.IN1
+E[2] => FOR01~7.IN1
+E[2] => FOR01~6.IN1
+E[3] => FOR01~10.IN1
+E[3] => FOR01~9.IN1
+E[4] => FOR01~13.IN1
+E[4] => FOR01~12.IN1
+E[5] => FOR01~16.IN1
+E[5] => FOR01~15.IN1
+E[6] => FOR01~19.IN1
+E[6] => FOR01~18.IN1
+E[7] => FOR01~22.IN1
+E[7] => FOR01~21.IN1
+T[0] => aux[0].IN0
+T[1] => aux[1].IN0
+T[2] => aux[2].IN0
+T[3] => aux[3].IN0
+P[0] => aux[0].IN1
+P[1] => aux[1].IN1
+P[2] => aux[2].IN1
+P[3] => aux[3].IN1
+S[0] <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~5.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S~9.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S~11.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S~13.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S~15.DB_MAX_OUTPUT_PORT_TYPE
+M[0] <= FlipFlopJK2:FOR01:0:cont1.Q
+M[1] <= FlipFlopJK2:FOR01:1:cont1.Q
+M[2] <= FlipFlopJK2:FOR01:2:cont1.Q
+M[3] <= FlipFlopJK2:FOR01:3:cont1.Q
+M[4] <= FlipFlopJK2:FOR01:4:cont1.Q
+M[5] <= FlipFlopJK2:FOR01:5:cont1.Q
+M[6] <= FlipFlopJK2:FOR01:6:cont1.Q
+M[7] <= FlipFlopJK2:FOR01:7:cont1.Q
+
+
+|memoria|celula:CEL01|flipFlopJK2:\FOR01:0:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL01|flipFlopJK2:\FOR01:1:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL01|flipFlopJK2:\FOR01:2:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL01|flipFlopJK2:\FOR01:3:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL01|flipFlopJK2:\FOR01:4:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL01|flipFlopJK2:\FOR01:5:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL01|flipFlopJK2:\FOR01:6:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL01|flipFlopJK2:\FOR01:7:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL02
+clk => FOR01~2.IN0
+clk => FOR01~5.IN0
+clk => FOR01~8.IN0
+clk => FOR01~11.IN0
+clk => FOR01~14.IN0
+clk => FOR01~17.IN0
+clk => FOR01~20.IN0
+clk => FOR01~23.IN0
+rw => FOR01~2.IN1
+rw => FOR01~5.IN1
+rw => FOR01~8.IN1
+rw => FOR01~11.IN1
+rw => FOR01~14.IN1
+rw => FOR01~17.IN1
+rw => FOR01~20.IN1
+rw => FOR01~23.IN1
+rw => S~14.IN1
+rw => S~12.IN1
+rw => S~10.IN1
+rw => S~8.IN1
+rw => S~6.IN1
+rw => S~4.IN1
+rw => S~2.IN1
+rw => S~0.IN1
+E[0] => FOR01~1.IN1
+E[0] => FOR01~0.IN1
+E[1] => FOR01~4.IN1
+E[1] => FOR01~3.IN1
+E[2] => FOR01~7.IN1
+E[2] => FOR01~6.IN1
+E[3] => FOR01~10.IN1
+E[3] => FOR01~9.IN1
+E[4] => FOR01~13.IN1
+E[4] => FOR01~12.IN1
+E[5] => FOR01~16.IN1
+E[5] => FOR01~15.IN1
+E[6] => FOR01~19.IN1
+E[6] => FOR01~18.IN1
+E[7] => FOR01~22.IN1
+E[7] => FOR01~21.IN1
+T[0] => aux[0].IN0
+T[1] => aux[1].IN0
+T[2] => aux[2].IN0
+T[3] => aux[3].IN0
+P[0] => aux[0].IN1
+P[1] => aux[1].IN1
+P[2] => aux[2].IN1
+P[3] => aux[3].IN1
+S[0] <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~5.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S~9.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S~11.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S~13.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S~15.DB_MAX_OUTPUT_PORT_TYPE
+M[0] <= FlipFlopJK2:FOR01:0:cont1.Q
+M[1] <= FlipFlopJK2:FOR01:1:cont1.Q
+M[2] <= FlipFlopJK2:FOR01:2:cont1.Q
+M[3] <= FlipFlopJK2:FOR01:3:cont1.Q
+M[4] <= FlipFlopJK2:FOR01:4:cont1.Q
+M[5] <= FlipFlopJK2:FOR01:5:cont1.Q
+M[6] <= FlipFlopJK2:FOR01:6:cont1.Q
+M[7] <= FlipFlopJK2:FOR01:7:cont1.Q
+
+
+|memoria|celula:CEL02|flipFlopJK2:\FOR01:0:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL02|flipFlopJK2:\FOR01:1:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL02|flipFlopJK2:\FOR01:2:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL02|flipFlopJK2:\FOR01:3:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL02|flipFlopJK2:\FOR01:4:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL02|flipFlopJK2:\FOR01:5:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL02|flipFlopJK2:\FOR01:6:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL02|flipFlopJK2:\FOR01:7:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL03
+clk => FOR01~2.IN0
+clk => FOR01~5.IN0
+clk => FOR01~8.IN0
+clk => FOR01~11.IN0
+clk => FOR01~14.IN0
+clk => FOR01~17.IN0
+clk => FOR01~20.IN0
+clk => FOR01~23.IN0
+rw => FOR01~2.IN1
+rw => FOR01~5.IN1
+rw => FOR01~8.IN1
+rw => FOR01~11.IN1
+rw => FOR01~14.IN1
+rw => FOR01~17.IN1
+rw => FOR01~20.IN1
+rw => FOR01~23.IN1
+rw => S~14.IN1
+rw => S~12.IN1
+rw => S~10.IN1
+rw => S~8.IN1
+rw => S~6.IN1
+rw => S~4.IN1
+rw => S~2.IN1
+rw => S~0.IN1
+E[0] => FOR01~1.IN1
+E[0] => FOR01~0.IN1
+E[1] => FOR01~4.IN1
+E[1] => FOR01~3.IN1
+E[2] => FOR01~7.IN1
+E[2] => FOR01~6.IN1
+E[3] => FOR01~10.IN1
+E[3] => FOR01~9.IN1
+E[4] => FOR01~13.IN1
+E[4] => FOR01~12.IN1
+E[5] => FOR01~16.IN1
+E[5] => FOR01~15.IN1
+E[6] => FOR01~19.IN1
+E[6] => FOR01~18.IN1
+E[7] => FOR01~22.IN1
+E[7] => FOR01~21.IN1
+T[0] => aux[0].IN0
+T[1] => aux[1].IN0
+T[2] => aux[2].IN0
+T[3] => aux[3].IN0
+P[0] => aux[0].IN1
+P[1] => aux[1].IN1
+P[2] => aux[2].IN1
+P[3] => aux[3].IN1
+S[0] <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~5.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S~9.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S~11.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S~13.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S~15.DB_MAX_OUTPUT_PORT_TYPE
+M[0] <= FlipFlopJK2:FOR01:0:cont1.Q
+M[1] <= FlipFlopJK2:FOR01:1:cont1.Q
+M[2] <= FlipFlopJK2:FOR01:2:cont1.Q
+M[3] <= FlipFlopJK2:FOR01:3:cont1.Q
+M[4] <= FlipFlopJK2:FOR01:4:cont1.Q
+M[5] <= FlipFlopJK2:FOR01:5:cont1.Q
+M[6] <= FlipFlopJK2:FOR01:6:cont1.Q
+M[7] <= FlipFlopJK2:FOR01:7:cont1.Q
+
+
+|memoria|celula:CEL03|flipFlopJK2:\FOR01:0:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL03|flipFlopJK2:\FOR01:1:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL03|flipFlopJK2:\FOR01:2:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL03|flipFlopJK2:\FOR01:3:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL03|flipFlopJK2:\FOR01:4:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL03|flipFlopJK2:\FOR01:5:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL03|flipFlopJK2:\FOR01:6:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL03|flipFlopJK2:\FOR01:7:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL04
+clk => FOR01~2.IN0
+clk => FOR01~5.IN0
+clk => FOR01~8.IN0
+clk => FOR01~11.IN0
+clk => FOR01~14.IN0
+clk => FOR01~17.IN0
+clk => FOR01~20.IN0
+clk => FOR01~23.IN0
+rw => FOR01~2.IN1
+rw => FOR01~5.IN1
+rw => FOR01~8.IN1
+rw => FOR01~11.IN1
+rw => FOR01~14.IN1
+rw => FOR01~17.IN1
+rw => FOR01~20.IN1
+rw => FOR01~23.IN1
+rw => S~14.IN1
+rw => S~12.IN1
+rw => S~10.IN1
+rw => S~8.IN1
+rw => S~6.IN1
+rw => S~4.IN1
+rw => S~2.IN1
+rw => S~0.IN1
+E[0] => FOR01~1.IN1
+E[0] => FOR01~0.IN1
+E[1] => FOR01~4.IN1
+E[1] => FOR01~3.IN1
+E[2] => FOR01~7.IN1
+E[2] => FOR01~6.IN1
+E[3] => FOR01~10.IN1
+E[3] => FOR01~9.IN1
+E[4] => FOR01~13.IN1
+E[4] => FOR01~12.IN1
+E[5] => FOR01~16.IN1
+E[5] => FOR01~15.IN1
+E[6] => FOR01~19.IN1
+E[6] => FOR01~18.IN1
+E[7] => FOR01~22.IN1
+E[7] => FOR01~21.IN1
+T[0] => aux[0].IN0
+T[1] => aux[1].IN0
+T[2] => aux[2].IN0
+T[3] => aux[3].IN0
+P[0] => aux[0].IN1
+P[1] => aux[1].IN1
+P[2] => aux[2].IN1
+P[3] => aux[3].IN1
+S[0] <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~5.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S~9.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S~11.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S~13.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S~15.DB_MAX_OUTPUT_PORT_TYPE
+M[0] <= FlipFlopJK2:FOR01:0:cont1.Q
+M[1] <= FlipFlopJK2:FOR01:1:cont1.Q
+M[2] <= FlipFlopJK2:FOR01:2:cont1.Q
+M[3] <= FlipFlopJK2:FOR01:3:cont1.Q
+M[4] <= FlipFlopJK2:FOR01:4:cont1.Q
+M[5] <= FlipFlopJK2:FOR01:5:cont1.Q
+M[6] <= FlipFlopJK2:FOR01:6:cont1.Q
+M[7] <= FlipFlopJK2:FOR01:7:cont1.Q
+
+
+|memoria|celula:CEL04|flipFlopJK2:\FOR01:0:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL04|flipFlopJK2:\FOR01:1:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL04|flipFlopJK2:\FOR01:2:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL04|flipFlopJK2:\FOR01:3:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL04|flipFlopJK2:\FOR01:4:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL04|flipFlopJK2:\FOR01:5:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL04|flipFlopJK2:\FOR01:6:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL04|flipFlopJK2:\FOR01:7:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL05
+clk => FOR01~2.IN0
+clk => FOR01~5.IN0
+clk => FOR01~8.IN0
+clk => FOR01~11.IN0
+clk => FOR01~14.IN0
+clk => FOR01~17.IN0
+clk => FOR01~20.IN0
+clk => FOR01~23.IN0
+rw => FOR01~2.IN1
+rw => FOR01~5.IN1
+rw => FOR01~8.IN1
+rw => FOR01~11.IN1
+rw => FOR01~14.IN1
+rw => FOR01~17.IN1
+rw => FOR01~20.IN1
+rw => FOR01~23.IN1
+rw => S~14.IN1
+rw => S~12.IN1
+rw => S~10.IN1
+rw => S~8.IN1
+rw => S~6.IN1
+rw => S~4.IN1
+rw => S~2.IN1
+rw => S~0.IN1
+E[0] => FOR01~1.IN1
+E[0] => FOR01~0.IN1
+E[1] => FOR01~4.IN1
+E[1] => FOR01~3.IN1
+E[2] => FOR01~7.IN1
+E[2] => FOR01~6.IN1
+E[3] => FOR01~10.IN1
+E[3] => FOR01~9.IN1
+E[4] => FOR01~13.IN1
+E[4] => FOR01~12.IN1
+E[5] => FOR01~16.IN1
+E[5] => FOR01~15.IN1
+E[6] => FOR01~19.IN1
+E[6] => FOR01~18.IN1
+E[7] => FOR01~22.IN1
+E[7] => FOR01~21.IN1
+T[0] => aux[0].IN0
+T[1] => aux[1].IN0
+T[2] => aux[2].IN0
+T[3] => aux[3].IN0
+P[0] => aux[0].IN1
+P[1] => aux[1].IN1
+P[2] => aux[2].IN1
+P[3] => aux[3].IN1
+S[0] <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~5.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S~9.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S~11.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S~13.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S~15.DB_MAX_OUTPUT_PORT_TYPE
+M[0] <= FlipFlopJK2:FOR01:0:cont1.Q
+M[1] <= FlipFlopJK2:FOR01:1:cont1.Q
+M[2] <= FlipFlopJK2:FOR01:2:cont1.Q
+M[3] <= FlipFlopJK2:FOR01:3:cont1.Q
+M[4] <= FlipFlopJK2:FOR01:4:cont1.Q
+M[5] <= FlipFlopJK2:FOR01:5:cont1.Q
+M[6] <= FlipFlopJK2:FOR01:6:cont1.Q
+M[7] <= FlipFlopJK2:FOR01:7:cont1.Q
+
+
+|memoria|celula:CEL05|flipFlopJK2:\FOR01:0:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL05|flipFlopJK2:\FOR01:1:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL05|flipFlopJK2:\FOR01:2:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL05|flipFlopJK2:\FOR01:3:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL05|flipFlopJK2:\FOR01:4:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL05|flipFlopJK2:\FOR01:5:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL05|flipFlopJK2:\FOR01:6:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL05|flipFlopJK2:\FOR01:7:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL06
+clk => FOR01~2.IN0
+clk => FOR01~5.IN0
+clk => FOR01~8.IN0
+clk => FOR01~11.IN0
+clk => FOR01~14.IN0
+clk => FOR01~17.IN0
+clk => FOR01~20.IN0
+clk => FOR01~23.IN0
+rw => FOR01~2.IN1
+rw => FOR01~5.IN1
+rw => FOR01~8.IN1
+rw => FOR01~11.IN1
+rw => FOR01~14.IN1
+rw => FOR01~17.IN1
+rw => FOR01~20.IN1
+rw => FOR01~23.IN1
+rw => S~14.IN1
+rw => S~12.IN1
+rw => S~10.IN1
+rw => S~8.IN1
+rw => S~6.IN1
+rw => S~4.IN1
+rw => S~2.IN1
+rw => S~0.IN1
+E[0] => FOR01~1.IN1
+E[0] => FOR01~0.IN1
+E[1] => FOR01~4.IN1
+E[1] => FOR01~3.IN1
+E[2] => FOR01~7.IN1
+E[2] => FOR01~6.IN1
+E[3] => FOR01~10.IN1
+E[3] => FOR01~9.IN1
+E[4] => FOR01~13.IN1
+E[4] => FOR01~12.IN1
+E[5] => FOR01~16.IN1
+E[5] => FOR01~15.IN1
+E[6] => FOR01~19.IN1
+E[6] => FOR01~18.IN1
+E[7] => FOR01~22.IN1
+E[7] => FOR01~21.IN1
+T[0] => aux[0].IN0
+T[1] => aux[1].IN0
+T[2] => aux[2].IN0
+T[3] => aux[3].IN0
+P[0] => aux[0].IN1
+P[1] => aux[1].IN1
+P[2] => aux[2].IN1
+P[3] => aux[3].IN1
+S[0] <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~5.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S~9.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S~11.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S~13.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S~15.DB_MAX_OUTPUT_PORT_TYPE
+M[0] <= FlipFlopJK2:FOR01:0:cont1.Q
+M[1] <= FlipFlopJK2:FOR01:1:cont1.Q
+M[2] <= FlipFlopJK2:FOR01:2:cont1.Q
+M[3] <= FlipFlopJK2:FOR01:3:cont1.Q
+M[4] <= FlipFlopJK2:FOR01:4:cont1.Q
+M[5] <= FlipFlopJK2:FOR01:5:cont1.Q
+M[6] <= FlipFlopJK2:FOR01:6:cont1.Q
+M[7] <= FlipFlopJK2:FOR01:7:cont1.Q
+
+
+|memoria|celula:CEL06|flipFlopJK2:\FOR01:0:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL06|flipFlopJK2:\FOR01:1:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL06|flipFlopJK2:\FOR01:2:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL06|flipFlopJK2:\FOR01:3:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL06|flipFlopJK2:\FOR01:4:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL06|flipFlopJK2:\FOR01:5:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL06|flipFlopJK2:\FOR01:6:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL06|flipFlopJK2:\FOR01:7:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL07
+clk => FOR01~2.IN0
+clk => FOR01~5.IN0
+clk => FOR01~8.IN0
+clk => FOR01~11.IN0
+clk => FOR01~14.IN0
+clk => FOR01~17.IN0
+clk => FOR01~20.IN0
+clk => FOR01~23.IN0
+rw => FOR01~2.IN1
+rw => FOR01~5.IN1
+rw => FOR01~8.IN1
+rw => FOR01~11.IN1
+rw => FOR01~14.IN1
+rw => FOR01~17.IN1
+rw => FOR01~20.IN1
+rw => FOR01~23.IN1
+rw => S~14.IN1
+rw => S~12.IN1
+rw => S~10.IN1
+rw => S~8.IN1
+rw => S~6.IN1
+rw => S~4.IN1
+rw => S~2.IN1
+rw => S~0.IN1
+E[0] => FOR01~1.IN1
+E[0] => FOR01~0.IN1
+E[1] => FOR01~4.IN1
+E[1] => FOR01~3.IN1
+E[2] => FOR01~7.IN1
+E[2] => FOR01~6.IN1
+E[3] => FOR01~10.IN1
+E[3] => FOR01~9.IN1
+E[4] => FOR01~13.IN1
+E[4] => FOR01~12.IN1
+E[5] => FOR01~16.IN1
+E[5] => FOR01~15.IN1
+E[6] => FOR01~19.IN1
+E[6] => FOR01~18.IN1
+E[7] => FOR01~22.IN1
+E[7] => FOR01~21.IN1
+T[0] => aux[0].IN0
+T[1] => aux[1].IN0
+T[2] => aux[2].IN0
+T[3] => aux[3].IN0
+P[0] => aux[0].IN1
+P[1] => aux[1].IN1
+P[2] => aux[2].IN1
+P[3] => aux[3].IN1
+S[0] <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~5.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S~9.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S~11.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S~13.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S~15.DB_MAX_OUTPUT_PORT_TYPE
+M[0] <= FlipFlopJK2:FOR01:0:cont1.Q
+M[1] <= FlipFlopJK2:FOR01:1:cont1.Q
+M[2] <= FlipFlopJK2:FOR01:2:cont1.Q
+M[3] <= FlipFlopJK2:FOR01:3:cont1.Q
+M[4] <= FlipFlopJK2:FOR01:4:cont1.Q
+M[5] <= FlipFlopJK2:FOR01:5:cont1.Q
+M[6] <= FlipFlopJK2:FOR01:6:cont1.Q
+M[7] <= FlipFlopJK2:FOR01:7:cont1.Q
+
+
+|memoria|celula:CEL07|flipFlopJK2:\FOR01:0:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL07|flipFlopJK2:\FOR01:1:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL07|flipFlopJK2:\FOR01:2:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL07|flipFlopJK2:\FOR01:3:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL07|flipFlopJK2:\FOR01:4:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL07|flipFlopJK2:\FOR01:5:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL07|flipFlopJK2:\FOR01:6:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL07|flipFlopJK2:\FOR01:7:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL08
+clk => FOR01~2.IN0
+clk => FOR01~5.IN0
+clk => FOR01~8.IN0
+clk => FOR01~11.IN0
+clk => FOR01~14.IN0
+clk => FOR01~17.IN0
+clk => FOR01~20.IN0
+clk => FOR01~23.IN0
+rw => FOR01~2.IN1
+rw => FOR01~5.IN1
+rw => FOR01~8.IN1
+rw => FOR01~11.IN1
+rw => FOR01~14.IN1
+rw => FOR01~17.IN1
+rw => FOR01~20.IN1
+rw => FOR01~23.IN1
+rw => S~14.IN1
+rw => S~12.IN1
+rw => S~10.IN1
+rw => S~8.IN1
+rw => S~6.IN1
+rw => S~4.IN1
+rw => S~2.IN1
+rw => S~0.IN1
+E[0] => FOR01~1.IN1
+E[0] => FOR01~0.IN1
+E[1] => FOR01~4.IN1
+E[1] => FOR01~3.IN1
+E[2] => FOR01~7.IN1
+E[2] => FOR01~6.IN1
+E[3] => FOR01~10.IN1
+E[3] => FOR01~9.IN1
+E[4] => FOR01~13.IN1
+E[4] => FOR01~12.IN1
+E[5] => FOR01~16.IN1
+E[5] => FOR01~15.IN1
+E[6] => FOR01~19.IN1
+E[6] => FOR01~18.IN1
+E[7] => FOR01~22.IN1
+E[7] => FOR01~21.IN1
+T[0] => aux[0].IN0
+T[1] => aux[1].IN0
+T[2] => aux[2].IN0
+T[3] => aux[3].IN0
+P[0] => aux[0].IN1
+P[1] => aux[1].IN1
+P[2] => aux[2].IN1
+P[3] => aux[3].IN1
+S[0] <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~5.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S~9.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S~11.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S~13.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S~15.DB_MAX_OUTPUT_PORT_TYPE
+M[0] <= FlipFlopJK2:FOR01:0:cont1.Q
+M[1] <= FlipFlopJK2:FOR01:1:cont1.Q
+M[2] <= FlipFlopJK2:FOR01:2:cont1.Q
+M[3] <= FlipFlopJK2:FOR01:3:cont1.Q
+M[4] <= FlipFlopJK2:FOR01:4:cont1.Q
+M[5] <= FlipFlopJK2:FOR01:5:cont1.Q
+M[6] <= FlipFlopJK2:FOR01:6:cont1.Q
+M[7] <= FlipFlopJK2:FOR01:7:cont1.Q
+
+
+|memoria|celula:CEL08|flipFlopJK2:\FOR01:0:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL08|flipFlopJK2:\FOR01:1:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL08|flipFlopJK2:\FOR01:2:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL08|flipFlopJK2:\FOR01:3:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL08|flipFlopJK2:\FOR01:4:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL08|flipFlopJK2:\FOR01:5:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL08|flipFlopJK2:\FOR01:6:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL08|flipFlopJK2:\FOR01:7:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL09
+clk => FOR01~2.IN0
+clk => FOR01~5.IN0
+clk => FOR01~8.IN0
+clk => FOR01~11.IN0
+clk => FOR01~14.IN0
+clk => FOR01~17.IN0
+clk => FOR01~20.IN0
+clk => FOR01~23.IN0
+rw => FOR01~2.IN1
+rw => FOR01~5.IN1
+rw => FOR01~8.IN1
+rw => FOR01~11.IN1
+rw => FOR01~14.IN1
+rw => FOR01~17.IN1
+rw => FOR01~20.IN1
+rw => FOR01~23.IN1
+rw => S~14.IN1
+rw => S~12.IN1
+rw => S~10.IN1
+rw => S~8.IN1
+rw => S~6.IN1
+rw => S~4.IN1
+rw => S~2.IN1
+rw => S~0.IN1
+E[0] => FOR01~1.IN1
+E[0] => FOR01~0.IN1
+E[1] => FOR01~4.IN1
+E[1] => FOR01~3.IN1
+E[2] => FOR01~7.IN1
+E[2] => FOR01~6.IN1
+E[3] => FOR01~10.IN1
+E[3] => FOR01~9.IN1
+E[4] => FOR01~13.IN1
+E[4] => FOR01~12.IN1
+E[5] => FOR01~16.IN1
+E[5] => FOR01~15.IN1
+E[6] => FOR01~19.IN1
+E[6] => FOR01~18.IN1
+E[7] => FOR01~22.IN1
+E[7] => FOR01~21.IN1
+T[0] => aux[0].IN0
+T[1] => aux[1].IN0
+T[2] => aux[2].IN0
+T[3] => aux[3].IN0
+P[0] => aux[0].IN1
+P[1] => aux[1].IN1
+P[2] => aux[2].IN1
+P[3] => aux[3].IN1
+S[0] <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~5.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S~9.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S~11.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S~13.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S~15.DB_MAX_OUTPUT_PORT_TYPE
+M[0] <= FlipFlopJK2:FOR01:0:cont1.Q
+M[1] <= FlipFlopJK2:FOR01:1:cont1.Q
+M[2] <= FlipFlopJK2:FOR01:2:cont1.Q
+M[3] <= FlipFlopJK2:FOR01:3:cont1.Q
+M[4] <= FlipFlopJK2:FOR01:4:cont1.Q
+M[5] <= FlipFlopJK2:FOR01:5:cont1.Q
+M[6] <= FlipFlopJK2:FOR01:6:cont1.Q
+M[7] <= FlipFlopJK2:FOR01:7:cont1.Q
+
+
+|memoria|celula:CEL09|flipFlopJK2:\FOR01:0:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL09|flipFlopJK2:\FOR01:1:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL09|flipFlopJK2:\FOR01:2:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL09|flipFlopJK2:\FOR01:3:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL09|flipFlopJK2:\FOR01:4:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL09|flipFlopJK2:\FOR01:5:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL09|flipFlopJK2:\FOR01:6:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL09|flipFlopJK2:\FOR01:7:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL10
+clk => FOR01~2.IN0
+clk => FOR01~5.IN0
+clk => FOR01~8.IN0
+clk => FOR01~11.IN0
+clk => FOR01~14.IN0
+clk => FOR01~17.IN0
+clk => FOR01~20.IN0
+clk => FOR01~23.IN0
+rw => FOR01~2.IN1
+rw => FOR01~5.IN1
+rw => FOR01~8.IN1
+rw => FOR01~11.IN1
+rw => FOR01~14.IN1
+rw => FOR01~17.IN1
+rw => FOR01~20.IN1
+rw => FOR01~23.IN1
+rw => S~14.IN1
+rw => S~12.IN1
+rw => S~10.IN1
+rw => S~8.IN1
+rw => S~6.IN1
+rw => S~4.IN1
+rw => S~2.IN1
+rw => S~0.IN1
+E[0] => FOR01~1.IN1
+E[0] => FOR01~0.IN1
+E[1] => FOR01~4.IN1
+E[1] => FOR01~3.IN1
+E[2] => FOR01~7.IN1
+E[2] => FOR01~6.IN1
+E[3] => FOR01~10.IN1
+E[3] => FOR01~9.IN1
+E[4] => FOR01~13.IN1
+E[4] => FOR01~12.IN1
+E[5] => FOR01~16.IN1
+E[5] => FOR01~15.IN1
+E[6] => FOR01~19.IN1
+E[6] => FOR01~18.IN1
+E[7] => FOR01~22.IN1
+E[7] => FOR01~21.IN1
+T[0] => aux[0].IN0
+T[1] => aux[1].IN0
+T[2] => aux[2].IN0
+T[3] => aux[3].IN0
+P[0] => aux[0].IN1
+P[1] => aux[1].IN1
+P[2] => aux[2].IN1
+P[3] => aux[3].IN1
+S[0] <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~5.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S~9.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S~11.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S~13.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S~15.DB_MAX_OUTPUT_PORT_TYPE
+M[0] <= FlipFlopJK2:FOR01:0:cont1.Q
+M[1] <= FlipFlopJK2:FOR01:1:cont1.Q
+M[2] <= FlipFlopJK2:FOR01:2:cont1.Q
+M[3] <= FlipFlopJK2:FOR01:3:cont1.Q
+M[4] <= FlipFlopJK2:FOR01:4:cont1.Q
+M[5] <= FlipFlopJK2:FOR01:5:cont1.Q
+M[6] <= FlipFlopJK2:FOR01:6:cont1.Q
+M[7] <= FlipFlopJK2:FOR01:7:cont1.Q
+
+
+|memoria|celula:CEL10|flipFlopJK2:\FOR01:0:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL10|flipFlopJK2:\FOR01:1:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL10|flipFlopJK2:\FOR01:2:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL10|flipFlopJK2:\FOR01:3:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL10|flipFlopJK2:\FOR01:4:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL10|flipFlopJK2:\FOR01:5:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL10|flipFlopJK2:\FOR01:6:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL10|flipFlopJK2:\FOR01:7:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL11
+clk => FOR01~2.IN0
+clk => FOR01~5.IN0
+clk => FOR01~8.IN0
+clk => FOR01~11.IN0
+clk => FOR01~14.IN0
+clk => FOR01~17.IN0
+clk => FOR01~20.IN0
+clk => FOR01~23.IN0
+rw => FOR01~2.IN1
+rw => FOR01~5.IN1
+rw => FOR01~8.IN1
+rw => FOR01~11.IN1
+rw => FOR01~14.IN1
+rw => FOR01~17.IN1
+rw => FOR01~20.IN1
+rw => FOR01~23.IN1
+rw => S~14.IN1
+rw => S~12.IN1
+rw => S~10.IN1
+rw => S~8.IN1
+rw => S~6.IN1
+rw => S~4.IN1
+rw => S~2.IN1
+rw => S~0.IN1
+E[0] => FOR01~1.IN1
+E[0] => FOR01~0.IN1
+E[1] => FOR01~4.IN1
+E[1] => FOR01~3.IN1
+E[2] => FOR01~7.IN1
+E[2] => FOR01~6.IN1
+E[3] => FOR01~10.IN1
+E[3] => FOR01~9.IN1
+E[4] => FOR01~13.IN1
+E[4] => FOR01~12.IN1
+E[5] => FOR01~16.IN1
+E[5] => FOR01~15.IN1
+E[6] => FOR01~19.IN1
+E[6] => FOR01~18.IN1
+E[7] => FOR01~22.IN1
+E[7] => FOR01~21.IN1
+T[0] => aux[0].IN0
+T[1] => aux[1].IN0
+T[2] => aux[2].IN0
+T[3] => aux[3].IN0
+P[0] => aux[0].IN1
+P[1] => aux[1].IN1
+P[2] => aux[2].IN1
+P[3] => aux[3].IN1
+S[0] <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~5.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S~9.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S~11.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S~13.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S~15.DB_MAX_OUTPUT_PORT_TYPE
+M[0] <= FlipFlopJK2:FOR01:0:cont1.Q
+M[1] <= FlipFlopJK2:FOR01:1:cont1.Q
+M[2] <= FlipFlopJK2:FOR01:2:cont1.Q
+M[3] <= FlipFlopJK2:FOR01:3:cont1.Q
+M[4] <= FlipFlopJK2:FOR01:4:cont1.Q
+M[5] <= FlipFlopJK2:FOR01:5:cont1.Q
+M[6] <= FlipFlopJK2:FOR01:6:cont1.Q
+M[7] <= FlipFlopJK2:FOR01:7:cont1.Q
+
+
+|memoria|celula:CEL11|flipFlopJK2:\FOR01:0:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL11|flipFlopJK2:\FOR01:1:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL11|flipFlopJK2:\FOR01:2:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL11|flipFlopJK2:\FOR01:3:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL11|flipFlopJK2:\FOR01:4:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL11|flipFlopJK2:\FOR01:5:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL11|flipFlopJK2:\FOR01:6:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL11|flipFlopJK2:\FOR01:7:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL12
+clk => FOR01~2.IN0
+clk => FOR01~5.IN0
+clk => FOR01~8.IN0
+clk => FOR01~11.IN0
+clk => FOR01~14.IN0
+clk => FOR01~17.IN0
+clk => FOR01~20.IN0
+clk => FOR01~23.IN0
+rw => FOR01~2.IN1
+rw => FOR01~5.IN1
+rw => FOR01~8.IN1
+rw => FOR01~11.IN1
+rw => FOR01~14.IN1
+rw => FOR01~17.IN1
+rw => FOR01~20.IN1
+rw => FOR01~23.IN1
+rw => S~14.IN1
+rw => S~12.IN1
+rw => S~10.IN1
+rw => S~8.IN1
+rw => S~6.IN1
+rw => S~4.IN1
+rw => S~2.IN1
+rw => S~0.IN1
+E[0] => FOR01~1.IN1
+E[0] => FOR01~0.IN1
+E[1] => FOR01~4.IN1
+E[1] => FOR01~3.IN1
+E[2] => FOR01~7.IN1
+E[2] => FOR01~6.IN1
+E[3] => FOR01~10.IN1
+E[3] => FOR01~9.IN1
+E[4] => FOR01~13.IN1
+E[4] => FOR01~12.IN1
+E[5] => FOR01~16.IN1
+E[5] => FOR01~15.IN1
+E[6] => FOR01~19.IN1
+E[6] => FOR01~18.IN1
+E[7] => FOR01~22.IN1
+E[7] => FOR01~21.IN1
+T[0] => aux[0].IN0
+T[1] => aux[1].IN0
+T[2] => aux[2].IN0
+T[3] => aux[3].IN0
+P[0] => aux[0].IN1
+P[1] => aux[1].IN1
+P[2] => aux[2].IN1
+P[3] => aux[3].IN1
+S[0] <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~5.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S~9.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S~11.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S~13.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S~15.DB_MAX_OUTPUT_PORT_TYPE
+M[0] <= FlipFlopJK2:FOR01:0:cont1.Q
+M[1] <= FlipFlopJK2:FOR01:1:cont1.Q
+M[2] <= FlipFlopJK2:FOR01:2:cont1.Q
+M[3] <= FlipFlopJK2:FOR01:3:cont1.Q
+M[4] <= FlipFlopJK2:FOR01:4:cont1.Q
+M[5] <= FlipFlopJK2:FOR01:5:cont1.Q
+M[6] <= FlipFlopJK2:FOR01:6:cont1.Q
+M[7] <= FlipFlopJK2:FOR01:7:cont1.Q
+
+
+|memoria|celula:CEL12|flipFlopJK2:\FOR01:0:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL12|flipFlopJK2:\FOR01:1:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL12|flipFlopJK2:\FOR01:2:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL12|flipFlopJK2:\FOR01:3:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL12|flipFlopJK2:\FOR01:4:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL12|flipFlopJK2:\FOR01:5:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL12|flipFlopJK2:\FOR01:6:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL12|flipFlopJK2:\FOR01:7:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL13
+clk => FOR01~2.IN0
+clk => FOR01~5.IN0
+clk => FOR01~8.IN0
+clk => FOR01~11.IN0
+clk => FOR01~14.IN0
+clk => FOR01~17.IN0
+clk => FOR01~20.IN0
+clk => FOR01~23.IN0
+rw => FOR01~2.IN1
+rw => FOR01~5.IN1
+rw => FOR01~8.IN1
+rw => FOR01~11.IN1
+rw => FOR01~14.IN1
+rw => FOR01~17.IN1
+rw => FOR01~20.IN1
+rw => FOR01~23.IN1
+rw => S~14.IN1
+rw => S~12.IN1
+rw => S~10.IN1
+rw => S~8.IN1
+rw => S~6.IN1
+rw => S~4.IN1
+rw => S~2.IN1
+rw => S~0.IN1
+E[0] => FOR01~1.IN1
+E[0] => FOR01~0.IN1
+E[1] => FOR01~4.IN1
+E[1] => FOR01~3.IN1
+E[2] => FOR01~7.IN1
+E[2] => FOR01~6.IN1
+E[3] => FOR01~10.IN1
+E[3] => FOR01~9.IN1
+E[4] => FOR01~13.IN1
+E[4] => FOR01~12.IN1
+E[5] => FOR01~16.IN1
+E[5] => FOR01~15.IN1
+E[6] => FOR01~19.IN1
+E[6] => FOR01~18.IN1
+E[7] => FOR01~22.IN1
+E[7] => FOR01~21.IN1
+T[0] => aux[0].IN0
+T[1] => aux[1].IN0
+T[2] => aux[2].IN0
+T[3] => aux[3].IN0
+P[0] => aux[0].IN1
+P[1] => aux[1].IN1
+P[2] => aux[2].IN1
+P[3] => aux[3].IN1
+S[0] <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~5.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S~9.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S~11.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S~13.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S~15.DB_MAX_OUTPUT_PORT_TYPE
+M[0] <= FlipFlopJK2:FOR01:0:cont1.Q
+M[1] <= FlipFlopJK2:FOR01:1:cont1.Q
+M[2] <= FlipFlopJK2:FOR01:2:cont1.Q
+M[3] <= FlipFlopJK2:FOR01:3:cont1.Q
+M[4] <= FlipFlopJK2:FOR01:4:cont1.Q
+M[5] <= FlipFlopJK2:FOR01:5:cont1.Q
+M[6] <= FlipFlopJK2:FOR01:6:cont1.Q
+M[7] <= FlipFlopJK2:FOR01:7:cont1.Q
+
+
+|memoria|celula:CEL13|flipFlopJK2:\FOR01:0:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL13|flipFlopJK2:\FOR01:1:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL13|flipFlopJK2:\FOR01:2:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL13|flipFlopJK2:\FOR01:3:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL13|flipFlopJK2:\FOR01:4:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL13|flipFlopJK2:\FOR01:5:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL13|flipFlopJK2:\FOR01:6:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL13|flipFlopJK2:\FOR01:7:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL14
+clk => FOR01~2.IN0
+clk => FOR01~5.IN0
+clk => FOR01~8.IN0
+clk => FOR01~11.IN0
+clk => FOR01~14.IN0
+clk => FOR01~17.IN0
+clk => FOR01~20.IN0
+clk => FOR01~23.IN0
+rw => FOR01~2.IN1
+rw => FOR01~5.IN1
+rw => FOR01~8.IN1
+rw => FOR01~11.IN1
+rw => FOR01~14.IN1
+rw => FOR01~17.IN1
+rw => FOR01~20.IN1
+rw => FOR01~23.IN1
+rw => S~14.IN1
+rw => S~12.IN1
+rw => S~10.IN1
+rw => S~8.IN1
+rw => S~6.IN1
+rw => S~4.IN1
+rw => S~2.IN1
+rw => S~0.IN1
+E[0] => FOR01~1.IN1
+E[0] => FOR01~0.IN1
+E[1] => FOR01~4.IN1
+E[1] => FOR01~3.IN1
+E[2] => FOR01~7.IN1
+E[2] => FOR01~6.IN1
+E[3] => FOR01~10.IN1
+E[3] => FOR01~9.IN1
+E[4] => FOR01~13.IN1
+E[4] => FOR01~12.IN1
+E[5] => FOR01~16.IN1
+E[5] => FOR01~15.IN1
+E[6] => FOR01~19.IN1
+E[6] => FOR01~18.IN1
+E[7] => FOR01~22.IN1
+E[7] => FOR01~21.IN1
+T[0] => aux[0].IN0
+T[1] => aux[1].IN0
+T[2] => aux[2].IN0
+T[3] => aux[3].IN0
+P[0] => aux[0].IN1
+P[1] => aux[1].IN1
+P[2] => aux[2].IN1
+P[3] => aux[3].IN1
+S[0] <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~5.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S~9.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S~11.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S~13.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S~15.DB_MAX_OUTPUT_PORT_TYPE
+M[0] <= FlipFlopJK2:FOR01:0:cont1.Q
+M[1] <= FlipFlopJK2:FOR01:1:cont1.Q
+M[2] <= FlipFlopJK2:FOR01:2:cont1.Q
+M[3] <= FlipFlopJK2:FOR01:3:cont1.Q
+M[4] <= FlipFlopJK2:FOR01:4:cont1.Q
+M[5] <= FlipFlopJK2:FOR01:5:cont1.Q
+M[6] <= FlipFlopJK2:FOR01:6:cont1.Q
+M[7] <= FlipFlopJK2:FOR01:7:cont1.Q
+
+
+|memoria|celula:CEL14|flipFlopJK2:\FOR01:0:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL14|flipFlopJK2:\FOR01:1:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL14|flipFlopJK2:\FOR01:2:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL14|flipFlopJK2:\FOR01:3:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL14|flipFlopJK2:\FOR01:4:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL14|flipFlopJK2:\FOR01:5:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL14|flipFlopJK2:\FOR01:6:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL14|flipFlopJK2:\FOR01:7:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL15
+clk => FOR01~2.IN0
+clk => FOR01~5.IN0
+clk => FOR01~8.IN0
+clk => FOR01~11.IN0
+clk => FOR01~14.IN0
+clk => FOR01~17.IN0
+clk => FOR01~20.IN0
+clk => FOR01~23.IN0
+rw => FOR01~2.IN1
+rw => FOR01~5.IN1
+rw => FOR01~8.IN1
+rw => FOR01~11.IN1
+rw => FOR01~14.IN1
+rw => FOR01~17.IN1
+rw => FOR01~20.IN1
+rw => FOR01~23.IN1
+rw => S~14.IN1
+rw => S~12.IN1
+rw => S~10.IN1
+rw => S~8.IN1
+rw => S~6.IN1
+rw => S~4.IN1
+rw => S~2.IN1
+rw => S~0.IN1
+E[0] => FOR01~1.IN1
+E[0] => FOR01~0.IN1
+E[1] => FOR01~4.IN1
+E[1] => FOR01~3.IN1
+E[2] => FOR01~7.IN1
+E[2] => FOR01~6.IN1
+E[3] => FOR01~10.IN1
+E[3] => FOR01~9.IN1
+E[4] => FOR01~13.IN1
+E[4] => FOR01~12.IN1
+E[5] => FOR01~16.IN1
+E[5] => FOR01~15.IN1
+E[6] => FOR01~19.IN1
+E[6] => FOR01~18.IN1
+E[7] => FOR01~22.IN1
+E[7] => FOR01~21.IN1
+T[0] => aux[0].IN0
+T[1] => aux[1].IN0
+T[2] => aux[2].IN0
+T[3] => aux[3].IN0
+P[0] => aux[0].IN1
+P[1] => aux[1].IN1
+P[2] => aux[2].IN1
+P[3] => aux[3].IN1
+S[0] <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~5.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S~9.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S~11.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S~13.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S~15.DB_MAX_OUTPUT_PORT_TYPE
+M[0] <= FlipFlopJK2:FOR01:0:cont1.Q
+M[1] <= FlipFlopJK2:FOR01:1:cont1.Q
+M[2] <= FlipFlopJK2:FOR01:2:cont1.Q
+M[3] <= FlipFlopJK2:FOR01:3:cont1.Q
+M[4] <= FlipFlopJK2:FOR01:4:cont1.Q
+M[5] <= FlipFlopJK2:FOR01:5:cont1.Q
+M[6] <= FlipFlopJK2:FOR01:6:cont1.Q
+M[7] <= FlipFlopJK2:FOR01:7:cont1.Q
+
+
+|memoria|celula:CEL15|flipFlopJK2:\FOR01:0:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL15|flipFlopJK2:\FOR01:1:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL15|flipFlopJK2:\FOR01:2:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL15|flipFlopJK2:\FOR01:3:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL15|flipFlopJK2:\FOR01:4:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL15|flipFlopJK2:\FOR01:5:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL15|flipFlopJK2:\FOR01:6:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memoria|celula:CEL15|flipFlopJK2:\FOR01:7:cont1
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+

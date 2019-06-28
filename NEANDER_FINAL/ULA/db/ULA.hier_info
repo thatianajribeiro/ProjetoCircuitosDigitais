@@ -1,0 +1,220 @@
+|ula
+a[0] => y~9.IN0
+a[0] => y~17.IN0
+a[0] => soma:total.A[0]
+a[1] => y~10.IN0
+a[1] => y~18.IN0
+a[1] => soma:total.A[1]
+a[2] => y~11.IN0
+a[2] => y~19.IN0
+a[2] => soma:total.A[2]
+a[3] => y~12.IN0
+a[3] => y~20.IN0
+a[3] => soma:total.A[3]
+a[4] => y~13.IN0
+a[4] => y~21.IN0
+a[4] => soma:total.A[4]
+a[5] => y~14.IN0
+a[5] => y~22.IN0
+a[5] => soma:total.A[5]
+a[6] => y~15.IN0
+a[6] => y~23.IN0
+a[6] => soma:total.A[6]
+a[7] => y~16.IN0
+a[7] => y~24.IN0
+a[7] => soma:total.A[7]
+b[0] => y~9.IN1
+b[0] => y~17.IN1
+b[0] => soma:total.B[0]
+b[0] => Mux0.IN6
+b[0] => Mux0.IN2
+b[1] => y~10.IN1
+b[1] => y~18.IN1
+b[1] => soma:total.B[1]
+b[1] => Mux1.IN6
+b[1] => Mux1.IN2
+b[2] => y~11.IN1
+b[2] => y~19.IN1
+b[2] => soma:total.B[2]
+b[2] => Mux2.IN6
+b[2] => Mux2.IN2
+b[3] => y~12.IN1
+b[3] => y~20.IN1
+b[3] => soma:total.B[3]
+b[3] => Mux3.IN6
+b[3] => Mux3.IN2
+b[4] => y~13.IN1
+b[4] => y~21.IN1
+b[4] => soma:total.B[4]
+b[4] => Mux4.IN6
+b[4] => Mux4.IN2
+b[5] => y~14.IN1
+b[5] => y~22.IN1
+b[5] => soma:total.B[5]
+b[5] => Mux5.IN6
+b[5] => Mux5.IN2
+b[6] => y~15.IN1
+b[6] => y~23.IN1
+b[6] => soma:total.B[6]
+b[6] => Mux6.IN6
+b[6] => Mux6.IN2
+b[7] => y~16.IN1
+b[7] => y~24.IN1
+b[7] => soma:total.B[7]
+b[7] => Mux7.IN6
+b[7] => Mux7.IN2
+operacao[0] => Mux0.IN9
+operacao[0] => Mux1.IN9
+operacao[0] => Mux2.IN9
+operacao[0] => Mux3.IN9
+operacao[0] => Mux4.IN9
+operacao[0] => Mux5.IN9
+operacao[0] => Mux6.IN9
+operacao[0] => Mux7.IN9
+operacao[0] => Mux8.IN10
+operacao[1] => Mux0.IN8
+operacao[1] => Mux1.IN8
+operacao[1] => Mux2.IN8
+operacao[1] => Mux3.IN8
+operacao[1] => Mux4.IN8
+operacao[1] => Mux5.IN8
+operacao[1] => Mux6.IN8
+operacao[1] => Mux7.IN8
+operacao[1] => Mux8.IN9
+operacao[2] => Mux0.IN7
+operacao[2] => Mux1.IN7
+operacao[2] => Mux2.IN7
+operacao[2] => Mux3.IN7
+operacao[2] => Mux4.IN7
+operacao[2] => Mux5.IN7
+operacao[2] => Mux6.IN7
+operacao[2] => Mux7.IN7
+operacao[2] => Mux8.IN8
+y[0] <= y[0]~1.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y[1]~2.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y[2]~3.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y[3]~4.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= y[4]~5.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= y[5]~6.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= y[6]~7.DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= y[7]~8.DB_MAX_OUTPUT_PORT_TYPE
+NZ[0] <= Z_resultado~6.DB_MAX_OUTPUT_PORT_TYPE
+NZ[1] <= soma:total.S[7]
+
+
+|ula|soma:total
+A[0] => somador:S0.A
+A[1] => somador:S1.A
+A[2] => somador:S2.A
+A[3] => somador:S3.A
+A[4] => somador:S4.A
+A[5] => somador:S5.A
+A[6] => somador:S6.A
+A[7] => somador:S7.A
+B[0] => somador:S0.B
+B[1] => somador:S1.B
+B[2] => somador:S2.B
+B[3] => somador:S3.B
+B[4] => somador:S4.B
+B[5] => somador:S5.B
+B[6] => somador:S6.B
+B[7] => somador:S7.B
+S[0] <= somador:S0.S
+S[1] <= somador:S1.S
+S[2] <= somador:S2.S
+S[3] <= somador:S3.S
+S[4] <= somador:S4.S
+S[5] <= somador:S5.S
+S[6] <= somador:S6.S
+S[7] <= somador:S7.S
+Co <= somador:S7.Co
+
+
+|ula|soma:total|somador:S0
+Ci => S~0.IN1
+Ci => Co~1.IN1
+A => Co~0.IN0
+A => Co~2.IN0
+B => Co~0.IN1
+B => Co~2.IN1
+Co <= Co~3.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|soma:total|somador:S1
+Ci => S~0.IN1
+Ci => Co~1.IN1
+A => Co~0.IN0
+A => Co~2.IN0
+B => Co~0.IN1
+B => Co~2.IN1
+Co <= Co~3.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|soma:total|somador:S2
+Ci => S~0.IN1
+Ci => Co~1.IN1
+A => Co~0.IN0
+A => Co~2.IN0
+B => Co~0.IN1
+B => Co~2.IN1
+Co <= Co~3.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|soma:total|somador:S3
+Ci => S~0.IN1
+Ci => Co~1.IN1
+A => Co~0.IN0
+A => Co~2.IN0
+B => Co~0.IN1
+B => Co~2.IN1
+Co <= Co~3.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|soma:total|somador:S4
+Ci => S~0.IN1
+Ci => Co~1.IN1
+A => Co~0.IN0
+A => Co~2.IN0
+B => Co~0.IN1
+B => Co~2.IN1
+Co <= Co~3.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|soma:total|somador:S5
+Ci => S~0.IN1
+Ci => Co~1.IN1
+A => Co~0.IN0
+A => Co~2.IN0
+B => Co~0.IN1
+B => Co~2.IN1
+Co <= Co~3.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|soma:total|somador:S6
+Ci => S~0.IN1
+Ci => Co~1.IN1
+A => Co~0.IN0
+A => Co~2.IN0
+B => Co~0.IN1
+B => Co~2.IN1
+Co <= Co~3.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|soma:total|somador:S7
+Ci => S~0.IN1
+Ci => Co~1.IN1
+A => Co~0.IN0
+A => Co~2.IN0
+B => Co~0.IN1
+B => Co~2.IN1
+Co <= Co~3.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

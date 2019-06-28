@@ -1,0 +1,97 @@
+|RegREM
+clk => flipFlopJK:RFOR:0:FFN.clk
+clk => flipFlopJK:RFOR:1:FFN.clk
+clk => flipFlopJK:RFOR:2:FFN.clk
+clk => flipFlopJK:RFOR:3:FFN.clk
+clear => ~NO_FANOUT~
+load => flipFlopJK:RFOR:0:FFN.load
+load => flipFlopJK:RFOR:1:FFN.load
+load => flipFlopJK:RFOR:2:FFN.load
+load => flipFlopJK:RFOR:3:FFN.load
+preset => ~NO_FANOUT~
+endereco_in[0] => flipFlopJK:RFOR:0:FFN.K
+endereco_in[0] => flipFlopJK:RFOR:0:FFN.J
+endereco_in[1] => flipFlopJK:RFOR:1:FFN.K
+endereco_in[1] => flipFlopJK:RFOR:1:FFN.J
+endereco_in[2] => flipFlopJK:RFOR:2:FFN.K
+endereco_in[2] => flipFlopJK:RFOR:2:FFN.J
+endereco_in[3] => flipFlopJK:RFOR:3:FFN.K
+endereco_in[3] => flipFlopJK:RFOR:3:FFN.J
+endereco_in[4] => ~NO_FANOUT~
+endereco_in[5] => ~NO_FANOUT~
+endereco_in[6] => ~NO_FANOUT~
+endereco_in[7] => ~NO_FANOUT~
+endereco_out[0] <= flipFlopJK:RFOR:0:FFN.Q
+endereco_out[1] <= flipFlopJK:RFOR:1:FFN.Q
+endereco_out[2] <= flipFlopJK:RFOR:2:FFN.Q
+endereco_out[3] <= flipFlopJK:RFOR:3:FFN.Q
+endereco_out[4] <= <GND>
+endereco_out[5] <= <GND>
+endereco_out[6] <= <GND>
+endereco_out[7] <= <GND>
+
+
+|RegREM|flipFlopJK:\RFOR:0:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+load => qsignal.ENA
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegREM|flipFlopJK:\RFOR:1:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+load => qsignal.ENA
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegREM|flipFlopJK:\RFOR:2:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+load => qsignal.ENA
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegREM|flipFlopJK:\RFOR:3:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+load => qsignal.ENA
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+

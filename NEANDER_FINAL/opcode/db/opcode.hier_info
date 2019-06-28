@@ -1,0 +1,97 @@
+|RegOpcode
+clk => flipFlopJK:RFOR:4:FFN.clk
+clk => flipFlopJK:RFOR:5:FFN.clk
+clk => flipFlopJK:RFOR:6:FFN.clk
+clk => flipFlopJK:RFOR:7:FFN.clk
+clear => ~NO_FANOUT~
+load => flipFlopJK:RFOR:4:FFN.load
+load => flipFlopJK:RFOR:5:FFN.load
+load => flipFlopJK:RFOR:6:FFN.load
+load => flipFlopJK:RFOR:7:FFN.load
+preset => ~NO_FANOUT~
+dado_RDM[0] => ~NO_FANOUT~
+dado_RDM[1] => ~NO_FANOUT~
+dado_RDM[2] => ~NO_FANOUT~
+dado_RDM[3] => ~NO_FANOUT~
+dado_RDM[4] => flipFlopJK:RFOR:4:FFN.K
+dado_RDM[4] => flipFlopJK:RFOR:4:FFN.J
+dado_RDM[5] => flipFlopJK:RFOR:5:FFN.K
+dado_RDM[5] => flipFlopJK:RFOR:5:FFN.J
+dado_RDM[6] => flipFlopJK:RFOR:6:FFN.K
+dado_RDM[6] => flipFlopJK:RFOR:6:FFN.J
+dado_RDM[7] => flipFlopJK:RFOR:7:FFN.K
+dado_RDM[7] => flipFlopJK:RFOR:7:FFN.J
+operacao_out[0] <= <GND>
+operacao_out[1] <= <GND>
+operacao_out[2] <= <GND>
+operacao_out[3] <= <GND>
+operacao_out[4] <= flipFlopJK:RFOR:4:FFN.Q
+operacao_out[5] <= flipFlopJK:RFOR:5:FFN.Q
+operacao_out[6] <= flipFlopJK:RFOR:6:FFN.Q
+operacao_out[7] <= flipFlopJK:RFOR:7:FFN.Q
+
+
+|RegOpcode|flipFlopJK:\RFOR:4:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+load => qsignal.ENA
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegOpcode|flipFlopJK:\RFOR:5:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+load => qsignal.ENA
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegOpcode|flipFlopJK:\RFOR:6:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+load => qsignal.ENA
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegOpcode|flipFlopJK:\RFOR:7:FFN
+J => process_0~1.IN0
+J => process_0~2.IN0
+J => process_0~0.IN0
+K => process_0~0.IN1
+K => process_0~2.IN1
+K => process_0~1.IN1
+clear => qsignal~3.IN0
+clear => qsignal.ACLR
+preset => qsignal~3.IN1
+load => qsignal.ENA
+clk => qsignal.CLK
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
