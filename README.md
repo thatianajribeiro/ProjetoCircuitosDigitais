@@ -110,5 +110,6 @@ O RDM tem a função de armazenar o dado que vem da memória. No momento em que 
 ________________________________________________________________________________________________
 
 # Opcode
-Opcode é um registrador de instrução. Ele busca a instrução da memória e armazena em si mesmo. Para implementar a sua lógica foi necessário de entradas como o clock, clear, load, preset, dado_RDM (no tamanho de 8 bits, formado por 4 bits de instrução e 4 bits de memória) e, a saída operacao_out de 8 bits que vai receber os 4 bits mais significativos, representando o código da operacao a ser feita, que vai ser decodificada. 
+Opcode é um registrador de instrução. Ele busca a instrução da memória e armazena em si mesmo. Para implementar a sua lógica foi necessário de entradas como o clock, clear, load, preset, dado_RDM (no tamanho de 8 bits, formado por 4 bits de instrução e 4 bits de memória) e, a saída operacao_out de 8 bits que vai receber os 4 bits mais significativos, representando o código da operacao a ser feita, que vai ser decodificada.
+
 Para implementar a lógica, foi necessário fazer uma estrutura de for com um conjunto de flipflops que juntos armazenarão os 8 bits, no formato XXXX YYYY, sendo X referente a operacao a ser realizada e Y o endereco da memória, clear e preset foram setados em 1 devido a lógica utilizada pelo professor em sala. Como o que importa são os 4 primeiros bits da lógica, então operacao_out ocupara os 4 primeiros espaços com eles e o restante com 0.
