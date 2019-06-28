@@ -98,4 +98,4 @@ Para obter essa saída, foi necessário fazer o uso de um conjunto de flipflops 
 ________________________________________________________________________________________________
 
 # RDM
-O RDM tem a função de armazenar o dado que vem da memória. No momento o endereço entra o REM, a memória libera o conteúdo na saída, esse conteúdo não entra automaticamente na RDM, ele entra a partir do momento que é dado um clock nele. 
+O RDM tem a função de armazenar o dado que vem da memória. No momento o endereço entra no REM, a memória libera o conteúdo na saída, esse conteúdo não entra automaticamente na RDM, ele entra a partir do momento que é dado um clock nele. 
