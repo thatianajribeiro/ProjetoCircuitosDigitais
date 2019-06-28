@@ -108,7 +108,7 @@ O RDM tem a função de armazenar o dado que vem da memória. No momento em que 
 * 10- nada acontece;
 * 11- nada acontece.
 
-Para implementar a lógica, foi necessário fazer uma estrutura de for com um conjunto de flipflops que juntos armazenarão os 8 bits, no formato XXXX YYYY, sendo X referente a operacao a ser realizada e Y o endereco da memória, clear e preset foram setados em 1 devido a lógica utilizada pelo professor em sala. 
+Para implementar a lógica, foi necessário fazer uma estrutura de for com um conjunto de FlipFlops que juntos armazenarão os 8 bits, no formato XXXX YYYY, sendo X referente a operacao a ser realizada e Y o endereco da memória, clear e preset foram setados em 1 devido a lógica utilizada pelo professor em sala. A saída Q desse conjunto de FlipFlops JK foi passada para a saída do RDM.
 ________________________________________________________________________________________________
 
 # Opcode
