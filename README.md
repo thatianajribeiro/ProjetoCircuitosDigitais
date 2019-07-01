@@ -124,6 +124,22 @@ Opcode é um registrador de instrução. Ele busca a instrução da memória e a
 
 Para implementar a lógica, foi necessário fazer uma estrutura de for com um conjunto de flipflops JK que juntos armazenaram 8 bits, no formato XXXX YYYY, sendo X referente a operação a ser realizada e Y o endereco da memória, clear e preset foram setados em 1 devido a lógica utilizada pelo professor em sala. Como o que importa são os 4 primeiros bits da lógica, então operacao_out ocupará os 4 primeiros espaços com eles e o restante com 0.
 
+________________________________________________________________________________________________
+
+# Unidade de Controle
+
+
+A unidade de controle é responsável por controlar o fluxo de dados no datapath do Neander. A unidade faz isso arbitrando quando cada registrador precisa armazenar os dados em sua entrada, através dos sinais, controlando a memória read e write e selecionando se o REM usa o PC ou o endereço do operando lido da memória para apontar para uma posição determinada da memória. Todas essas ações de controle dependem da instrução que está sendo executada e do tempo de execução do ciclo de instrução. A Unidade de Controle também é responsável por selecionar a operação apropriada a ser executada pela Unidade Lógica Aritmética (ULA) com base na instrução atual e na etapa de execução. Juntamente com o datapath, a unidade de controle compõe o projeto Neander.
+Com base nos movimentos de dados entre os elementos do datapath definidos por cada instrução Neander, a unidade de controle pode ser representada por um FSM com oito estados. Cada estado representa uma etapa de execução e as ações de controle executadas em cada estado dependem da instrução, bem como das transições.
+
+
+Um ciclo de instrução é o conjunto de movimentos de dados e ações de controle que compõem as etapas de execução da instrução. Na arquitetura Neander, este ciclo de instrução é dividido em duas fases: fase de busca da instrução e fase de execução. A fase de busca da instrução é a primeira fase de uma instrução. O ciclo de instrução não depende da instrução que está sendo executada. A instrução que será executada posteriormente é obtida da memória nesta fase. Do estado 0 ao estado 2, a unidade de controle acessa a memória para buscar a instrução a ser armazenada em IR e incrementa o PC para apontar para o endereço do operando da instrução ou para a próxima instrução. Depois que a instrução é buscada da memória, o processador Neander vai para a próxima fase do ciclo de instruções, a fase de execução. Dependendo da instrução a ser executada, as ações dessa fase podem levar de 1 (NOP) a 5 (STA) etapas de execução.
+A instrução LDA move os dados da MEM para o AC. A fase de execução dessa instrução leva até o estado 7 e precisa de dois acessos de leitura de memória: um para ler o endereço do operando e outro para ler os dados do operando na posição mostrada pelo endereço do operando.
+
+
+As instruções ADD fazem com que a ULA some os dados atuais na CA com os dados do operando indicados na instrução. Essa instrução também requer os mesmos dois acessos de leitura de memória que a instrução LDA. Por fim, a instrução STA move os dados de CA para a MEM. Esta instrução precisa de um acesso de leitura de memória, para ler o endereço do operando e um outro acesso de gravação de memória, para armazenar os dados. Após a instrução STA, o processador Neander é interrompido pela instrução HLT.
+
+
 
 <h1>Desenvolvedores:</h1>
  
